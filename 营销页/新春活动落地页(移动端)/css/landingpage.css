@@ -1,0 +1,725 @@
+@charset "UTF-8";
+html, body {
+  padding: 0;
+  margin: 0; }
+
+.landingpage_box {
+  font-family: 'MicrosoftYaHei';
+  background-color: #FAEDE0;
+  /*banner图样式*/
+  /*活动简介样式*/
+  /*活动进度样式*/
+  /*如何参与样式*/
+  /*活动规则样式*/
+  /* 常见问答样式*/
+  /*编玩边学logo样式*/
+  /*立即开抢的弹窗样式*/ }
+  .landingpage_box .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .landingpage_box .clearfix {
+    *zoom: 1; }
+  .landingpage_box .landingpage_banner {
+    width: 100vw;
+    height: 104.4vw; }
+    .landingpage_box .landingpage_banner img {
+      width: 100%;
+      height: auto;
+      vertical-align: top; }
+  .landingpage_box .introductions_box {
+    position: relative;
+    top: -4vw;
+    margin: 0 auto;
+    width: 88.6666666667vw;
+    height: 106.6666666667vw;
+    background: url("../images/produce@2x.png");
+    background-size: cover;
+    z-index: 999 !important; }
+    .landingpage_box .introductions_box .introductions_box_center {
+      padding: 0 4.6666666667vw 0 4.6666666667vw; }
+      .landingpage_box .introductions_box .introductions_box_center .introduce_title {
+        color: #76643c;
+        font-size: 3.7333333333vw;
+        font-weight: normal;
+        padding-top: 30.6666666667vw;
+        margin-bottom: 6vw; }
+      .landingpage_box .introductions_box .introductions_box_center .introduce_texts {
+        color: #76643c;
+        font-size: 3.4666666667vw;
+        margin: 0 0 1.6vw 0; }
+      .landingpage_box .introductions_box .introductions_box_center .prompt_title {
+        color: #ff454c;
+        font-size: 3.7333333333vw;
+        margin: 4.6666666667vw 0 0 0;
+        text-align: center; }
+    .landingpage_box .introductions_box .timers_box {
+      position: absolute;
+      width: 90%;
+      left: 50%;
+      margin-left: -45%;
+      bottom: 6.6666666667vw;
+      text-align: center; }
+      .landingpage_box .introductions_box .timers_box .timers_box_txt {
+        display: inline-block;
+        font-size: 2.5333333333vw;
+        color: #76643c; }
+      .landingpage_box .introductions_box .timers_box .timer_txts {
+        display: inline-block;
+        font-size: 3.3333333333vw;
+        color: #de3c44; }
+  .landingpage_box .jindu_boxs {
+    padding: 0 4.2666666667vw; }
+    .landingpage_box .jindu_boxs .jindu_boxs_title_img {
+      width: 67.3333333333vw;
+      height: 12.2666666667vw;
+      margin: 1.3333333333vw auto 4.2666666667vw; }
+      .landingpage_box .jindu_boxs .jindu_boxs_title_img img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle; }
+    .landingpage_box .jindu_boxs .jindu_boxs_one {
+      margin: 0 auto 7.7333333333vw;
+      width: 91.4666666667vw;
+      height: 140.8vw;
+      position: relative; }
+      .landingpage_box .jindu_boxs .jindu_boxs_one img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999; }
+        .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .jindu_boxs_one_item-title {
+          margin: 0.2666666667vw 0 0 4vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .jindu_boxs_one_item-title .jindu_boxs_one_item-txt {
+            display: inline-block;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-size: 3.4666666667vw;
+            color: #ff464d;
+            margin-right: 1.0666666667vw;
+            font-weight: bolder; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .jindu_boxs_one_item-title .jindu_boxs_one_item-txte {
+            display: inline-block;
+            font-size: 2.9333333333vw;
+            color: #ff464d; }
+        .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .participate_txt {
+          font-size: 2.9333333333vw;
+          text-align: center;
+          margin: 8.1333333333vw auto 5.3333333333vw;
+          color: #9e885a; }
+        .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs {
+          width: 100%;
+          display: flex;
+          height: 105.3333333333vw;
+          justify-content: center; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_one_item {
+            width: 100%;
+            position: absolute;
+            left: 0; }
+            .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_one_item .hongbao_boxs_one_item_img {
+              height: 20.4vw;
+              background: url("../images/NO1_red@2x.png");
+              background-size: cover;
+              text-align: center;
+              position: relative;
+              margin: 0 auto 2.6666666667vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_one_item .hongbao_boxs_one_item_img .hongbao_boxs_one_item_img_text {
+                margin-top: 1.6vw;
+                display: inline-block;
+                color: #fff;
+                font-size: 2.5333333333vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_one_item .hongbao_boxs_one_item_img .hongbao_item_textss {
+                color: #de3c44;
+                font-size: 2.6666666667vw;
+                font-family: 'MicrosoftYaHei-Bold';
+                font-weight: bolder;
+                position: absolute;
+                left: 12.5333333333vw;
+                bottom: 7.2vw; }
+            .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_one_item .hongbao_boxs_one_item_txt {
+              text-align: center;
+              font-size: 3.2vw;
+              color: #de3c44;
+              margin: 0 auto 1.0666666667vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two_item {
+            width: 31.7333333333vw;
+            height: 17.3333333333vw;
+            background: url("../images/NO1_red2@2x.png");
+            background-size: cover;
+            text-align: center;
+            position: absolute;
+            left: 0; }
+            .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two_item .hongbao_item_txtss {
+              display: inline-block;
+              color: #de3c44;
+              font-size: 2.9333333333vw;
+              font-family: 'MicrosoftYaHei-Bold';
+              font-weight: bolder;
+              padding-top: 6.6666666667vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .red_boxs_one {
+            top: 36vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .red_boxs_two {
+            top: 76vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .red_boxs_four {
+            top: 21.3333333333vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .red_boxs_five {
+            top: 57.3333333333vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_one {
+            flex: 5;
+            margin-left: 8.6666666667vw;
+            position: relative; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .envelopes_one {
+            top: 0; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .envelopes_two {
+            display: none;
+            top: 33.3333333333vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .envelopes_three {
+            display: none;
+            top: 70.6666666667vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .envelopes_four {
+            display: none; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .envelopes_five {
+            display: none;
+            top: 54.6666666667vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two {
+            flex: 1;
+            margin: 0 3.8666666667vw; }
+            .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs {
+              margin: 13.3333333333vw auto 0;
+              width: 0.8vw;
+              height: 69.3333333333vw;
+              background-color: #E3C992;
+              position: relative; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .line_boxs_item {
+                border-radius: 50%;
+                background-color: #E3C992;
+                width: 3.2vw;
+                height: 3.2vw;
+                position: absolute;
+                left: -1.1333333333vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .xiaoyuanquan {
+                background-image: linear-gradient(161deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#de3c44, #de3c44);
+                background-blend-mode: normal, normal; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .line_boxs_one {
+                top: -1.6vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .line_boxs_two {
+                top: 15.2vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .line_boxs_three {
+                top: 30.2666666667vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .line_boxs_four {
+                top: 50.8vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .line_boxs_five {
+                bottom: -1.6vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_two .line_boxs .line_boxs_xiantiao {
+                position: absolute;
+                width: 0.8vw;
+                height: 1.6vw;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(161deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#de3c44, #de3c44);
+                background-blend-mode: normal, normal; }
+          .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .hongbao_boxs .hongbao_boxs_three {
+            padding-top: 18.6666666667vw;
+            flex: 5;
+            margin-right: 8vw;
+            position: relative; }
+        .landingpage_box .jindu_boxs .jindu_boxs_one .jindu_boxs_one_item .mony_texts {
+          color: #de3c44;
+          font-size: 3.2vw;
+          text-align: center;
+          display: none; }
+    .landingpage_box .jindu_boxs .jindu_boxs_two {
+      margin: 0 auto 8.8vw;
+      width: 91.4666666667vw;
+      height: 106.6666666667vw;
+      position: relative; }
+      .landingpage_box .jindu_boxs .jindu_boxs_two img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999; }
+        .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .jindu_boxs_one_item-title {
+          margin: 0.2666666667vw 0 0 4vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .jindu_boxs_one_item-title .jindu_boxs_one_item-txt {
+            display: inline-block;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-size: 3.4666666667vw;
+            color: #ff464d;
+            margin-right: 1.0666666667vw;
+            font-weight: bolder; }
+          .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .jindu_boxs_one_item-title .jindu_boxs_one_item-txte {
+            display: inline-block;
+            font-size: 2.9333333333vw;
+            color: #ff464d; }
+        .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .reward_box_title {
+          margin: 8vw auto 4.9333333333vw;
+          text-align: center;
+          color: #9e885a;
+          font-size: 2.9333333333vw; }
+        .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-container_texts {
+          color: #ff484d;
+          font-size: 3.4666666667vw;
+          text-align: center;
+          margin-top: 5.3333333333vw; }
+        .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide {
+          width: 55.4666666667vw;
+          height: 65.4666666667vw;
+          border-radius: 1.3333333333vw;
+          /* margin: 0 auto (14/7.5)+vw;*/
+          background-image: linear-gradient(146deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#ff434c, #ff434c);
+          background-blend-mode: normal, normal;
+          padding-top: 1.3333333333vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center {
+            width: 52.9333333333vw;
+            height: 48.2666666667vw;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 3px; }
+            .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center .reward_box_item_img {
+              width: 100%;
+              height: 37.7333333333vw;
+              position: relative;
+              margin-bottom: 2.6666666667vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center .reward_box_item_img img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                vertical-align: top; }
+            .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center .header_icon_box {
+              float: left;
+              margin-left: 2vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center .header_icon_box .header_icons {
+                width: 3.7333333333vw;
+                height: 3.6vw;
+                margin-right: 1.3333333333vw;
+                float: left;
+                position: relative; }
+                .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center .header_icon_box .header_icons img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  vertical-align: top; }
+              .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center .header_icon_box .mingcheng_item {
+                color: #99959E;
+                font-size: 2.1333333333vw;
+                float: left; }
+            .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .reward_box_item_center .timer_items {
+              float: right;
+              color: #99959E;
+              font-size: 2.1333333333vw;
+              margin-right: 2vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .frist-items, .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .frist-items-monery {
+            margin: 2.4vw auto 0.8vw;
+            text-align: center;
+            color: #fff;
+            font-size: 4vw;
+            font-weight: bolder;
+            font-family: 'MicrosoftYaHei-Bold'; }
+          .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .swiper-slide .frist-items-monery {
+            margin: 0 !important;
+            font-weight: normal !important; }
+        .landingpage_box .jindu_boxs .jindu_boxs_two .jindu_boxs_one_item .reward_box_item_txt {
+          color: #ff484d;
+          font-size: 4vw;
+          text-align: center;
+          margin: 0 auto; }
+    .landingpage_box .jindu_boxs .jindu_boxs_three {
+      margin: 0 auto 8.4vw;
+      width: 91.4666666667vw;
+      height: 96.4vw;
+      position: relative; }
+      .landingpage_box .jindu_boxs .jindu_boxs_three img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999; }
+        .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .jindu_boxs_one_item-title {
+          margin: 0.2666666667vw 0 0 4vw; }
+          .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .jindu_boxs_one_item-title .jindu_boxs_one_item-txt {
+            display: inline-block;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-size: 3.4666666667vw;
+            color: #ff464d;
+            margin-right: 1.0666666667vw;
+            font-weight: bolder; }
+          .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .jindu_boxs_one_item-title .jindu_boxs_one_item-txte {
+            display: inline-block;
+            font-size: 2.9333333333vw;
+            color: #ff464d; }
+        .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_titles {
+          margin: 7.3333333333vw auto 4.6666666667vw;
+          text-align: center;
+          color: #a7926a;
+          font-size: 2.9333333333vw; }
+        .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_centers {
+          display: flex;
+          width: 100%; }
+          .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_centers .programming_centers_item {
+            flex: 1;
+            margin: 1.3333333333vw;
+            height: 40vw;
+            position: relative; }
+            .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_centers .programming_centers_item .ticket_imgs {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              margin-left: -17.0666666667vw;
+              margin-top: 6.6666666667vw;
+              width: 32.1333333333vw;
+              height: 18vw; }
+            .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_centers .programming_centers_item .course_img {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              margin-left: -15.8666666667vw;
+              width: 31.7333333333vw;
+              height: 27.8666666667vw; }
+            .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_centers .programming_centers_item .programming_centers_txt {
+              width: 100%;
+              left: 50%;
+              margin-left: -50%;
+              position: absolute;
+              bottom: 1.3333333333vw;
+              text-align: center; }
+              .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_centers .programming_centers_item .programming_centers_txt .programming_text {
+                font-family: 'MicrosoftYaHei-Bold';
+                font-size: 3.2vw;
+                color: #ff4a4d;
+                margin: 0 auto 1.3333333333vw; }
+              .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_centers .programming_centers_item .programming_centers_txt .programming_txt {
+                color: #c49d76;
+                font-size: 3.2vw;
+                margin: 0; }
+        .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_buttons {
+          margin: 5.7333333333vw auto 2.6666666667vw;
+          width: 38.4vw;
+          height: 9.6vw;
+          line-height: 9.6vw;
+          text-align: center;
+          color: #f7f7f7;
+          cursor: pointer;
+          font-size: 4.1333333333vw;
+          border-radius: 4.8vw;
+          background-color: #ff4a4d;
+          letter-spacing: 1.3333333333vw;
+          font-weight: bolder;
+          font-family: 'MicrosoftYaHei-Bold'; }
+        .landingpage_box .jindu_boxs .jindu_boxs_three .jindu_boxs_one_item .programming_buttons_text {
+          font-size: 3.7333333333vw;
+          text-align: center;
+          color: #ff434c;
+          letter-spacing: 0.5333333333vw; }
+  .landingpage_box .how_box {
+    width: 100%;
+    background-size: cover;
+    background: url("../images/bg1.png") no-repeat;
+    padding-bottom: 7.6vw;
+    padding-top: 4vw; }
+    .landingpage_box .how_box .how_box_title {
+      width: 67.3333333333vw;
+      height: 16vw;
+      margin: 0 auto 8.4vw; }
+      .landingpage_box .how_box .how_box_title img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top; }
+    .landingpage_box .how_box .how_box_center {
+      width: 89.2vw;
+      height: 146.1333333333vw;
+      border: 1px solid #e8d39e;
+      border-radius: 2.6666666667vw;
+      margin: 0 auto 7.6vw; }
+      .landingpage_box .how_box .how_box_center .how_box_center_title {
+        color: #f6ecd1;
+        font-size: 4.2666666667vw;
+        margin: 5.6vw auto 6vw;
+        text-align: center;
+        font-family: 'MicrosoftYaHei-Bold';
+        font-weight: bolder; }
+      .landingpage_box .how_box .how_box_center .how_box_center_box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between; }
+        .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item {
+          width: 41.3333333333vw;
+          height: 49.6vw;
+          margin: 0 0 2vw 0; }
+          .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item .how_box_center_box_txt {
+            font-size: 3.4666666667vw;
+            color: #f6ecd1;
+            text-align: left;
+            padding: 0 3.3333333333vw; }
+          .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item .how_box_center_img_one {
+            width: 33.4666666667vw;
+            height: 26.6666666667vw;
+            text-align: center;
+            position: relative; }
+            .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item .how_box_center_img_one img {
+              position: absolute;
+              top: 26%;
+              left: 55%;
+              margin: -6.9333333333vw 0 0 -45%;
+              width: 90%;
+              height: 21.4666666667vw; }
+          .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item .how_box_center_img_two {
+            width: 31.3333333333vw;
+            height: 18.4vw; }
+            .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item .how_box_center_img_two img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              margin-left: 4vw; }
+          .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item .how_box_center_img_three {
+            width: 41.3333333333vw;
+            height: 23.8666666667vw;
+            text-align: center; }
+            .landingpage_box .how_box .how_box_center .how_box_center_box .how_box_center_box_item .how_box_center_img_three img {
+              width: 33.4666666667vw;
+              height: 100%;
+              vertical-align: top; }
+      .landingpage_box .how_box .how_box_center .how_box_center_txts {
+        text-align: center;
+        color: #f6ecd1;
+        font-size: 4vw;
+        font-family: 'MicrosoftYaHei-Bold';
+        font-weight: bolder;
+        margin: 0 0 4.5333333333vw 0; }
+      .landingpage_box .how_box .how_box_center .how_box_center_button {
+        width: 47.4666666667vw;
+        height: 10.2666666667vw;
+        line-height: 10.2666666667vw;
+        text-align: center;
+        color: #e3434b;
+        font-size: 4.5333333333vw;
+        font-weight: bolder;
+        font-family: 'MicrosoftYaHei-Bold';
+        letter-spacing: 1.0666666667vw;
+        border-radius: 5.0666666667vw;
+        background-image: linear-gradient(161deg, #fcdbae 0%, #e2bc8b 100%), linear-gradient(#f6ecd1, #f6ecd1);
+        background-blend-mode: normal, normal;
+        margin: 0 auto; }
+  .landingpage_box .rule_boxs {
+    width: 100%;
+    background-size: cover;
+    background: url("../images/bg2.png") no-repeat;
+    padding-bottom: 8.5333333333vw; }
+    .landingpage_box .rule_boxs .how_box_title {
+      margin: 0 auto 5.6vw;
+      width: 67.4666666667vw;
+      height: 16.2666666667vw; }
+      .landingpage_box .rule_boxs .how_box_title img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top; }
+    .landingpage_box .rule_boxs .rule_boxs_centers {
+      width: 89.2vw;
+      height: 73.0666666667vw;
+      margin: 0 auto;
+      border-radius: 2.6666666667vw;
+      border: 1px solid #e8d39e; }
+      .landingpage_box .rule_boxs .rule_boxs_centers .rule_boxs_centers_item {
+        padding: 0 4vw;
+        margin-top: 2.6666666667vw;
+        display: flex;
+        justify-content: start; }
+        .landingpage_box .rule_boxs .rule_boxs_centers .rule_boxs_centers_item .xiaoyuanquan_icon {
+          display: inline-block;
+          width: 4vw;
+          height: 4vw;
+          line-height: 4vw;
+          text-align: center;
+          color: #e3424a;
+          font-size: 2.9333333333vw;
+          border-radius: 50%;
+          background-color: #fcdbae;
+          font-family: 'MicrosoftYaHei-Bold';
+          margin-right: 1.3333333333vw; }
+        .landingpage_box .rule_boxs .rule_boxs_centers .rule_boxs_centers_item .xiaoyuanquan_icon_txt {
+          display: inline-block;
+          margin: 0;
+          color: #f6ecd1;
+          font-size: 3.4666666667vw; }
+  .landingpage_box .answer_boxs {
+    width: 100%;
+    background-size: cover;
+    background: url("../images/bg2.png") no-repeat; }
+    .landingpage_box .answer_boxs .how_box_title {
+      width: 67.3333333333vw;
+      height: 16vw;
+      margin: 0 auto 6.5333333333vw; }
+      .landingpage_box .answer_boxs .how_box_title img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top; }
+    .landingpage_box .answer_boxs .answer_boxs_center {
+      padding: 0 5.3333333333vw; }
+      .landingpage_box .answer_boxs .answer_boxs_center .answer_boxs_center_item {
+        margin-bottom: 6.5333333333vw; }
+        .landingpage_box .answer_boxs .answer_boxs_center .answer_boxs_center_item .answer_boxs_center_item_title {
+          margin-bottom: 1.3333333333vw; }
+          .landingpage_box .answer_boxs .answer_boxs_center .answer_boxs_center_item .answer_boxs_center_item_title .answer_boxs_icon {
+            display: inline-block;
+            background-color: #fcdbae;
+            width: 4vw;
+            line-height: 4vw;
+            height: 4vw;
+            text-align: center;
+            color: #e3424a;
+            font-size: 2.9333333333vw;
+            font-family: 'MicrosoftYaHei-Bold';
+            border-radius: 50%;
+            margin-right: 1.6vw; }
+          .landingpage_box .answer_boxs .answer_boxs_center .answer_boxs_center_item .answer_boxs_center_item_title .answer_boxs_txt_title {
+            color: #fcdbae;
+            font-size: 3.4666666667vw;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-weight: bolder; }
+        .landingpage_box .answer_boxs .answer_boxs_center .answer_boxs_center_item .answer_boxs_center_item_texts {
+          color: #fcdbae;
+          font-size: 3.4666666667vw;
+          padding-left: 13.3333333333vw;
+          position: relative;
+          margin: 0; }
+          .landingpage_box .answer_boxs .answer_boxs_center .answer_boxs_center_item .answer_boxs_center_item_texts .da_items {
+            position: absolute;
+            top: 0;
+            left: 6.6666666667vw; }
+  .landingpage_box .bwbx_logo {
+    width: 100%;
+    height: 38.8vw;
+    position: relative; }
+    .landingpage_box .bwbx_logo .footer_img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top; }
+    .landingpage_box .bwbx_logo .foot_logo_img {
+      position: absolute;
+      top: 11.7333333333vw;
+      left: 50%;
+      margin-left: -9.6vw;
+      width: 19.2vw;
+      height: 7.7333333333vw; }
+  .landingpage_box .modal-dialog {
+    margin: 6.6666666667vw auto 0 !important;
+    width: 81.6vw !important; }
+    .landingpage_box .modal-dialog .modal-content {
+      border: none !important;
+      box-shadow: none !important;
+      border-radius: 0 !important; }
+      .landingpage_box .modal-dialog .modal-content .modal-header {
+        padding: 0 !important;
+        border-bottom: none !important; }
+      .landingpage_box .modal-dialog .modal-content .modal-body {
+        padding: 0 !important;
+        position: relative; }
+        .landingpage_box .modal-dialog .modal-content .modal-body .modal-body_img {
+          position: absolute;
+          width: 81.6vw;
+          height: 113.4666666667vw;
+          left: 0;
+          top: 0; }
+        .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form {
+          position: absolute;
+          left: 50%;
+          top: 22.6666666667vw;
+          margin-left: -38vw;
+          width: 76vw;
+          height: 87.2vw;
+          z-index: 999 !important; }
+          .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form .delete_img {
+            width: 6.1333333333vw;
+            height: 6.1333333333vw;
+            position: absolute;
+            left: 50%;
+            margin-left: -3.0666666667vw;
+            bottom: -12.6666666667vw; }
+          .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form .biaodan_form_title {
+            margin: 4vw auto 0;
+            color: #fff;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-size: 5.8666666667vw;
+            text-align: center; }
+          .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form .biaodan_form_input {
+            padding: 0 7.4666666667vw;
+            padding-top: 5.3333333333vw; }
+            .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form .biaodan_form_input input {
+              outline: none;
+              padding: 1.3333333333vw 0;
+              height: 10.8vw;
+              vertical-align: middle;
+              width: 100%;
+              border-radius: 1.0666666667vw;
+              border: 1px solid #d02e2a;
+              margin-top: 5.2vw;
+              color: #bababa;
+              font-size: 3.4666666667vw;
+              text-indent: 1em;
+              -webkit-appearance: none;
+              appearance: none; }
+            .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form .biaodan_form_input .yangzhengma_input {
+              float: left;
+              width: 27.8666666667vw; }
+            .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form .biaodan_form_input .yangzhengma_input_buttons {
+              margin-top: 5.7333333333vw;
+              background-color: #ff504f;
+              width: 27.8666666667vw;
+              height: 10.8vw;
+              line-height: 10.8vw;
+              text-align: center;
+              color: #fffefe;
+              font-size: 3.8666666667vw;
+              float: right;
+              outline: none;
+              border: 0;
+              border-radius: 5px !important; }
+          .landingpage_box .modal-dialog .modal-content .modal-body .biaodan_form .receive_items_button {
+            width: 60.2666666667vw;
+            margin: 4.6666666667vw 0 0 7.3333333333vw;
+            line-height: 10.8vw;
+            text-align: center;
+            color: #fff;
+            font-size: 4.2666666667vw;
+            border: 0;
+            outline: none;
+            border-radius: 6px !important;
+            background-image: linear-gradient(161deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#de3c44, #de3c44);
+            background-blend-mode: normal, normal; }
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50) !important;
+  opacity: .7 !important; }
+
+/*# sourceMappingURL=landingpage.css.map */

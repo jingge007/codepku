@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/*PC端的样式*/
+.introduction_boxs {
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  background-color: #fff;
+  font-family: '微软雅黑'; }
+  .introduction_boxs .introduction_banner {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background: url("../images/introduction_banner_01.png") center center; }
+    .introduction_boxs .introduction_banner .banner_text {
+      width: 760px;
+      padding-top: 30px;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-75%);
+      -moz-transform: translateX(-75%);
+      -ms-transform: translateX(-75%);
+      -o-transform: translateX(-75%);
+      transform: translateX(-75%); }
+      .introduction_boxs .introduction_banner .banner_text .banner_text_title {
+        margin: 0 0 8px 0;
+        padding: 0;
+        font-size: 38px;
+        color: #000;
+        font-weight: normal;
+        font-family: 'KaiGenGothicSC-Light'; }
+      .introduction_boxs .introduction_banner .banner_text .banner_text_center {
+        color: #3E3C3C;
+        line-height: 25px;
+        font-size: 14px;
+        margin: 0 0 20px 0;
+        padding: 0;
+        font-family: 'KaiGenGothicSCLight'; }
+      .introduction_boxs .introduction_banner .banner_text .study_button {
+        text-decoration: none;
+        display: inline-block;
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 35px;
+        color: #fff;
+        background-color: #2284F1;
+        font-size: 16px;
+        font-family: '微软雅黑'; }
+      .introduction_boxs .introduction_banner .banner_text .purchase_money {
+        text-decoration: none;
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 35px;
+        margin-left: 25px;
+        font-size: 16px;
+        font-family: 'MicrosoftYaHeiLight';
+        background-color: transparent;
+        color: #2284F1;
+        border: 1px solid #2284F1;
+        display: none;
+        box-sizing: border-box; }
+  .introduction_boxs .Scratch_banner {
+    background: url("../images/introduction_banner_01.png") center center !important; }
+  .introduction_boxs .Python_banner {
+    background: url("../images/introduction_banner_02.png") center center !important; }
+  .introduction_boxs .NOIP_banner {
+    background: url("../images/introduction_banner_03.png") center center !important; }
+  .introduction_boxs .curriculum_navs {
+    width: 100%;
+    height: 153px;
+    background-color: #fafafa; }
+    .introduction_boxs .curriculum_navs .curriculum_navs_center {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      text-align: center;
+      padding-top: 48px; }
+      .introduction_boxs .curriculum_navs .curriculum_navs_center .curriculum_navs_center_item .navs_center_item_title {
+        margin: 0 0 10px 0;
+        color: #666;
+        font-size: 24px;
+        font-family: 'MicrosoftYaHei-Bold';
+        font-weight: 600; }
+      .introduction_boxs .curriculum_navs .curriculum_navs_center .curriculum_navs_center_item .navs_center_txt {
+        color: #666;
+        font-size: 16px;
+        margin: 0;
+        font-family: '微软雅黑'; }
+  .introduction_boxs .syllabus_boxs {
+    padding-top: 46px;
+    text-align: center; }
+    .introduction_boxs .syllabus_boxs .syllabus_boxs_title {
+      margin: 0 0 10px 0;
+      font-family: 'STXingkai';
+      font-size: 30px;
+      color: #333; }
+    .introduction_boxs .syllabus_boxs .syllabus_boxs_txt {
+      color: #333;
+      font-size: 30px;
+      font-family: 'MicrosoftYaHei-Bold';
+      margin: 0 0 15px 0; }
+    .introduction_boxs .syllabus_boxs .line_boxs {
+      width: 194px;
+      margin: 0 auto 50px;
+      display: flex;
+      justify-content: space-around; }
+      .introduction_boxs .syllabus_boxs .line_boxs .line_boxs_item_01 {
+        width: 43px;
+        height: 3px;
+        background-color: #ffd400; }
+      .introduction_boxs .syllabus_boxs .line_boxs .line_boxs_item_02 {
+        width: 100px;
+        height: 3px;
+        background-color: #2284f1; }
+      .introduction_boxs .syllabus_boxs .line_boxs .line_boxs_item_03 {
+        width: 43px;
+        height: 3px;
+        background-color: #ff3838; }
+    .introduction_boxs .syllabus_boxs .syllabus_boxs_tables {
+      margin: 0 auto;
+      width: 1134px;
+      border: solid 1px #dcdcdc;
+      padding: 24px 30px 35px 30px; }
+      .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+        .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .syllabus_boxs_tables_title {
+          height: 56px;
+          background-color: #2284f1;
+          line-height: 56px;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+          font-family: '微软雅黑'; }
+        .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .syllabus_item_center {
+          text-align: center;
+          color: #666;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .syllabus_item_center .syllabus_boxs_item_txt {
+            padding: 20px;
+            line-height: 22px;
+            font-family: '微软雅黑'; }
+          .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .syllabus_item_center .font-item_01 {
+            font-size: 18px; }
+          .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .syllabus_item_center .font-item_02 {
+            font-size: 14px;
+            text-align: left; }
+        .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .item_title_01 {
+          flex: 1;
+          border-right: 2px solid #fff;
+          font-family: '微软雅黑'; }
+        .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .item_title_02 {
+          flex: 2;
+          border-right: 2px solid #fff;
+          font-family: '微软雅黑'; }
+        .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .item_title_03 {
+          flex: 4;
+          border-right: 2px solid #fff;
+          font-family: '微软雅黑'; }
+        .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .item_title_04 {
+          flex: 3;
+          border-right: 2px solid #fff;
+          font-family: '微软雅黑';
+          justify-content: flex-start !important; }
+          .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .item_title_04 .syllabus_boxs_item_txt {
+            width: 194px;
+            margin: 0 auto;
+            padding: 20px 0 !important;
+            text-align: left; }
+        .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .syllabus_boxs_tab .item_title_05 {
+          flex: 5; }
+      .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .color_box_items:nth-child(2n-1) {
+        background-color: #fff; }
+      .introduction_boxs .syllabus_boxs .syllabus_boxs_tables .color_box_items:nth-child(2n+1) {
+        background-color: #f8f8f8; }
+  .introduction_boxs .purchase_boxs {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    background-color: #f8f8f8;
+    margin-top: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .introduction_boxs .purchase_boxs .purchase_boxs_text {
+      font-family: 'MicrosoftYaHeiLight';
+      font-size: 18px;
+      color: #666;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      display: flex; }
+      .introduction_boxs .purchase_boxs .purchase_boxs_text .purchase_boxs_item_text {
+        font-size: 20px;
+        margin: 0 20px 0 11px;
+        display: inline-block; }
+      .introduction_boxs .purchase_boxs .purchase_boxs_text .purchase_boxs_item {
+        position: relative; }
+      .introduction_boxs .purchase_boxs .purchase_boxs_text .purchase_boxs_item::before, .introduction_boxs .purchase_boxs .purchase_boxs_text .purchase_boxs_item::after {
+        content: "";
+        display: inline-block;
+        border-width: 9px;
+        position: absolute;
+        right: -14px;
+        top: 6px;
+        border-style: dashed solid solid dashed;
+        border-color: transparent transparent transparent #bababa;
+        font-size: 0;
+        line-height: 0; }
+      .introduction_boxs .purchase_boxs .purchase_boxs_text .purchase_boxs_item:after {
+        right: -11px;
+        border-color: transparent transparent transparent #F8F8F8; }
+
+/*移动端的样式*/
+.introduction_box_mobile {
+  width: 100%;
+  background-color: #eeeeee !important; }
+  .introduction_box_mobile .banner_container {
+    background-color: #fff;
+    padding-bottom: 4.6666666667vw; }
+    .introduction_box_mobile .banner_container .mobile_banner_box, .introduction_box_mobile .banner_container .mobile_banner_Scratch, .introduction_box_mobile .banner_container .mobile_banner_Python, .introduction_box_mobile .banner_container .mobile_banner_NOIP {
+      width: 100vw;
+      height: 40vw;
+      background-image: url("../images/scratch_mobile_banner.png");
+      background-size: 100% auto;
+      padding: 11.7333333333vw 0 0 10.1333333333vw;
+      background-repeat: no-repeat;
+      background-position: center center; }
+      .introduction_box_mobile .banner_container .mobile_banner_box .mobile_banner_title, .introduction_box_mobile .banner_container .mobile_banner_Scratch .mobile_banner_title, .introduction_box_mobile .banner_container .mobile_banner_Python .mobile_banner_title, .introduction_box_mobile .banner_container .mobile_banner_NOIP .mobile_banner_title {
+        margin: 0;
+        font-family: 'KaiGenGothicSC-Light';
+        font-size: 4.5333333333vw;
+        color: #333333; }
+      .introduction_box_mobile .banner_container .mobile_banner_box .mobile_purchase, .introduction_box_mobile .banner_container .mobile_banner_Scratch .mobile_purchase, .introduction_box_mobile .banner_container .mobile_banner_Python .mobile_purchase, .introduction_box_mobile .banner_container .mobile_banner_NOIP .mobile_purchase {
+        margin: 5.7333333333vw 0 0 0;
+        display: block;
+        background-color: #2284f1;
+        width: 30.6666666667vw;
+        height: 7.2vw;
+        line-height: 7.2vw;
+        text-align: center;
+        font-size: 3.2vw;
+        color: #fff;
+        font-family: 'MicrosoftYaHei-Bold';
+        border-radius: 3.6vw;
+        text-decoration: none; }
+    .introduction_box_mobile .banner_container .mobile_banner_Scratch {
+      background-image: url("../images/scratch_mobile_banner.png"); }
+    .introduction_box_mobile .banner_container .mobile_banner_Python {
+      background-image: url("../images/python_mobile_banner.png"); }
+    .introduction_box_mobile .banner_container .mobile_banner_NOIP {
+      background-image: url("../images/noip_mobile_banner.png"); }
+    .introduction_box_mobile .banner_container .mobile_course_introduction {
+      padding: 4.2666666667vw 4.6666666667vw 3.0666666667vw 4.6666666667vw;
+      background-color: #fff;
+      min-height: 32vw;
+      font-size: 3.4666666667vw;
+      font-family: 'MicrosoftYaHeiLight';
+      color: #666; }
+    .introduction_box_mobile .banner_container .mobile_course_object {
+      width: 94.6666666667vw;
+      margin: 0 auto;
+      background-color: #fafafa;
+      padding: 4.6666666667vw 0 0.8vw 4.2666666667vw; }
+      .introduction_box_mobile .banner_container .mobile_course_object .course_object_item {
+        display: flex;
+        margin: 0 0 3.2vw 0; }
+        .introduction_box_mobile .banner_container .mobile_course_object .course_object_item .object_item {
+          font-size: 3.4666666667vw;
+          color: #999999;
+          font-family: '微软雅黑';
+          margin-right: 0.6666666667vw; }
+        .introduction_box_mobile .banner_container .mobile_course_object .course_object_item .mobile_course_text {
+          font-size: 3.4666666667vw;
+          color: #333;
+          font-family: '微软雅黑'; }
+  .introduction_box_mobile .mobile_center_contaniner {
+    background-color: #fff;
+    margin-top: 2.6666666667vw;
+    width: 100%; }
+    .introduction_box_mobile .mobile_center_contaniner .mobile_center_title {
+      padding: 6.2666666667vw 0 6.6666666667vw 0;
+      text-align: center; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_center_title .curriculum_text {
+        margin: 0 auto 2.6666666667vw;
+        font-family: STXingkai;
+        font-size: 4vw;
+        color: #333; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_center_title .curriculum_title {
+        font-family: 'MicrosoftYaHei-Bold';
+        margin: 0 auto 2.6666666667vw;
+        font-size: 4vw;
+        color: #333; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_center_title .mobile_line {
+        margin: 0 auto;
+        width: 31.2vw;
+        display: flex;
+        justify-content: space-between; }
+        .introduction_box_mobile .mobile_center_contaniner .mobile_center_title .mobile_line .line_item_01 {
+          width: 6.9333333333vw;
+          height: 0.5333333333vw;
+          background-color: #ffd400; }
+        .introduction_box_mobile .mobile_center_contaniner .mobile_center_title .mobile_line .line_item_02 {
+          width: 16vw;
+          height: 0.5333333333vw;
+          background-color: #2284f1; }
+        .introduction_box_mobile .mobile_center_contaniner .mobile_center_title .mobile_line .line_item_03 {
+          width: 6.9333333333vw;
+          height: 0.5333333333vw;
+          background-color: #ff3838; }
+    .introduction_box_mobile .mobile_center_contaniner .mobile_swiper_box {
+      width: 100%; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_swiper_box .swiper-container {
+        padding: 4vw; }
+        .introduction_box_mobile .mobile_center_contaniner .mobile_swiper_box .swiper-container .swiper_slide_item {
+          width: 75.8666666667vw;
+          min-height: 105.7333333333vw;
+          background-color: #ffffff;
+          box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.2);
+          padding: 6.9333333333vw 7.2vw 0 7.2vw;
+          font-family: '微软雅黑'; }
+          .introduction_box_mobile .mobile_center_contaniner .mobile_swiper_box .swiper-container .swiper_slide_item .swiper_slide_title {
+            font-family: '微软雅黑';
+            font-size: 5.0666666667vw;
+            color: #282828;
+            margin: 0 auto 3.2vw;
+            text-align: center; }
+          .introduction_box_mobile .mobile_center_contaniner .mobile_swiper_box .swiper-container .swiper_slide_item .course_name {
+            font-family: '微软雅黑';
+            font-weight: 500;
+            text-align: center;
+            font-size: 4vw;
+            color: #2284f1;
+            margin: 0; }
+          .introduction_box_mobile .mobile_center_contaniner .mobile_swiper_box .swiper-container .swiper_slide_item .mobile_swiper_list_title {
+            font-size: 3.4666666667vw;
+            color: #333;
+            margin: 8vw 0 2vw 0; }
+          .introduction_box_mobile .mobile_center_contaniner .mobile_swiper_box .swiper-container .swiper_slide_item .mobile_swiper_list_center {
+            font-size: 3.4666666667vw;
+            color: #999; }
+    .introduction_box_mobile .mobile_center_contaniner .mobile_learning_package {
+      margin: 0 auto;
+      display: none;
+      text-decoration: none;
+      width: 30.6666666667vw;
+      height: 7.2vw;
+      line-height: 7.2vw;
+      border-radius: 3.6vw;
+      text-align: center;
+      color: #2284f1;
+      font-size: 3.2vw;
+      border: solid 1px #2284f1; }
+    .introduction_box_mobile .mobile_center_contaniner .mobile_continue {
+      margin-top: 4.6666666667vw;
+      width: 100%;
+      display: flex;
+      height: 22vw;
+      background-color: #f8f8f8;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.7333333333vw;
+      color: #666;
+      font-family: 'MicrosoftYaHeiLight'; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_continue .mobile_continue_txt {
+        display: inline-block;
+        margin: 0 6.9333333333vw 0 1.8666666667vw; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_continue .mobile_continue_icon {
+        position: relative; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_continue .mobile_continue_icon::before, .introduction_box_mobile .mobile_center_contaniner .mobile_continue .mobile_continue_icon::after {
+        content: "";
+        display: inline-block;
+        border-width: 2vw;
+        position: absolute;
+        right: -3.4666666667vw;
+        top: -2.1333333333vw;
+        border-style: dashed solid solid dashed;
+        border-color: transparent transparent transparent #bababa;
+        font-size: 0;
+        line-height: 0; }
+      .introduction_box_mobile .mobile_center_contaniner .mobile_continue .mobile_continue_icon:after {
+        right: -3.0666666667vw;
+        border-color: transparent transparent transparent #F8F8F8; }
+
+/*# sourceMappingURL=introduction.css.map */

@@ -1,0 +1,236 @@
+/*页面一的样式*/
+.administration {
+    width: 1144px;
+    margin: 30px auto 0;
+    font-family: MicrosoftYaHei;
+}
+
+.administration .admin_add {
+    width: 1144px;
+    height: 47px;
+    line-height: 47px;
+    width: 1144px;
+    background-color: #ffffff;
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 1px #ebebeb;
+}
+
+/*select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}*/
+
+.admin_add .add_text {
+    margin-left: 30px;
+    color: #333333;
+    font-size: 16px;
+}
+
+.admin_add .add_select {
+    padding: 0 30px;
+    width: auto;
+    height: 30px;
+    background-color: #f4f4f4;
+    border: solid 1px #ebebeb;
+    text-align: center;
+    /*  background: url("../images/icon.png") no-repeat scroll right center transparent;*/
+}
+
+.admin_add .add_select option {
+    text-align: center;
+}
+
+.admin_add .add_info {
+    float: right;
+    margin: 10px 6px 0 0;
+    width: 90px;
+    height: 30px;
+    background-color: #3f66f6;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tab_info {
+    width: 1140px;
+    margin: 19px auto 0;
+    background-color: #FAFAFA;
+}
+
+.tab_info .title {
+    background-color: #f6f7fb;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tab_info th {
+    color: #a2aecd;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.tab_info .content_info {
+    text-align: center;
+    border-top: 1px solid #CED0D7;
+    border-bottom: 1px solid #CED0D7;
+    background-color: #fff;
+    color: #666666;
+    font-size: 16px;
+}
+
+.content_info .edit {
+    margin-right: 17px;
+}
+
+.content_info td {
+    border-right: 1px solid #CED0D7;
+}
+
+.content_info .operation, .content_info td:nth-child(4) {
+    border-right: 0;
+}
+
+.content_info .works, .content_info .teacher {
+    height: 60px;
+}
+
+.content_info .teacher {
+    width: 220px;
+    padding: 0 28px;
+}
+
+/*页面二的样式*/
+
+.staff_content {
+    background-color: #fff;
+    width: 1144px;
+    height: 651px;
+    margin: 40px auto 0;
+}
+
+.staff_content .info_box {
+    width: 570px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.info_box .info_text {
+    height: 63px;
+}
+
+.info_text .adds_txt {
+    font-size: 16px;
+    color: #666;
+}
+
+.info_box .add_select {
+    /*width: 126px;*/
+    padding: 0 30px;
+    width: auto;
+    height: 32px;
+    line-height: 32px;
+    background-color: #f4f4f4;
+    border: solid 1px #ebebeb;
+}
+
+.info_box .add_text {
+    font-size: 16px;
+    color: #333333;
+}
+
+.category .subject, .teacher_box .subject_teachers {
+    margin-top: 10px;
+    width: 570px;
+}
+
+.subject_teachers {
+    display: none;
+}
+
+.hides_teacher, .hides_addInfo, .hides_preservations {
+    display: none;
+}
+
+.subject span, .subject_teachers span {
+    width: 90px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333333;
+    margin: 0px 20px 5px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*.category .subject span:first-child {
+    margin-left: 0px;
+}*/
+
+.info_box span.selected {
+    margin: 0px 20px 5px 20px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #CBD6FD;
+    border-radius: 15px;
+}
+
+.info_box .teacher_box {
+    margin: 30px 0 56px 0;
+}
+
+.info_box .addInfo {
+    width: 541px;
+    padding: 20px 0 0 23px;
+    margin: 0 auto;
+    background-color: #CBD6FD;
+    height: 174px;
+}
+
+.addInfo .add_text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 19px;
+}
+
+.addInfo p {
+    height: 30px;
+    line-height: 30px;
+}
+
+.addInfo .selected_text {
+    display: inline-block;
+    margin-right: 50px;
+    width: 65px;
+}
+
+.bottom_box {
+    width: 220px;
+    margin: 40px auto 0;
+}
+
+.bottom_box .preservation, .bottom_box .empty {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    background-color: #3f66f6;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.bottom_box .empty {
+    margin-right: 30px;
+}
+
+.show_box {
+    display: block;
+}

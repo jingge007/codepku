@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>老师详情</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/teacher_details.css">
+</head>
+<body>
+<!--老师详情-->
+<div class="teacher_details">
+    <!--侧边栏-->
+    <div class="nav_left_box">
+        <!--基本信息-->
+        <div class="basic_information">
+            <div class="basic_information_header">
+                <h2 class="basic_title">基本信息</h2>
+                <img src="images/tx.png" alt="" class="header_img">
+                <p class="basic_name">黄小明</p>
+                <span class="basic_teacher">教学老师</span>
+            </div>
+            <div class="information_box">
+                <span class="edit_icon"></span>
+                <div class="information_item">
+                    <p class="basic_name">姓名</p>
+                    <input type="text" class="teacher_name edit_items" value="黄小明" readonly>
+                    <div class="Prompt_name_items">*请输入姓名!</div>
+                    <p class="basic_mobile" style="margin-top:15px;">手机</p>
+                    <input type="text" class="telephone_item edit_items phone_number" value="11111111" readonly>
+                    <div class="Prompt_items">*请输入正确的手机号码!</div>
+                    <span class="determine_btn">确定</span>
+                    <span class="cancel_btn">取消</span>
+                </div>
+            </div>
+        </div>
+        <!--直播间信息-->
+        <div class="live_room">
+            <h2 class="basic_title">直播间信息</h2>
+            <div class="link_item_01">
+                <span class="link_icon"></span>
+                <span class="link_text">复制直播间地址</span>
+            </div>
+            <div class="link_item_02">
+                <span class="link_icon"></span>
+                <span class="link_text">复制嘉宾口令</span>
+            </div>
+        </div>
+    </div>
+    <!--右边主体内容-->
+    <div class="nav_right_box">
+        <!--tab栏-->
+        <div class="nav_tab_box">
+            <div class="nav_tab">
+                <p class="nav_tab_title nav_tab_selcted" data-currentIndex="1">教课权限</p>
+                <span class="nav_tab_border" style="display: block;"></span>
+            </div>
+            <div class="nav_tab">
+                <p class="nav_tab_title" style="padding-right: 0px;" data-currentIndex="2">课程查看权限</p>
+                <span class="nav_tab_news">2</span>
+                <span class="nav_tab_border"></span>
+            </div>
+            <div class="nav_tab">
+                <p class="nav_tab_title" data-currentIndex="3">试听时间安排</p>
+                <span class="nav_tab_border"></span>
+            </div>
+            <div class="nav_tab">
+                <p class="nav_tab_title" data-currentIndex="4">上班时间设置</p>
+                <span class="nav_tab_border"></span>
+            </div>
+        </div>
+        <!--教课权限-->
+        <div class="content_boxs content_item_01" data-content="1" style="display: block;">
+            <div class="curriculum_item">
+                <div class="content_box_item">
+                    <span class="mask_box_01"></span>
+                    <div class="curriculum_nav">
+                        <div class="curriculum_img_01">
+                            <img src="images/icon-Scratch.png" alt="" width="27px" height="28px">
+                        </div>
+                        <h2 class="curriculum_title Scratch_txt">Scratch</h2>
+                        <span class="jurisdiction_item_01">开通</span>
+                    </div>
+                    <div class="class_item Scratch_text">
+                        <span>是否安排小班课：</span>
+                        <div class="switch_box Scratch_switch_box_01">
+                            <span class="switch_box_item switch_scratch_01"></span>
+                        </div>
+                    </div>
+                    <div class="class_item Scratch_text">
+                        <span>是否安排试听课：</span>
+                        <div class="switch_box Scratch_switch_box_02">
+                            <span class="switch_box_item switch_scratch_02"></span>
+                        </div>
+                    </div>
+                    <div class="class_item Scratch_text">
+                        <span>试听课能力评分：</span>
+                        <div id="startone_01">
+                            <div class="star_score scratch_star"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_box_item">
+                    <span class="mask_box_02"></span>
+                    <div class="curriculum_nav">
+                        <div class="curriculum_img_02">
+                            <img src="images/icon-python.png" alt="" width="31px" height=27px>
+                        </div>
+                        <h2 class="curriculum_title Python_txt">Python</h2>
+                        <span class="jurisdiction_item_02">开通</span>
+                    </div>
+                    <div class="class_item Python_text">
+                        <span>是否安排小班课：</span>
+                        <div class="switch_box Python_switch_box_01">
+                            <span class="switch_box_item switch_python_01"></span>
+                        </div>
+                    </div>
+                    <div class="class_item Python_text">
+                        <span>是否安排试听课：</span>
+                        <div class="switch_box Python_switch_box_02">
+                            <span class="switch_box_item switch_python_02"></span>
+                        </div>
+                    </div>
+                    <div class="class_item Python_text">
+                        <span>试听课能力评分：</span>
+                        <div id="startone_02">
+                            <div class="star_score python_star"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_box_item">
+                    <span class="mask_box_03"></span>
+                    <div class="curriculum_nav">
+                        <div class="curriculum_img_03">
+                            <img src="images/icon-noip.png" alt="" width="30px" height="31px">
+                        </div>
+                        <h2 class="curriculum_title NOIP_txt">NOIP</h2>
+                        <span class="jurisdiction_item_03">开通</span>
+                    </div>
+                    <div class="class_item NOIP_text">
+                        <span>是否安排小班课：</span>
+                        <div class="switch_box NOIP_switch_box_01">
+                            <span class="switch_box_item switch_noip_01"></span>
+                        </div>
+                    </div>
+                    <div class="class_item NOIP_text">
+                        <span>是否安排试听课：</span>
+                        <div class="switch_box NOIP_switch_box_02">
+                            <span class="switch_box_item switch_noip_02"></span>
+                        </div>
+                    </div>
+                    <div class="class_item NOIP_text">
+                        <span>试听课能力评分：</span>
+                        <div id="startone_03">
+                            <div class="star_score noip_star"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_box_item">
+                    <span class="mask_box_04"></span>
+                    <div class="curriculum_nav">
+                        <div class="curriculum_img_04">
+                            <img src="images/icon-zhuanti.png" alt="" width="28px" height="32px">
+                        </div>
+                        <h2 class="curriculum_title zhuangye_txt">专题课</h2>
+                        <span class="jurisdiction_item_04">开通</span>
+                    </div>
+                    <div class="class_item zhuangye_text">
+                        <span>是否安排小班课：</span>
+                        <div class="switch_box zhuangye_switch_box_01">
+                            <span class="switch_box_item switch_zhuangye_01"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weeking_box">
+                <div class="weeking_box_item">
+                    <div class="weeking_text">
+                        <span>本周小班课可安排总次数：</span>
+                        <input type="text" value="30" class="weeking_input">
+                        <span>节</span>
+                    </div>
+                    <div class="weeking_text">
+                        <span>本周试听课可安排总次数：</span>
+                        <input type="text" value="10" class="weeking_input">
+                        <span>节</span>
+                    </div>
+                </div>
+                <div class="weeking_box_item">
+                    <div class="weeking_text">
+                        <span>本周已安排小班课：</span>
+                        <span class="weeking_color">8节</span>
+                    </div>
+                    <div class="weeking_text">
+                        <span>本周已安排试听课：</span>
+                        <span class="weeking_color">9节</span>
+                    </div>
+                </div>
+                <div class="weeking_box_item">
+                    <div class="weeking_text">
+                        <span>剩余小班课可安排次数：</span>
+                        <span class="weeking_color">22节</span>
+                    </div>
+                    <div class="weeking_text">
+                        <span>剩余试听课可安排次数：</span>
+                        <span class="weeking_color">1节</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content_btn_box">
+                <span class="preservation_btn">保存</span>
+                <span class="cancelbtn">取消</span>
+            </div>
+        </div>
+        <!--课程查看权限-->
+        <div class="view_permissions content_item_02" data-content="2">
+            <div class="table_box">
+                <ul class="table_headers">
+                    <li class="table_item">Scratch</li>
+                    <li class="table_item">Python</li>
+                    <li class="table_item">NOIP</li>
+                </ul>
+                <ul class="table_line">
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            Scratch Level 1
+                        </label>
+                    </li>
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            Python Level 1
+                        </label>
+                    </li>
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            NOIP Level 1
+                        </label>
+                    </li>
+                </ul>
+                <ul class="table_line">
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            Scratch Level 1
+                        </label>
+                    </li>
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            Python Level 1
+                        </label>
+                    </li>
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            NOIP Level 1
+                        </label>
+                    </li>
+                </ul>
+                <ul class="table_line">
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            Scratch Level 1
+                        </label>
+                    </li>
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            Python Level 1
+                        </label>
+                    </li>
+                    <li class="table_line_item">
+                        <label class="select_type_checked">
+                            <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                            NOIP Level 1
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="permissions_boxs">
+                <span class="preserva_btn">保存</span>
+                <span class="cancels_btns">取消</span>
+            </div>
+        </div>
+        <!--试听时间安排-->
+        <div class="try_listen_time content_item_03" data-content="3">
+            <div class="listen_boxs">
+                <div class="week_switch">
+                    <div class="week_date">
+                        <button class="prev_week"><i class="chevron_circle_left"></i></button>
+                        <span class="week_date_day">2018年03月26日 - 04月01日</span>
+                        <button class="next_week"><i class="chevron_circle_right"></i></button>
+                    </div>
+
+                    <button class="look_this_week">查看本周</button>
+                </div>
+                <div class="week_date_cont">
+                    <table class="week_date_tab" border="0" cellspacing="0" cellpadding="0">
+                        <tr class="week_tab_head">
+                            <td>时间</td>
+                            <td>周一<br/><span>(03/26)</span></td>
+                            <td>周二<br/><span>(03/27)</span></td>
+                            <td>周三<br/><span>(03/28)</span></td>
+                            <td>周四<br/><span>(03/29)</span></td>
+                            <td>周五<br/><span>(03/30)</span></td>
+                            <td>周六<br/><span>(03/31)</span></td>
+                            <td>周日<br/><span>(04/01)</span></td>
+                        </tr>
+                        <tr>
+                            <td>09:00-09:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09:30-10:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:00-10:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state" style="display: block;">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:30-11:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:00-11:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30-12:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14:00-14:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state" style="display: block;">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14:30-15:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:00-15:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state" style="display: block;">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:30-16:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:00-16:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:30-17:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:00-17:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:30-18:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18:00-18:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18:30-19:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19:00-19:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19:30-20:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20:00-20:30</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20:30-21:00</td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class" style="display: block;">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                            <td>
+                                <span class="relax_state" style="display: none;">休息</span>
+                                <span class="assigned_state">已安排</span>
+                                <span class="small_class">小班课</span>
+                                <label class="select_type" style="display: block;">
+                                    <input type="checkbox" name="remember"><i class="mdui_checkout_icon" style="display: inline-block;"></i>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="try_listen_btns">
+                    <button class="save_btn">保存</button>
+                    <button class="ques_btn">取消</button>
+                </div>
+            </div>
+        </div>
+        <!--上班时间设置-->
+        <div class="work_time_setting content_item_04" data-content="4">
+            <div class="retrieve_row">
+                <div class="select_week_time">
+                    <label class="label_title">每周几：</label>
+                    <select name="week" class="form-control week_axis">
+                        <option value="1">周一</option>
+                        <option value="2">周二</option>
+                        <option value="3">周三</option>
+                        <option value="4">周四</option>
+                        <option value="5">周五</option>
+                        <option value="6">周六</option>
+                        <option value="7">周日</option>
+                    </select>
+                </div>
+                <div class="week_day_time">
+                    <label class="label_title">选择时间：</label>
+                    <select type='text' class="form-control time_axis">
+                        <option label="09:00~12:00（上午)" value="am 9:00 - 12:00"></option>
+                        <option label="14:00~17:00（下午）" value="pm 14:00 - 17:00"></option>
+                        <option label="15:00~17:00（下午）" value="pm 15:00 - 17:00"></option>
+                        <option label="15:30~17:00（下午）" value="pm 15:30 - 17:00"></option>
+                        <option label="18:00~21:00（晚上）" value="night 18:00 - 21:00"></option>
+
+                    </select>
+                </div>
+                <button class="add_new_time">新增</button>
+                <button class="custom_new_time" data-toggle="modal" data-target="#custom_time">自定义时间</button>
+            </div>
+            <div class="work_time_data">
+                <table class="work_time_tab" id="work_time_tab" border="0" cellspacing="10" cellpadding="2">
+                    <tr class="time_tab_title">
+                        <td class="week_day">时间段</td>
+                        <td>上午</td>
+                        <td>下午</td>
+                        <td>晚上</td>
+
+                    </tr>
+                    <tr>
+                        <td class="week_day">周一</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="week_day">周二</td>
+                        <td></td>
+                        <td>
+                            <div class="time_period">
+                                14:00 - 17:00
+                                <span class="card_close">×</span>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="week_day">周三</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="time_period">
+                                19:00 - 21:00
+                                <span class="card_close">×</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="week_day">周四</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="week_day">周五</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="week_day">周六</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="week_day">周日</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="week_time_btns">
+                <button class="save_btn">保存</button>
+                <button class="ques_btn">取消</button>
+
+            </div>
+        </div>
+        <!--自定义时间的弹窗-->
+        <div class="modal fade" id="custom_time" tabindex="-1" role="dialog">
+            <div class="modal-dialog relative_cont" role="document">
+                <div class="modal-content common_popcont">
+                    <div class="modal-header common_head">
+                        <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title common_headtext">自定义时间</h4>
+                    </div>
+                    <form>
+                        <div class="modal-body common_cont">
+                            <div class="datepicker_inline">
+                                <label for="" class="label_title">选择时间段：</label>
+                                <select class="form-control">
+                                    <option>请选择</option>
+                                    <option>上午</option>
+                                    <option>下午</option>
+                                    <option>晚上</option>
+                                </select>
+                            </div>
+                            <div class="datepicker_inline">
+                                <label for="" class="label_title">开始时间：</label>
+                                <div class="input-group ">
+                                    <input type="text" class="form-control starTime" value="">
+                                </div>
+                            </div>
+                            <div class="datepicker_inline">
+                                <label for="" class="label_title">结束时间：</label>
+                                <div class="input-group ">
+                                    <input type="text" class="form-control stopTime" value="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer untied_footer">
+                            <button class="confirm_btn" type="button" data-dismiss="modal" aria-hidden="true">确定</button>
+                            <button class="cancel_btn" data-dismiss="modal" aria-label="Close" aria-hidden="true">取消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="js/starScore.js"></script>
+<script src="js/teacher_details.js"></script>
+</body>
+</html>

@@ -1,0 +1,571 @@
+.marketing_box {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    font-family: 'MicrosoftYaHei';
+}
+
+/*页面的banner区域样式*/
+.marketing_box .marketing_banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.marketing_box .marketing_banner .banner_button {
+    position: absolute;
+    bottom: 1.653rem;
+    left: 0.946rem;
+    width: 2.4rem;
+    height: 0.76rem;
+    text-align: center;
+    line-height: 0.76rem;
+    border-radius: 0.08rem;
+    background-color: #2284f1;
+    color: #fff;
+    font-size: 0.373rem;
+}
+
+.marketing_box .popup_item_banner .modal .modal-dialog .modal-content {
+    width: 7.68rem;
+}
+
+.marketing_box .popup_item_banner .modal .modal-dialog .modal-content .modal-body .audition_items_box {
+    width: 7.68rem;
+
+}
+
+.marketing_box .popup_item_banner .modal .modal-dialog .modal-content .modal-body .audition_items_box .audition_items_box_title {
+    height: 1.573rem;
+    line-height: 1.573rem;
+    background-color: #ebf6ff;
+    color: #2284f1;
+    font-family: 'MicrosoftYaHei-Bold';
+    font-size: 0.506rem;
+    text-align: center;
+    position: relative;
+    border-radius: 10px 0 0 0;
+}
+
+.marketing_box .popup_item_banner .modal .modal-dialog .modal-content .modal-body .audition_items_box .audition_items_box_title .delete_boxs {
+    position: absolute;
+    right: -0.3rem;
+    top: -0.3rem;
+    width: 0.786rem;
+    height: 0.786rem;
+}
+
+.marketing_box .popup_item_banner .audition_items_box .audition_items_box_input {
+    padding: 0 0.906rem;
+    background-color: #fff;
+}
+
+.marketing_box .popup_item_banner .audition_items_box .audition_items_box_input input, .select_inputs {
+    width: 100%;
+    /* height: 1.06rem;*/
+    border-radius: 4px;
+    border: 1px solid #2284f1;
+    outline: none;
+    text-indent: 1em;
+    margin-top: 0.52rem;
+    color: #bababa;
+    font-size: 0.373rem;
+    padding: 0.3rem 0;
+    background-color: #fff;
+}
+
+.marketing_box .popup_item_banner .audition_items_box .audition_items_box_input .select_inputs {
+    height: 1.06rem;
+    padding: 0;
+}
+
+.marketing_box .popup_item_banner .audition_items_box .audition_items_box_input input.banner_yzm {
+    width: 3.08rem;
+    float: left;
+}
+
+.marketing_box .popup_item_banner .audition_items_box .audition_items_box_input .banner_items_buttom {
+    width: 2.48rem;
+    height: 1.1rem;
+    text-align: center;
+    line-height: 1.1rem;
+    background-color: #ebf6ff;
+    border-radius: 4px;
+    font-size: 0.373rem;
+    margin-top: 0.52rem;
+    outline: none;
+    border: none;
+    float: right;
+    color: #2284f1;
+}
+
+.marketing_box .popup_item_banner .audition_items_box .audition_items_box_input .receive_item_button {
+    margin: 0.52rem 0 0.68rem 0;
+    outline: none;
+    border: none;
+    font-size: 0.4rem;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    background-color: #e8423c;
+    border-radius: 6px;
+    line-height: 1.146rem;
+    height: 1.146rem;
+}
+
+.marketing_box .marketing_banner img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+/*学编程区域样式*/
+.marketing_box .programming_box {
+    background-color: #fff;
+}
+
+.marketing_box .programming_box .video-js .vjs-big-play-button {
+    width: 9.253rem;
+    height: 5.226rem;
+    border: none;
+    background: url("../images/video_item_icon.png") no-repeat center center;
+    background-size: cover;
+}
+
+/*中间的播放箭头*/
+.vjs-big-play-button .vjs-icon-placeholder {
+    /*font-size: 1.63em;*/
+    display: none !important;
+}
+
+/* 加载圆圈 */
+/*.vjs-loading-spinner {
+    font-size: 2.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    margin-top: -1em;
+    margin-left: -1.5em;
+}*/
+
+.vjs-big-play-centered .vjs-big-play-button {
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+
+.marketing_box .programming_box .video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+}
+
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+
+.marketing_box .programming_box .programming_title {
+    width: 100%;
+    background-color: #fff;
+    padding: 0.6rem 0 0.4rem 0;
+}
+
+.marketing_box .programming_box .programming_title img {
+    display: block;
+    margin: 0 auto;
+    width: 4.6rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.marketing_box .programming_box .video_box {
+    padding: 0 0.37rem 0.8rem;
+    position: relative;
+}
+
+.marketing_box .programming_box .video_box .video_center {
+    width: 100%;
+    height: 5.2rem;
+}
+
+/*为什么要学编程区域样式*/
+
+.marketing_box .studying_box, .marketing_box .starting_box, .marketing_box .team_box {
+    margin-top: 0.18rem;
+    background-color: #fff;
+}
+
+.marketing_box .studying_box .studying_title {
+    width: 100%;
+    background-color: #fff;
+    padding: 0.8rem 0 0.72rem 0;
+}
+
+.marketing_box .studying_box .studying_title img {
+    display: block;
+    margin: 0 auto;
+    width: 4.57rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.marketing_box .studying_box .study_item {
+    padding: 0 0.64rem 0 0.88rem;
+    font-family: "MicrosoftYaHei";
+    margin-bottom: 0.506rem;
+}
+
+.marketing_box .studying_box .study_item:last-child {
+    margin-bottom: 0px;
+}
+
+.marketing_box .studying_box .study_item .img_box {
+    height: 1.786rem;
+    width: 1.786rem;
+    float: left;
+    margin-right: 0.58rem;
+}
+
+.marketing_box .studying_box .study_item .img_box img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.marketing_box .studying_box .study_item .study_center {
+    overflow: hidden;
+}
+
+.marketing_box .studying_box .study_item .study_center .study_title {
+    color: #2284f1;
+    font-size: 16px;
+    margin-bottom: 0.213rem;
+    margin-top: 0 !important;
+    /* line-height: 0.213rem;*/
+}
+
+.marketing_box .studying_box .study_item .study_center .study_text {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 0 !important;
+}
+
+/*学编程从什么时候开始的区域样式*/
+.marketing_box .starting_box, .marketing_box .studying_box {
+    padding-bottom: 0.3rem;
+}
+
+.marketing_box .starting_box .starting_title {
+    width: 100%;
+    background-color: #fff;
+    padding: 0.8rem 0 0.66rem 0;
+}
+
+.marketing_box .starting_box .starting_title img {
+    display: block;
+    margin: 0 auto;
+    width: 5.973rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.marketing_box .starting_box .start_item {
+    padding: 0 0.813rem 0 0.826rem;
+    margin-bottom: 0.286rem;
+    position: relative;
+}
+
+.marketing_box .starting_box .start_item .start_img {
+    width: 100%;
+    height: 3.8rem;
+    vertical-align: top;
+}
+
+.marketing_box .starting_box .start_item .subject_box {
+    position: absolute;
+    top: 0.12rem;
+    left: 50%;
+    margin-left: -35%;
+    width: 70%;
+    text-align: center;
+}
+
+.marketing_box .starting_box .start_item .subject_box .subject_item {
+    font-size: 0.586rem;
+    font-family: 'MicrosoftYaHei-Bold';
+    color: #4190f2;
+    margin-bottom: 0 !important;
+}
+
+.marketing_box .starting_box .start_item .subject_box .subject_title {
+    font-size: 0.426rem;
+    font-family: 'MicrosoftYaHei';
+    color: #2284f1;
+    margin: 0.04rem 0 0.10rem 0;
+}
+
+.marketing_box .starting_box .start_item .subject_box .subject_center {
+    font-size: 0.4rem;
+    font-family: 'MicrosoftYaHei';
+    color: #666;
+    margin-bottom: 0 !important;
+}
+
+/*我们有优秀的师资团队区域样式*/
+
+.marketing_box .team_box .team_title {
+    width: 100%;
+    background-color: #fff;
+    padding: 0.826rem 0 0.693rem 0;
+}
+
+.marketing_box .team_box .team_title img {
+    display: block;
+    margin: 0 auto;
+    width: 6.6rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.marketing_box .team_box .swiper-container {
+    padding: 0 1.3rem 0 0.706rem;
+}
+
+.marketing_box .team_box .swiper-container .swiper-slide {
+    width: 6.5rem;
+}
+
+.marketing_box .team_box .swiper-container .team_box_items:last-child {
+    margin-right: 0px;
+}
+
+.marketing_box .team_box .swiper-container .team_box_items {
+    width: 6rem;
+    height: 7.8rem;
+    margin: 0 0.6rem 30px 0;
+    border-radius: 5px;
+    background-color: #f6fbff;
+    box-shadow: 4px 4px 4px #f6fbff;
+    padding: 10px;
+}
+
+.marketing_box .team_box .swiper-container .team_box_items img {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 2.173rem;
+    height: 2.16rem;
+    margin: 0.346rem auto 0.293rem;
+}
+
+.marketing_box .team_box .swiper-container .team_box_items .teachers_name {
+    text-align: center;
+    color: #4190f2;
+    font-size: 17px;
+    font-family: 'MicrosoftYaHei-Bold';
+    margin-bottom: 0.346rem;
+    margin-top: 0 !important;
+}
+
+.marketing_box .team_box .swiper-container .team_box_items .school_name {
+    font-size: 12px;
+    font-family: 'MicrosoftYaHei';
+    color: #5b5b5b;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.marketing_box .team_box .swiper-container .team_box_items .teachers_content {
+    margin-top: 0.453rem;
+    font-family: 'MicrosoftYaHei';
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.marketing_box .team_box .swiper-container .team_box_items .teachers_content .teachers_center {
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0 !important;
+}
+
+/*弹窗的区域样式*/
+/*.marketing_box .modal_item {
+    z-index: 999 !important;
+}*/
+
+.marketing_box .modal-dialog {
+    position: relative;
+    width: auto;
+    padding: 0 0.96rem 0 0.973rem;
+    margin: 0;
+}
+
+.marketing_box .modal-dialog .modal-content {
+    position: absolute;
+    top: 3rem;
+    width: 8rem;
+    left: 50%;
+    margin-left: -4rem;
+    background-color: #fff;
+    border: 0;
+    border-radius: 7px;
+    outline: 0;
+    box-shadow: none;
+    z-index: 999 !important;
+}
+
+.marketing_box .modal-dialog .modal-content .close {
+    position: absolute;
+    top: 0.12rem;
+    right: 0.373rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+    z-index: 999;
+    border: 0;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body {
+    padding: 0.88rem 0.866rem 0 0.96rem;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .popup_title {
+    height: 1.306rem;
+    color: #4190f2;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.893rem;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .input_box input {
+    height: 1.013rem;
+    line-height: 1.013rem;
+    background-color: #f9f9f9;
+    border: 0.0001rem solid #f9f9f9;
+    border-radius: 0.08rem;
+    padding-left: 0.48rem;
+    margin-bottom: 0.413rem;
+    width: 100%;
+    outline: none;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .input_box input::-webkit-input-placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .input_box input:-moz-placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .input_box input::-moz-placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .input_box input:-ms-input-placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .input_box input.lasting {
+    width: 3.2rem;
+    margin-right: 0.213rem;
+    float: left;
+    box-sizing: border-box;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .input_box .buttom_items {
+    width: 2.613rem;
+    height: 1.013rem;
+    line-height: 1.013rem;
+    background-color: #f9f9f9;
+    border: 0.0001rem solid #f9f9f9;
+    border-radius: 0.08rem;
+    color: #fff;
+    background-color: #4190f2;
+    font-size: 0.373rem;
+    text-align: center;
+    float: right;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .submit_item {
+    display: inline-block;
+    margin: 0.8rem auto 0.92rem;
+    /*width: 6.12rem;*/
+    width: 100%;
+    height: 1.0133rem;
+    line-height: 1.0133rem;
+    color: #fff;
+    font-size: 0.3733rem;
+    border-radius: 0.49333rem;
+    background: url("../images/submit@2x.png") top center repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two {
+    display: none;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two .end_title {
+    margin: 1.4rem auto 0.893rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.4333rem;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two .ip_img {
+    position: absolute;
+    top: -2.5rem;
+    width: 2.626rem;
+    height: 4.6133rem;
+    left: 50%;
+    margin-left: -1.313rem;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two .nav_bottom {
+    margin-bottom: 0.893rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two .nav_bottom span {
+    width: 1.7rem;
+    height: 1.013rem;
+    line-height: 1.013rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.33rem;
+    border-radius: 0.106rem;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two .nav_bottom .bottom_one {
+    background: url("../images/blue2@2x.png") center repeat;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two .nav_bottom .bottom_two {
+    background: url("../images/yellow2@2x.png") center repeat;
+}
+
+.marketing_box .modal-dialog .modal-content .modal-body .modal_two .nav_bottom .bottom_three {
+    background: url("../images/red2@2x.png") center repeat;
+}
+
+.marketing_box .modal {
+    z-index: 1050 !important;
+}

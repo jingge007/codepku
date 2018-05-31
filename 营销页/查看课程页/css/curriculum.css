@@ -1,0 +1,163 @@
+@charset "UTF-8";
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, p {
+  margin: 0;
+  padding: 0; }
+
+/*查看课程列表页的样式*/
+.curriculum_list_box {
+  background-color: #fff;
+  max-width: 750px;
+  margin: 0 auto;
+  font-family: 'MicrosoftYaHei'; }
+  .curriculum_list_box .return_items {
+    margin: 0.36rem 0 0 0.32rem; }
+    .curriculum_list_box .return_items .return_items_icon {
+      width: 0.213rem;
+      height: 0.373rem;
+      display: inline-block;
+      margin-right: 0.146rem;
+      vertical-align: top; }
+    .curriculum_list_box .return_items .return_items_text {
+      display: inline-block;
+      color: #999999;
+      font-size: 0.373rem;
+      height: 0.373rem;
+      line-height: 0.373rem; }
+  .curriculum_list_box .listbox_container {
+    margin-top: 0.613rem;
+    width: 100%; }
+    .curriculum_list_box .listbox_container .listbox_container_item {
+      list-style: none;
+      border-bottom: 1px solid #CCCCCC;
+      height: 1.06rem;
+      line-height: 1.06rem;
+      padding-left: 0.8rem;
+      margin-bottom: 0.32rem; }
+      .curriculum_list_box .listbox_container .listbox_container_item .listbox_container_boxs {
+        display: block;
+        font-size: 0.426rem;
+        color: #333333;
+        font-family: 'PingFang-SC-Medium';
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+      .curriculum_list_box .listbox_container .listbox_container_item .listbox_container_item_text {
+        position: relative;
+        margin-right: 0.46rem; }
+        .curriculum_list_box .listbox_container .listbox_container_item .listbox_container_item_text img {
+          width: 0.306rem;
+          height: 0.426rem;
+          position: absolute;
+          top: -5px;
+          right: -5px; }
+
+/*课程大纲页的样式*/
+.Syllabus_box {
+  background-color: #fff;
+  max-width: 750px;
+  margin: 0 auto;
+  font-family: 'MicrosoftYaHei';
+  /* 中间的播放箭头 */
+  /* 加载圆圈 */ }
+  .Syllabus_box .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .Syllabus_box .clearfix {
+    *zoom: 1; }
+  .Syllabus_box .return_items {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0.36rem 0 0 0.32rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+    .Syllabus_box .return_items .return_items_icon {
+      width: 0.213rem;
+      height: 0.373rem;
+      display: inline-block;
+      margin-right: 0.146rem;
+      vertical-align: top; }
+    .Syllabus_box .return_items .return_items_text {
+      display: inline-block;
+      color: #999999;
+      font-size: 0.373rem;
+      height: 0.373rem;
+      line-height: 0.373rem; }
+  .Syllabus_box .Syllabus_box_title {
+    /*width: 8rem;*/
+    padding: 0 0.9rem;
+    margin: 0.7rem auto 0.633rem;
+    text-align: center; }
+    .Syllabus_box .Syllabus_box_title .left_titles {
+      float: left;
+      width: 1.146rem;
+      height: 1.12rem; }
+    .Syllabus_box .Syllabus_box_title .titles_item {
+      color: #333;
+      font-family: 'PingFang-SC-Medium';
+      font-size: 0.426rem;
+      display: inline-block;
+      padding-top: 15px;
+      font-weight: normal; }
+    .Syllabus_box .Syllabus_box_title .right_titlres {
+      float: right;
+      width: 1.226rem;
+      height: 0.8563rem;
+      padding-top: 10px; }
+  .Syllabus_box .video_items {
+    padding: 0 0.373rem; }
+    .Syllabus_box .video_items .video_center {
+      width: 100%;
+      height: 5.2rem; }
+    .Syllabus_box .video_items .video-txts {
+      margin-top: 0.4rem;
+      text-align: center;
+      color: #f75035;
+      font-size: 0.32rem;
+      font-family: 'AdobeHeitiStd-Regular'; }
+  .Syllabus_box .vjs-paused .vjs-big-play-button, .Syllabus_box .vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block; }
+  .Syllabus_box .video-js .vjs-big-play-button {
+    font-size: 2.5em;
+    line-height: 2.3em;
+    height: 2.5em;
+    width: 2.5em;
+    -webkit-border-radius: 2.5em;
+    -moz-border-radius: 2.5em;
+    border-radius: 2.5em;
+    background-color: #73859f;
+    background-color: rgba(115, 133, 159, 0.5);
+    border-width: 0.15em;
+    margin-top: -1.25em;
+    margin-left: -1.75em; }
+  .Syllabus_box .vjs-big-play-button .vjs-icon-placeholder {
+    font-size: 1.63em; }
+  .Syllabus_box .vjs-loading-spinner {
+    font-size: 2.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    margin-top: -1em;
+    margin-left: -1.5em; }
+  .Syllabus_box .creation_boxs {
+    margin-top: 2.13rem; }
+    .Syllabus_box .creation_boxs .creation_boxs_title {
+      font-family: 'AdobeHeitiStd-Regular';
+      font-weight: normal;
+      text-align: center;
+      color: #333;
+      font-size: 0.4rem;
+      margin-bottom: 0.5333rem; }
+    .Syllabus_box .creation_boxs .creation_boxs_txt {
+      color: #666666;
+      font-size: 0.346rem;
+      padding-left: 0.5rem; }
+      .Syllabus_box .creation_boxs .creation_boxs_txt .number_items {
+        display: inline-block;
+        font-size: 0.4rem;
+        margin-right: 0.266rem; }
+
+/*# sourceMappingURL=curriculum.css.map */

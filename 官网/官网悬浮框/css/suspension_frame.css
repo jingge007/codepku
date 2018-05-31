@@ -1,0 +1,137 @@
+@charset "UTF-8";
+.suspension_frame {
+  width: 62px;
+  position: fixed;
+  top: 250px;
+  right: 12px;
+  z-index: 9999 !important;
+  background-color: #fff; }
+  .suspension_frame .auditions_frame_text {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    font-family: '微软雅黑';
+    font-size: 12px;
+    color: #666; }
+  .suspension_frame .auditions_frame_box {
+    width: 100%;
+    height: 55px;
+    padding-top: 7px;
+    position: relative;
+    box-shadow: 0px 0px 9px 0px rgba(0, 39, 97, 0.15);
+    margin-bottom: 10px;
+    cursor: pointer; }
+    .suspension_frame .auditions_frame_box .link_txt {
+      text-decoration: none; }
+    .suspension_frame .auditions_frame_box .auditions_frame_icon {
+      width: 28px;
+      height: 28px;
+      vertical-align: top;
+      margin: 0 auto;
+      display: block; }
+    .suspension_frame .auditions_frame_box .auditions_frame_num {
+      width: 18px;
+      height: 18px;
+      background-color: #ff0000;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 18px;
+      color: #fff;
+      font-family: 'NotoSansHans-Bold';
+      font-size: 12px;
+      position: absolute;
+      top: -9px;
+      right: -9px; }
+    .suspension_frame .auditions_frame_box .prompt_popup_item_01 {
+      position: absolute;
+      top: -6px;
+      right: 50px;
+      height: 76px;
+      width: 195px;
+      display: none;
+      z-index: 9999 !important; }
+    .suspension_frame .auditions_frame_box:hover .prompt_popup_item_01 {
+      display: block; }
+  .suspension_frame .prompt_popup_01 {
+    width: 170px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    background: url("../images/frame_icon_02.png"); }
+    .suspension_frame .prompt_popup_01 .prompt_popup_text {
+      text-decoration: none;
+      color: #3f94fc;
+      font-family: '微软雅黑';
+      font-size: 16px; }
+  .suspension_frame .prompt_popup_02 {
+    width: 170px;
+    height: 164px;
+    position: relative;
+    background: url("../images/frame_icon_01.png");
+    z-index: 9999 !important; }
+    .suspension_frame .prompt_popup_02 img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -65px;
+      margin-top: -65px;
+      width: 130px;
+      height: 130px; }
+  .suspension_frame .consultation_frame {
+    width: 100%;
+    box-shadow: 0px 0px 9px 0px rgba(0, 39, 97, 0.15); }
+    .suspension_frame .consultation_frame .on_line_item, .suspension_frame .consultation_frame .telephone_item, .suspension_frame .consultation_frame .public_number_item, .suspension_frame .consultation_frame .back_top_item {
+      width: 100%;
+      height: 60px;
+      padding-top: 7px;
+      cursor: pointer;
+      position: relative; }
+      .suspension_frame .consultation_frame .on_line_item .online_icons, .suspension_frame .consultation_frame .telephone_item .online_icons, .suspension_frame .consultation_frame .public_number_item .online_icons, .suspension_frame .consultation_frame .back_top_item .online_icons {
+        width: 24px;
+        height: 21px;
+        vertical-align: top;
+        margin: 0 auto 7px;
+        display: block; }
+      .suspension_frame .consultation_frame .on_line_item .telephone_icons, .suspension_frame .consultation_frame .telephone_item .telephone_icons, .suspension_frame .consultation_frame .public_number_item .telephone_icons, .suspension_frame .consultation_frame .back_top_item .telephone_icons {
+        width: 23px;
+        height: 23px;
+        vertical-align: top;
+        margin: 0 auto 7px;
+        display: block; }
+      .suspension_frame .consultation_frame .on_line_item .public_number_icons, .suspension_frame .consultation_frame .telephone_item .public_number_icons, .suspension_frame .consultation_frame .public_number_item .public_number_icons, .suspension_frame .consultation_frame .back_top_item .public_number_icons {
+        width: 26px;
+        height: 22px;
+        vertical-align: top;
+        margin: 0 auto 7px;
+        display: block; }
+      .suspension_frame .consultation_frame .on_line_item .back_top_icons, .suspension_frame .consultation_frame .telephone_item .back_top_icons, .suspension_frame .consultation_frame .public_number_item .back_top_icons, .suspension_frame .consultation_frame .back_top_item .back_top_icons {
+        width: 22px;
+        height: 24px;
+        vertical-align: top;
+        margin: 0 auto 7px;
+        display: block; }
+      .suspension_frame .consultation_frame .on_line_item .prompt_popup_item_02, .suspension_frame .consultation_frame .on_line_item .prompt_popup_item_03, .suspension_frame .consultation_frame .telephone_item .prompt_popup_item_02, .suspension_frame .consultation_frame .telephone_item .prompt_popup_item_03, .suspension_frame .consultation_frame .public_number_item .prompt_popup_item_02, .suspension_frame .consultation_frame .public_number_item .prompt_popup_item_03, .suspension_frame .consultation_frame .back_top_item .prompt_popup_item_02, .suspension_frame .consultation_frame .back_top_item .prompt_popup_item_03 {
+        position: absolute;
+        top: -6px;
+        right: 50px;
+        height: 76px;
+        width: 195px;
+        display: none;
+        z-index: 9999 !important; }
+      .suspension_frame .consultation_frame .on_line_item .prompt_popup_item_04, .suspension_frame .consultation_frame .telephone_item .prompt_popup_item_04, .suspension_frame .consultation_frame .public_number_item .prompt_popup_item_04, .suspension_frame .consultation_frame .back_top_item .prompt_popup_item_04 {
+        position: absolute;
+        top: -6px;
+        right: 50px;
+        height: 76px;
+        width: 195px;
+        display: none; }
+  .suspension_frame .on_line_item:hover .prompt_popup_item_02 {
+    display: block; }
+  .suspension_frame .telephone_item:hover .prompt_popup_item_03 {
+    display: block; }
+  .suspension_frame .public_number_item:hover .prompt_popup_item_04 {
+    display: block; }
+
+/*# sourceMappingURL=suspension_frame.css.map */

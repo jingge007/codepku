@@ -1,0 +1,280 @@
+html, body {
+    background-color: #FAFAFA;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+.statistics_box {
+    width: 1144px;
+    margin: 30px auto;
+    background-color: #fff;
+    font-family: MicrosoftYaHei;
+    border: solid 1px #ebebeb;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*.statistics_box .nav_box {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffffff;
+    border-bottom: solid 1px #ebebeb;
+}*/
+
+.statistics_box .center_box {
+    /* width: 100%;*/
+    padding: 20px 40px 0 40px;
+    background-color: #ffffff;
+    border-bottom: solid 1px #ebebeb;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.statistics_box .center_box .item {
+    margin: 0 14px 20px 14px;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px #3f66f6;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #3f66f6;
+    cursor: pointer;
+}
+
+.statistics_box .center_box .item.selected, .statistics_box .tearcher_box .tearcher_item.selected {
+    background-color: #3f66f6;
+    color: #fff;
+}
+
+.statistics_box .tearcher_box .tearcher_item.colors {
+    background-color: #fff;
+    color: #3f66f6;
+}
+
+.statistics_box .tearcher_box {
+    margin-top: 20px;
+    padding: 0 40px;
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.statistics_box .tearcher_box .tearcher_item {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px #3f66f6;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #3f66f6;
+    cursor: pointer;
+    margin: 10px 12px 10px 12px;
+}
+
+.statistics_box .worker_box {
+    position: relative;
+}
+
+.statistics_box .worker_box .mod-data-select {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.statistics_box .worker_box .mod-data-select .ea-cell {
+    margin: 0 15px 0 15px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.statistics_box .worker_box .mod-data-select .data-title {
+    text-align: center;
+    font-size: 16px;
+}
+
+.statistics_box .worker_box {
+    padding-top: 43px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.statistics_box .worker_box .nav_titles {
+    text-align: center;
+}
+
+.statistics_box .worker_box .form-control {
+    width: 130px;
+    position: absolute;
+    top: 43px;
+    left: 90px;
+
+}
+
+.statistics_box .worker_box .bottom_text {
+    position: absolute;
+    top: 43px;
+    right: 300px;
+    width: 82px;
+    height: 34px;
+    color: #fff;
+    background-color: #5bc0de;
+    border: 0;
+    border-radius: 5px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+}
+
+.statistics_box .worker_box .kq_title {
+    text-align: center;
+    font-size: 18px;
+    color: #5BC0DE;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.statistics_box .worker_box .page_item {
+    position: absolute;
+    top: 110px;
+    font-size: 14px;
+    color: #337AB7;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.statistics_box .worker_box .item_next {
+    right: 140px;
+}
+
+.statistics_box .worker_box .item_paty {
+    right: 60px;
+}
+
+.statistics_box .worker_box .attendance_box {
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.statistics_box .worker_box .add_txt {
+    background-color: #f6f7fb;
+    color: #a2aecd;
+    font-weight: bold;
+    flex: 2;
+}
+
+.statistics_box .worker_box .add_txt .border_tiem {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #ced0d7;
+    box-sizing: border-box;
+}
+
+.statistics_box .worker_box .add_txt .titles_item {
+    height: 39px;
+    line-height: 38px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ced0d7;
+    background-color: #fff !important;
+    color: #333;
+}
+
+.statistics_box .worker_box .conter-kaoqin {
+    flex: 16;
+    overflow: hidden;
+}
+
+.statistics_box .worker_box .kaoqin_center {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 868px;
+}
+
+.statistics_box .worker_box .kaoqin_center .tr_titlers {
+    height: 38px;
+    background-color: #f6f7fb;
+    line-height: 38px;
+    text-align: center;
+    color: #a2aecd;
+}
+
+.statistics_box .worker_box .kaoqin_center .tr_titlers span {
+    float: left;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    box-sizing: border-box;
+}
+
+.statistics_box .worker_box .kaoqin_center li {
+    border-bottom: 1px solid #ced0d7;
+}
+
+.statistics_box .worker_box .kaoqin_center span {
+    float: left;
+    width: 51px !important;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-left: 1px solid #ced0d7;
+    box-sizing: border-box;
+}
+
+.statistics_box .worker_box .numbers {
+    border-bottom: 1px solid #fff;
+    background-color: #f6f7fb;
+    color: #a2aecd;
+    flex: 2;
+    font-weight: bold;
+}
+
+.statistics_box .worker_box .numbers .absence_box {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #ced0d7;
+    box-sizing: border-box;
+}
+
+.statistics_box .worker_box .numbers .number_item {
+    height: 39px;
+    line-height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ced0d7;
+    color: #fff;
+}
+
+.statistics_box .worker_box .numbers .number_item.reds {
+    background-color: #FF0032;
+}
+
+.statistics_box .worker_box .numbers .number_item.yellows {
+    background-color: #FE9A00;
+}
+
+.statistics_box .worker_box .numbers .number_item.greens {
+    background-color: #679966;
+}

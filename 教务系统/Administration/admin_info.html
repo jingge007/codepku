@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工管理</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/administration.css">
+</head>
+<body>
+<div class="staff_content">
+    <div class="info_box">
+        <!--教务员-->
+        <div class="info_text">
+            <span class="add_text">教务员：</span>
+            <select class="add_select">
+                <option>请选择</option>
+            </select>
+        </div>
+        <!-- 课程类别-->
+        <div class="category">
+            <span class="add_text">课程类别：</span>
+            <div class="subject">
+                <span class="selected">Scratch</span>
+                <span>Python</span>
+                <span>NOIP</span>
+                <span>选修课</span>
+            </div>
+        </div>
+        <!--负责老师-->
+        <div class="teacher_box">
+            <span class="add_text">负责老师：</span>
+            <div class="subject_teachers show_box">
+                <span>孙小鸿</span>
+                <span>蔡龙</span>
+                <span>杨小龙</span>
+                <span>夏蒙玉</span>
+                <span>杨小龙</span>
+                <span>温立婧</span>
+                <span>甘来欣</span>
+                <span>倪辰飞</span>
+            </div>
+            <div class="subject_teachers">
+                <span>徐佳庆</span>
+                <span>周学瑜</span>
+                <span>徐宏灿</span>
+            </div>
+            <div class="subject_teachers">
+                <span>伍健霖</span>
+                <span>王梦琰</span>
+            </div>
+            <div class="subject_teachers">
+                <span>所有老师</span>
+            </div>
+        </div>
+        <!--已有权限-->
+        <div class="addInfo hides_addInfo">
+            <div class="add_text">已有权限：</div>
+            <p><span class="selected_text">Scratch</span>蔡龙、温立靖</p>
+            <p><span class="selected_text">Python</span>蔡龙、温立靖</p>
+            <p><span class="selected_text">NOIP</span>蔡龙</p>
+            <p><span class="selected_text">选修课</span></p>
+        </div>
+    </div>
+    <div class="bottom_box">
+        <div class="empty">清空</div>
+        <div class="preservation">保存</div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/administration.js"></script>
+</body>
+</html>

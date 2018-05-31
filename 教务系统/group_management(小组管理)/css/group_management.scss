@@ -1,0 +1,409 @@
+.body {
+  background-color: #F5F6FA;
+}
+
+.group_management {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 14px;
+  font-family: '微软雅黑';
+  .search_box {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 22px;
+    .search_item {
+      width: 380px;
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 300px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        border: solid 1px #d2d2d2;
+        outline: none;
+        line-height: 30px;
+        padding: 0 0 0 8px !important;
+        outline: none !important;
+        color: #666;
+        font-size: 14px;
+      }
+      input::-webkit-input-placeholder {
+        color: #ccc;
+        font-size: 14px;
+      }
+      input:-moz-placeholder {
+        color: #ccc;
+        font-size: 14px;
+      }
+      input::-moz-placeholder {
+        color: #ccc;
+        font-size: 14px;
+      }
+      input:-ms-input-placeholder {
+        color: #ccc;
+        font-size: 14px;
+      }
+      .search_btn {
+        display: inline-block;
+        width: 66px;
+        height: 30px;
+        background-color: #4381e6;
+        border-radius: 2px;
+        line-height: 30px;
+        text-align: center;
+        color: #fefeff;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+  .group_nav {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 14px 0 35px;
+    .group_nav_item {
+      flex: 1;
+    }
+    .group_nav_selected_text, .group_nav_select_txt {
+      font-size: 14px;
+      color: #999;
+      margin: 0;
+      display: inline-block;
+    }
+    .group_nav_select_txt {
+      margin-left: 30px;
+      .group_nav_select_text {
+        color: #4381e6 !important;
+        cursor: pointer;
+      }
+    }
+    .add_group_btn {
+      width: 90px;
+      height: 30px;
+      background-color: #4381e6;
+      border-radius: 2px;
+      display: inline-block;
+      line-height: 30px;
+      text-align: center;
+      color: #fefeff;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: '微软雅黑';
+    }
+  }
+  .group_table {
+    width: 100%;
+    background-color: #fff;
+    .type_Scratch, .type_Python, .type_NOIP {
+      margin-bottom: 10px;
+    }
+    .group_theader {
+      display: flex;
+      list-style: none;
+      padding: 0 !important;
+      margin: 0;
+      align-items: center;
+      text-align: center;
+      font-family: '微软雅黑';
+      font-size: 13px;
+      color: #fff;
+      height: 50px;
+      background-color: #b7c7d4;
+    }
+    .group_tbody {
+      padding: 0 !important;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      align-items: center;
+      font-family: '微软雅黑';
+      font-size: 13px;
+      color: #666;
+      background-color: #F5F8FB;
+      &:hover {
+        background-color: #dee8f1 !important;
+      }
+      span {
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+      .tbody_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          display: inline-block;
+          padding: 16px;
+        }
+      }
+      .th_edit_btn {
+        color: #4381e6 !important;
+        cursor: pointer;
+      }
+    }
+    .th_member {
+      flex: 5;
+    }
+    .th_groupName {
+      flex: 2;
+    }
+    .th_groupLeader, .th_curriculum, .th_number, .th_operation {
+      flex: 1;
+    }
+  }
+  #add_group_Modal, #edit_group_Modal, #teacher_group_Modal {
+    .modal-dialog {
+      width: 650px !important;
+      max-width: 650px;
+      overflow: hidden;
+      margin-top: 180px !important;
+      .modal-content {
+        border: none !important;
+        border-radius: 2px !important;
+        background-color: #ffffff;
+        box-shadow: 0px 25px 24px 0px rgba(0, 0, 0, 0.13);
+        .modal-header {
+          display: block;
+          font-size: 20px !important;
+          height: 57px;
+          line-height: 57px;
+          text-align: center;
+          width: 100%;
+          color: #2284f1;
+          padding: 0 !important;
+          border-bottom: 1px solid #E5E5E5;
+          position: relative;
+          .close_btn {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 17px;
+            right: 17px;
+            cursor: pointer;
+          }
+        }
+        .modal-body {
+          padding: 30px 60px 10px 40px;
+          .curriculum_select {
+            display: flex;
+            margin-bottom: 20px;
+          }
+          .input_box {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+          .curriculum_input {
+            display: flex;
+          }
+          .leable_txt {
+            height: 26px;
+            line-height: 26px;
+            width: auto;
+            letter-spacing: 1px;
+            color: #666;
+            font-size: 14px;
+          }
+          .selected_input, .input_item {
+            height: 26px;
+            padding: 0 0 0 5px !important;
+            font-size: 14px;
+            color: #bcbcbc;
+            line-height: 26px;
+            width: 150px;
+            border-radius: 2px !important;
+          }
+          .member_text {
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+          }
+          .member_number {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            max-height: 204px;
+            overflow-y: auto;
+            .member_number_item {
+              width: 84px;
+              height: 24px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #5ca9ff;
+              border-radius: 2px;
+              text-align: center;
+              font-size: 14px;
+              color: #fff;
+              margin: 0 22px 14px 0;
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select: none;
+              .close_icon {
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: url("../images/delete.png");
+                background-size: cover;
+                cursor: pointer;
+                margin-left: 10px;
+              }
+            }
+          }
+          .selected_teachers {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+          }
+          .search_teachers {
+            display: flex;
+            .search_teachers_input {
+              height: 26px;
+              border: solid 1px #cccccc;
+              border-right: 0 !important;
+              font-size: 14px;
+              color: #bcbcbc;
+              padding: 0 0 0 8px !important;
+              width: 163px;
+              outline: none;
+            }
+            .search_teachers_icon {
+              height: 26px;
+              /*border-left: 1px solid rgba(130, 130, 130, 0.2);*/
+              width: 25px;
+              box-sizing: border-box;
+              text-align: center;
+              line-height: 26px;
+              border: solid 1px #cccccc;
+              border-left: 0 !important;
+              position: relative;
+              cursor: pointer;
+            }
+            .search_teachers_img {
+              width: 12px;
+              height: 13px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .selected_teachers_boxs {
+            width: 100%;
+            display: flex;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+            max-height: 204px;
+            overflow-y: scroll;
+            .selected_teachers_item {
+              width: 64px;
+              height: 24px;
+              line-height: 24px;
+              background-color: #f0f2f4;
+              border-radius: 2px;
+              text-align: center;
+              color: #8f8d8d;
+              font-size: 14px;
+              margin: 0 13px 10px 0;
+              cursor: pointer;
+              display: inline-block;
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select: none;
+              &:hover {
+                color: #fff !important;
+                background-color: #5ca9ff !important;
+              }
+            }
+          }
+
+        }
+        .modal-footer {
+          padding: 25px 0 !important;
+          border: none !important;
+          text-align: center !important;
+          .close_buttons {
+            width: 74px;
+            height: 30px;
+            background-color: #2284f1;
+            border-radius: 2px;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 auto;
+            border: none !important;
+            outline: none !important;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .prompt_box {
+      width: 250px;
+      padding: 10px;
+      position: absolute;
+      background-color: #fefefe;
+      top: 123px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      color: #F3341B;
+      display: none;
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #fefefe;
+      }
+    }
+
+  }
+  #teacher_group_Modal {
+    .modal-body {
+      padding: 15px 40px 25px 20px !important;
+      .selected_title {
+        border-left: 5px solid #2284F1;
+        padding-left: 10px !important;
+        font-size: 16px;
+        color: #2284F1;
+        font-family: '微软雅黑';
+        margin: 25px 0 8px 0;
+        height: 16px;
+        line-height: 16px;
+      }
+      .selected_box_scratch {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .selected_box_item {
+          line-height: 25px;
+          height: 25px;
+          width: 65px;
+          text-align: center;
+          color: #666;
+          font-size: 14px;
+          margin: 0 0px 7px 7px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

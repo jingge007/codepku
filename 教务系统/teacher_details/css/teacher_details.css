@@ -1,0 +1,916 @@
+@charset "UTF-8";
+body {
+  background-color: #EAF0F2; }
+
+.teacher_details {
+  width: 1300px;
+  min-width: 1300px;
+  margin: 10px auto 0;
+  display: flex; }
+  .teacher_details .weeking_color {
+    color: #4381e6 !important; }
+  .teacher_details .nav_left_box {
+    width: 240px; }
+    .teacher_details .nav_left_box .basic_title {
+      padding: 18px 0 0 22px;
+      font-family: '微软雅黑';
+      font-size: 16px;
+      color: #999999;
+      margin: 0 !important; }
+    .teacher_details .nav_left_box .link_text {
+      display: inline-block;
+      font-size: 16px;
+      color: #4381e6;
+      margin-left: 8px;
+      cursor: pointer; }
+    .teacher_details .nav_left_box .basic_information {
+      width: 240px;
+      height: 580px;
+      background-color: #ffffff;
+      box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+      border-radius: 4px; }
+      .teacher_details .nav_left_box .basic_information .basic_information_header {
+        height: 320px;
+        width: 100%; }
+        .teacher_details .nav_left_box .basic_information .basic_information_header .header_img {
+          display: block;
+          margin: 65px auto 25px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          overflow: hidden; }
+        .teacher_details .nav_left_box .basic_information .basic_information_header .basic_name {
+          font-size: 16px;
+          font-family: '微软雅黑';
+          color: #333;
+          text-align: center;
+          margin: 0 0 8px 0;
+          font-weight: 600; }
+        .teacher_details .nav_left_box .basic_information .basic_information_header .basic_teacher {
+          display: block;
+          text-align: center;
+          font-family: '微软雅黑';
+          font-size: 14px;
+          color: #999; }
+      .teacher_details .nav_left_box .basic_information .information_box {
+        width: 100%;
+        height: 260px;
+        border-top: 1px solid #ebebf3;
+        box-sizing: border-box;
+        position: relative; }
+        .teacher_details .nav_left_box .basic_information .information_box .edit_icon {
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 16px;
+          width: 18px;
+          height: 18px;
+          background: url("../images/icon-jibenxinxi-bianji.png");
+          cursor: pointer;
+          background-size: cover; }
+        .teacher_details .nav_left_box .basic_information .information_box .information_item {
+          margin: 50px 0 0 42px;
+          padding-right: 46px; }
+          .teacher_details .nav_left_box .basic_information .information_box .information_item .basic_name, .teacher_details .nav_left_box .basic_information .information_box .information_item .basic_mobile {
+            font-size: 14px;
+            color: #999999;
+            margin: 0;
+            font-family: '微软雅黑'; }
+          .teacher_details .nav_left_box .basic_information .information_box .information_item .Prompt_items, .teacher_details .nav_left_box .basic_information .information_box .information_item .Prompt_name_items {
+            color: #DB3E3E;
+            font-size: 12px;
+            display: none;
+            margin: 5px 0 12px 0; }
+          .teacher_details .nav_left_box .basic_information .information_box .information_item .teacher_name, .teacher_details .nav_left_box .basic_information .information_box .information_item .phone_number {
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+            font-family: '微软雅黑';
+            line-height: 22px;
+            border: none;
+            width: 100%;
+            outline: none; }
+          .teacher_details .nav_left_box .basic_information .information_box .information_item .edit_input {
+            font-size: 14px;
+            color: #333;
+            font-family: '微软雅黑';
+            line-height: 22px;
+            padding: 0 0 0 6px;
+            border: 1px solid #ced4da;
+            border-radius: 2px;
+            width: 100%; }
+          .teacher_details .nav_left_box .basic_information .information_box .information_item .determine_btn, .teacher_details .nav_left_box .basic_information .information_box .information_item .cancel_btn {
+            display: inline-block;
+            cursor: pointer;
+            width: 58px;
+            height: 30px;
+            background-color: #4381e6;
+            border-radius: 2px;
+            line-height: 30px;
+            text-align: center;
+            font-family: '微软雅黑';
+            color: #fefeff;
+            font-size: 14px;
+            float: left;
+            margin: 15px 0 0 0;
+            display: none; }
+          .teacher_details .nav_left_box .basic_information .information_box .information_item .cancel_btn {
+            float: right !important;
+            border: solid 1px #4381e6 !important;
+            background-color: #ffffff !important;
+            color: #4381e6 !important; }
+    .teacher_details .nav_left_box .live_room {
+      margin-top: 10px;
+      width: 240px;
+      height: 330px;
+      background-color: #ffffff;
+      box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+      border-radius: 4px; }
+      .teacher_details .nav_left_box .live_room .link_item_01 {
+        margin: 94px 0 0 0;
+        padding-left: 42px;
+        display: flex;
+        height: 25px;
+        align-items: center; }
+        .teacher_details .nav_left_box .live_room .link_item_01 .link_icon {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background: url("../images/icon-zhibo-1.png");
+          background-size: cover; }
+      .teacher_details .nav_left_box .live_room .link_item_02 {
+        margin: 50px 0 0 0;
+        padding-left: 42px;
+        display: flex;
+        height: 25px;
+        align-items: center; }
+        .teacher_details .nav_left_box .live_room .link_item_02 .link_icon {
+          display: inline-block;
+          width: 14px;
+          height: 16px;
+          background: url("../images/icon-zhibo-2.png");
+          background-size: cover; }
+  .teacher_details .nav_right_box {
+    margin-left: 10px;
+    flex: 1;
+    /*教课权限*/
+    /*课程查看权限*/
+    /*试听时间安排*/
+    /*上班时间设置*/
+    /*自定义时间段弹窗*/ }
+    .teacher_details .nav_right_box .nav_tab_box {
+      width: 100%;
+      height: 70px;
+      background-color: #ffffff;
+      box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px; }
+      .teacher_details .nav_right_box .nav_tab_box .nav_tab {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; }
+        .teacher_details .nav_right_box .nav_tab_box .nav_tab .nav_tab_news {
+          width: 20px;
+          height: 20px;
+          background-color: #f84141;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-left: 6px;
+          line-height: 20px;
+          text-align: center;
+          color: #fefefe;
+          font-size: 12px; }
+        .teacher_details .nav_right_box .nav_tab_box .nav_tab .nav_tab_title {
+          padding: 20px;
+          cursor: pointer;
+          color: #333;
+          font-size: 14px;
+          font-family: '微软雅黑';
+          margin: 0 !important; }
+        .teacher_details .nav_right_box .nav_tab_box .nav_tab .nav_tab_selcted {
+          color: #4381e6 !important; }
+        .teacher_details .nav_right_box .nav_tab_box .nav_tab .nav_tab_border {
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 60px;
+          height: 3px;
+          background-color: #4381e6;
+          display: none; }
+    .teacher_details .nav_right_box .content_boxs {
+      height: 840px;
+      background-color: #ffffff;
+      box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+      border-radius: 4px;
+      padding: 40px 68px 0 68px;
+      display: none; }
+      .teacher_details .nav_right_box .content_boxs .curriculum_item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%; }
+        .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item {
+          width: 440px;
+          height: 200px;
+          background-color: #ffffff;
+          border-radius: 4px;
+          border: solid 1px #eaf0f2;
+          margin-bottom: 30px;
+          box-sizing: border-box;
+          padding: 20px 24px 0 24px;
+          position: relative; }
+          .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .curriculum_img_01, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .curriculum_img_02, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .curriculum_img_03, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .curriculum_img_04 {
+              width: 50px;
+              height: 50px;
+              margin-right: 17px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #dcdcdc; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .Scratch_img {
+              background-color: #f9c100 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .Python_img {
+              background-color: #2284f1 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .NOIP_img {
+              background-color: #ff3838 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .Zhuangye {
+              background-color: #f9c100 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .curriculum_title {
+              font-size: 16px;
+              color: #dcdcdc;
+              font-family: 'MicrosoftYaHei-Bold';
+              font-weight: 600;
+              flex: 1; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .Scratch_titles, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .Python_titles, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .NOIP_titles, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .zhuangye_titles {
+              color: #333 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_01, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_02, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_03, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_04 {
+              width: 54px;
+              height: 28px;
+              line-height: 28px;
+              text-align: center;
+              color: #fefeff;
+              background-color: #ffffff;
+              border-radius: 4px;
+              cursor: pointer;
+              z-index: 9999 !important;
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select: none; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_01 {
+              background-color: #f9c100; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .Scratch_close {
+              background-color: #ffffff !important;
+              border: solid 1px #f9c100 !important;
+              color: #f9c100 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_02 {
+              background-color: #2284f1; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .Python_close {
+              background-color: #ffffff !important;
+              border: solid 1px #2284f1 !important;
+              color: #2284f1 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_03 {
+              background-color: #ff3838; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .NOIP_close {
+              background-color: #ffffff !important;
+              border: solid 1px #ff3838 !important;
+              color: #ff3838 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .jurisdiction_item_04 {
+              background-color: #32c4d3; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .curriculum_nav .zhuangye_close {
+              background-color: #ffffff !important;
+              border: solid 1px #32c4d3 !important;
+              color: #32c4d3 !important; }
+          .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item {
+            display: flex;
+            height: 20px;
+            width: 100%;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 11px;
+            color: #dcdcdc; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .switch_box {
+              margin-left: 2px;
+              width: 34px;
+              height: 17px;
+              background-color: #dcdcdc;
+              border-radius: 8px;
+              position: relative;
+              cursor: pointer; }
+              .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .switch_box .switch_box_item {
+                position: absolute;
+                top: 50%;
+                left: 1px;
+                transform: translateY(-50%);
+                display: inline-block;
+                width: 16px;
+                height: 15px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                overflow: hidden;
+                cursor: pointer;
+                transition: all 0.2s; }
+              .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .switch_box .switch_move {
+                left: 16px !important;
+                transition: all 0.2s; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .switch_bs {
+              background-color: #4381e6 !important; }
+            .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .star_score {
+              background: url("../images/stark2.png");
+              height: 20px;
+              position: relative; }
+              .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .star_score a {
+                height: 20px;
+                display: block;
+                text-indent: -999em;
+                position: absolute;
+                left: 0; }
+                .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .star_score a:hover {
+                  background: url("../images/stars2.png");
+                  left: 0; }
+              .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item .star_score a.clibg {
+                background: url("../images/stars2.png");
+                left: 0; }
+          .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .class_item_bs {
+            color: #333 !important; }
+          .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .mask_box_01, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .mask_box_02, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .mask_box_03, .teacher_details .nav_right_box .content_boxs .curriculum_item .content_box_item .mask_box_04 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            z-index: 9998; }
+      .teacher_details .nav_right_box .content_boxs .weeking_box {
+        margin-top: 40px;
+        padding: 0 15px;
+        display: flex; }
+        .teacher_details .nav_right_box .content_boxs .weeking_box .weeking_box_item {
+          flex: 1; }
+          .teacher_details .nav_right_box .content_boxs .weeking_box .weeking_box_item .weeking_text {
+            display: flex;
+            height: 25px;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+            justify-content: center; }
+            .teacher_details .nav_right_box .content_boxs .weeking_box .weeking_box_item .weeking_text .weeking_input {
+              width: 50px;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              background-color: #ffffff;
+              border-radius: 2px;
+              border: solid 1px #d2d2d2;
+              margin: 0 8px 0 2px;
+              outline: none; }
+      .teacher_details .nav_right_box .content_boxs .content_btn_box {
+        width: 335px;
+        margin: 90px auto 0;
+        display: flex;
+        justify-content: space-between; }
+        .teacher_details .nav_right_box .content_boxs .content_btn_box .preservation_btn, .teacher_details .nav_right_box .content_boxs .content_btn_box .cancelbtn {
+          width: 150px;
+          height: 40px;
+          font-size: 18px;
+          background-color: #4381e6;
+          border-radius: 20px;
+          cursor: pointer;
+          line-height: 40px;
+          text-align: center;
+          color: #fefeff; }
+        .teacher_details .nav_right_box .content_boxs .content_btn_box .cancelbtn {
+          color: #4381e6 !important;
+          background-color: #fff !important;
+          border: solid 1px #4381e6;
+          box-sizing: border-box; }
+    .teacher_details .nav_right_box .view_permissions {
+      display: none;
+      padding: 80px 45px 0 45px;
+      width: 1050px;
+      height: 840px;
+      background-color: #ffffff;
+      box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+      border-radius: 4px; }
+      .teacher_details .nav_right_box .view_permissions .table_box {
+        width: 100%; }
+        .teacher_details .nav_right_box .view_permissions .table_box .table_headers {
+          list-style: none;
+          height: 46px;
+          background-color: #b7c7d4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'MicrosoftYaHei-Bold';
+          font-size: 16px;
+          color: #fff;
+          padding: 0 !important; }
+          .teacher_details .nav_right_box .view_permissions .table_box .table_headers .table_item {
+            flex: 1;
+            text-align: center; }
+        .teacher_details .nav_right_box .view_permissions .table_box .table_line {
+          list-style: none;
+          padding: 0 !important;
+          height: 46px;
+          background-color: #f5f8fb;
+          margin: 17px 0 0 0;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item {
+            text-align: center;
+            flex: 1;
+            font-size: 14px;
+            font-family: '微软雅黑';
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item .select_type_checked {
+              float: left;
+              font-size: 14px;
+              font-weight: 500;
+              position: relative;
+              display: inline-block;
+              color: #333;
+              height: 36px;
+              padding-left: 21px;
+              margin: 0 !important;
+              line-height: 38px;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; }
+              .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item .select_type_checked input {
+                position: absolute;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden; }
+              .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item .select_type_checked input[type=checkbox]:checked + .mdui_checkout_icon:after {
+                background-color: #2284f1;
+                border-color: #2284f1; }
+              .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item .select_type_checked input[type=checkbox]:checked + .mdui_checkout_icon:before {
+                opacity: 1;
+                -webkit-transform: rotateZ(37deg) scale(1);
+                transform: rotateZ(37deg) scale(1); }
+              .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item .select_type_checked .mdui_checkout_icon {
+                position: absolute;
+                top: 12px;
+                left: 0;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+                background-color: transparent;
+                border: none;
+                border-radius: 18px;
+                -webkit-transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1); }
+                .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item .select_type_checked .mdui_checkout_icon:before {
+                  position: absolute;
+                  top: 2px;
+                  left: 0;
+                  z-index: 1;
+                  width: 6px;
+                  height: 10px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  content: ' ';
+                  border-right: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  opacity: 0;
+                  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  -webkit-transform: rotateZ(37deg) scale(0);
+                  transform: rotateZ(37deg) scale(0);
+                  -webkit-transform-origin: 100% 100%;
+                  transform-origin: 100% 100%; }
+                .teacher_details .nav_right_box .view_permissions .table_box .table_line .table_line_item .select_type_checked .mdui_checkout_icon:after {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                  width: 14px;
+                  height: 14px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  content: ' ';
+                  border: solid 1px #d2d2d2;
+                  border-radius: 2px;
+                  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+      .teacher_details .nav_right_box .view_permissions .permissions_boxs {
+        margin: 60px auto 0;
+        width: 340px; }
+        .teacher_details .nav_right_box .view_permissions .permissions_boxs .preserva_btn, .teacher_details .nav_right_box .view_permissions .permissions_boxs .cancels_btns {
+          width: 150px;
+          height: 40px;
+          background-color: #4381e6;
+          border-radius: 20px;
+          line-height: 40px;
+          text-align: center;
+          color: #fefeff;
+          font-size: 18px;
+          font-family: '微软雅黑';
+          cursor: pointer;
+          float: left; }
+        .teacher_details .nav_right_box .view_permissions .permissions_boxs .cancels_btns {
+          float: right !important;
+          border: solid 1px #4381e6;
+          background-color: #fff !important;
+          color: #4381e6 !important; }
+    .teacher_details .nav_right_box .try_listen_time {
+      width: 1050px;
+      margin: 10px auto 0;
+      display: none;
+      background-color: #ffffff;
+      box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+      border-radius: 4px !important; }
+      .teacher_details .nav_right_box .try_listen_time .listen_boxs {
+        padding: 15px 45px 36px; }
+        .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date {
+            width: 270px;
+            align-items: center;
+            display: flex; }
+            .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date .prev_week {
+              border: none;
+              outline: none;
+              background: none;
+              padding: 0;
+              flex: 1;
+              line-height: 1; }
+              .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date .prev_week .chevron_circle_left {
+                font: normal normal normal 20px/1 FontAwesome;
+                color: #b7c7d4; }
+                .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date .prev_week .chevron_circle_left:before {
+                  content: "\f137"; }
+            .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date .next_week {
+              border: none;
+              outline: none;
+              background: none;
+              padding: 0;
+              flex: 1;
+              line-height: 1; }
+              .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date .next_week .chevron_circle_right {
+                font: normal normal normal 20px/1 FontAwesome;
+                color: #b7c7d4; }
+                .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date .next_week .chevron_circle_right:before {
+                  content: "\f138"; }
+            .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .week_date .week_date_day {
+              font-size: 14px;
+              font-family: "微软雅黑";
+              color: #666666; }
+          .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_switch .look_this_week {
+            border: none;
+            outline: none;
+            background-color: #4381e6;
+            padding: 8px 16px;
+            border-radius: 2px;
+            font-family: "微软雅黑";
+            color: #fff;
+            font-size: 14px;
+            margin-left: 33px; }
+        .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont {
+          margin-top: 12px;
+          height: 660px;
+          overflow-y: auto; }
+          .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont::-webkit-scrollbar {
+            display: none; }
+          .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab {
+            width: 100%;
+            text-align: center; }
+            .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab .week_tab_head {
+              height: 60px;
+              background-color: #B7C7D4 !important;
+              font-size: 16px; }
+              .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab .week_tab_head td:nth-of-type(1) {
+                width: 130px; }
+              .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab .week_tab_head td {
+                color: #fff !important; }
+            .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr:nth-of-type(odd) {
+              background-color: #F5F8FB; }
+            .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr:nth-of-type(even) {
+              background-color: #FFF; }
+            .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr {
+              height: 50px; }
+              .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td {
+                color: #333333; }
+                .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .relax_state {
+                  color: #999;
+                  font-size: 14px;
+                  font-family: "微软雅黑"; }
+                .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .assigned_state {
+                  display: none;
+                  color: #faa52c;
+                  font-size: 14px;
+                  font-family: "微软雅黑"; }
+                .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .small_class {
+                  display: none;
+                  color: #62cb0e;
+                  font-size: 14px;
+                  font-family: "微软雅黑"; }
+                .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .select_type {
+                  display: none;
+                  font-size: 15px;
+                  font-weight: 500;
+                  position: relative;
+                  color: #4381e6;
+                  height: 36px;
+                  width: 18px;
+                  margin: 0 auto;
+                  line-height: 38px;
+                  cursor: pointer;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none; }
+                  .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .select_type input {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    overflow: hidden;
+                    visibility: hidden; }
+                  .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .select_type input[type=checkbox]:checked + .mdui_checkout_icon:after {
+                    background-color: #2284f1;
+                    border-color: #2284f1; }
+                  .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .select_type input[type=checkbox]:checked + .mdui_checkout_icon:before {
+                    opacity: 1;
+                    -webkit-transform: rotateZ(37deg) scale(1);
+                    transform: rotateZ(37deg) scale(1); }
+                  .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .select_type .mdui_checkout_icon {
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 18px;
+                    -webkit-transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                    display: none; }
+                    .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .select_type .mdui_checkout_icon:before {
+                      position: absolute;
+                      top: 3px;
+                      left: 2px;
+                      z-index: 1;
+                      width: 6px;
+                      height: 11px;
+                      -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+                      content: ' ';
+                      border-right: 2px solid #fff;
+                      border-bottom: 2px solid #fff;
+                      opacity: 0;
+                      -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                      -webkit-transform: rotateZ(37deg) scale(0);
+                      transform: rotateZ(37deg) scale(0);
+                      -webkit-transform-origin: 100% 100%;
+                      transform-origin: 100% 100%; }
+                    .teacher_details .nav_right_box .try_listen_time .listen_boxs .week_date_cont .week_date_tab tr td .select_type .mdui_checkout_icon:after {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      z-index: 0;
+                      width: 18px;
+                      height: 18px;
+                      -webkit-box-sizing: border-box;
+                      box-sizing: border-box;
+                      content: ' ';
+                      border: 2px solid #cccccc;
+                      border-radius: 50%;
+                      -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .teacher_details .nav_right_box .try_listen_time .listen_boxs .try_listen_btns {
+          text-align: center;
+          margin: 40px auto 0; }
+          .teacher_details .nav_right_box .try_listen_time .listen_boxs .try_listen_btns .save_btn {
+            background-color: #4381E6;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 18px;
+            padding: 8px 50px;
+            outline: none;
+            margin: 0 30px;
+            border: none; }
+          .teacher_details .nav_right_box .try_listen_time .listen_boxs .try_listen_btns .ques_btn {
+            outline: none;
+            border-radius: 20px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            font-size: 18px;
+            color: #4381E6;
+            border: solid 1px #4381e6;
+            margin: 0 30px;
+            padding: 8px 50px; }
+    .teacher_details .nav_right_box .work_time_setting {
+      width: 1050px;
+      background-color: #fff;
+      margin: 10px auto 0;
+      padding: 30px 45px 29px 45px;
+      display: none; }
+      .teacher_details .nav_right_box .work_time_setting .retrieve_row .select_week_time {
+        display: inline-block; }
+        .teacher_details .nav_right_box .work_time_setting .retrieve_row .select_week_time .label_title {
+          font-size: 16px;
+          color: #333;
+          font-weight: normal; }
+        .teacher_details .nav_right_box .work_time_setting .retrieve_row .select_week_time .form-control {
+          display: inline-block;
+          width: 100px;
+          border-radius: 2px; }
+      .teacher_details .nav_right_box .work_time_setting .retrieve_row .week_day_time {
+        display: inline-block;
+        margin: 0 60px; }
+        .teacher_details .nav_right_box .work_time_setting .retrieve_row .week_day_time .label_title {
+          font-size: 16px;
+          color: #333;
+          font-weight: normal; }
+        .teacher_details .nav_right_box .work_time_setting .retrieve_row .week_day_time .form-control {
+          display: inline-block;
+          width: 203px;
+          border-radius: 2px; }
+      .teacher_details .nav_right_box .work_time_setting .retrieve_row .add_new_time, .teacher_details .nav_right_box .work_time_setting .retrieve_row .custom_new_time {
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        background-color: #4381e6;
+        border-radius: 2px; }
+      .teacher_details .nav_right_box .work_time_setting .retrieve_row .custom_new_time {
+        margin-left: 20px; }
+      .teacher_details .nav_right_box .work_time_setting .work_time_data {
+        margin-top: 30px; }
+        .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab {
+          width: 100%; }
+          .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab .time_tab_title {
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+            font-family: "微软雅黑";
+            font-size: 15px;
+            background-color: #b7c7d4 !important;
+            font-weight: bold; }
+            .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab .time_tab_title td {
+              background-color: #b7c7d4 !important;
+              color: #fff !important; }
+          .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab tr .week_day {
+            background-color: #dee8f1;
+            height: 76px;
+            line-height: 76px;
+            font-size: 16px;
+            color: #333;
+            font-family: "微软雅黑";
+            width: 195px !important;
+            text-align: center; }
+          .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab tr td {
+            background-color: #f5f8fb;
+            height: 76px;
+            line-height: 76px;
+            font-size: 16px;
+            color: #333;
+            font-family: "微软雅黑";
+            width: 252px;
+            display: inline-block;
+            margin: 1px; }
+            .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab tr td .time_period {
+              position: relative;
+              text-align: center;
+              color: #333;
+              font-size: 16px;
+              cursor: pointer; }
+              .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab tr td .time_period .card_close {
+                display: none;
+                color: #FFF;
+                position: absolute;
+                right: 14px;
+                top: 8px;
+                font-size: 22px;
+                width: 10px;
+                height: 10px;
+                line-height: 10px; }
+              .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab tr td .time_period:hover {
+                background-color: #4381e6;
+                color: #fff; }
+                .teacher_details .nav_right_box .work_time_setting .work_time_data .work_time_tab tr td .time_period:hover .card_close {
+                  display: block; }
+      .teacher_details .nav_right_box .work_time_setting .week_time_btns {
+        text-align: center;
+        margin: 40px auto 10px; }
+        .teacher_details .nav_right_box .work_time_setting .week_time_btns .save_btn {
+          background-color: #4381E6;
+          border-radius: 20px;
+          color: #fff;
+          font-size: 18px;
+          padding: 8px 50px;
+          outline: none;
+          margin: 0 30px;
+          border: none; }
+        .teacher_details .nav_right_box .work_time_setting .week_time_btns .ques_btn {
+          outline: none;
+          border-radius: 20px;
+          background-color: #ffffff;
+          font-size: 18px;
+          color: #4381E6;
+          border: solid 1px #4381e6;
+          margin: 0 30px;
+          padding: 8px 50px; }
+    .teacher_details .nav_right_box #custom_time .relative_cont {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      width: auto;
+      position: relative; }
+      .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont {
+        width: 638px;
+        background-color: #fff;
+        box-shadow: none;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .common_head {
+          background-color: #4381e6;
+          height: 58px; }
+          .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .common_head .close_btn {
+            font-size: 20px;
+            font-family: serif;
+            color: #fff;
+            outline: none;
+            transform: translateY(-2%);
+            font-weight: 100;
+            opacity: 1; }
+          .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .common_head .common_headtext {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-family: "微软雅黑";
+            font-weight: bold; }
+        .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .common_cont .datepicker_inline {
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding-right: 192px; }
+          .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .common_cont .datepicker_inline .label_title {
+            color: #333333;
+            font-size: 16px;
+            font-weight: normal;
+            font-family: "微软雅黑"; }
+          .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .common_cont .datepicker_inline .input-group, .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .common_cont .datepicker_inline .form-control {
+            display: inline-block;
+            width: 203px; }
+        .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .untied_footer {
+          border: none;
+          text-align: center;
+          margin-bottom: 20px; }
+          .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .untied_footer .confirm_btn {
+            background-color: #4381E6;
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 14px;
+            outline: none;
+            margin: 0 20px;
+            border: none;
+            border-radius: 2px; }
+          .teacher_details .nav_right_box #custom_time .relative_cont .common_popcont .untied_footer .cancel_btn {
+            outline: none;
+            background-color: #ffffff;
+            font-size: 16px;
+            border-radius: 2px;
+            color: #4381E6;
+            border: solid 1px #4381e6;
+            margin: 0 20px;
+            padding: 5px 14px; }
+
+/*# sourceMappingURL=teacher_details.css.map */

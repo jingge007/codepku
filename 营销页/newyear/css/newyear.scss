@@ -1,0 +1,656 @@
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, input, button, p {
+  margin: 0;
+  padding: 0;
+}
+
+.newyear_box {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  background: url("../images/box_imgs.png") repeat;
+  overflow: hidden;
+  position: relative;
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  .clearfix {
+    *zoom: 1;
+  }
+  .newyear_banner {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+    .logo_box {
+      position: absolute;
+      width: 1.746rem;
+      height: 2.893rem;
+      bottom: -0.93rem;
+      left: 50%;
+      margin-left: -0.873rem;
+    }
+  }
+  .newyear_popup {
+    width: 7.6rem;
+    margin: 0 auto;
+    border-radius: 0.1333rem;
+    overflow: hidden;
+    z-index: 999 !important;
+    .newyear_popup_title {
+      background-color: #FAE3A8;
+      height: 2rem;
+      text-align: center;
+      padding-top: 0.4rem;
+      z-index: 900 !important;
+      .preferential {
+        padding-bottom: 0.24rem;
+        font-size: 0.6rem;
+        font-family: 'MicrosoftYaHei';
+        font-weight: bold;
+        color: #D12F2B;;
+      }
+      .preferential_center {
+        font-family: 'MicrosoftYaHeiLight';
+        color: #D12F2B;
+        font-size: 0.426rem;
+      }
+    }
+    .input_container {
+      height: 8.16rem;
+      padding: 0 0.786rem 0 0.76rem;
+      font-family: 'MicrosoftYaHei';
+      background-color: #fff;
+      input, .dropdown_box {
+        width: 100%;
+        height: 1.053rem;
+        box-sizing: border-box;
+        border: 1px solid rgb(149, 4, 0);
+        outline: none;
+        border-radius: 0.106rem;
+        margin-top: 0.386rem;
+        padding: 0.346rem 0 0.346rem 0.32rem;
+        color: rgb(186, 186, 186);
+        font-size: 0.3866rem;
+        background-color: #fff;
+      }
+      .dropdown_box {
+        padding: 0 0 0 0.346rem !important;
+      }
+      input.yangzhen_input, .yangzhen_bottom {
+        width: 2.786rem !important;
+      }
+      input.yangzhen_input {
+        float: left;
+      }
+      .yangzhen_bottom {
+        margin-top: 0.386rem;
+        float: right;
+        background-color: #ffdda9;
+        color: #FD4F4A;
+        font-size: 0.3866rem;
+        line-height: 1.06rem;
+        text-align: center;
+        height: 1.06rem;
+        border: none;
+        border-radius: 0.0533rem !important;
+        outline: none;
+      }
+      .receive_box {
+        width: 100%;
+        height: 1.08rem;
+        line-height: 1.08rem;
+        text-align: center;
+        color: #D02E2A;
+        background-color: #FAE3A8;
+        border: none;
+        border-radius: 0.0533rem !important;
+        margin-top: 0.57333rem;
+        font-size: 0.426rem;
+        outline: none;
+      }
+    }
+  }
+  .huajian {
+    position: absolute;
+    left: 10px;
+    top: 10rem;
+    width: 0.453rem;
+    height: 0.88rem;
+  }
+  .huajian_big {
+    position: absolute;
+    right: 10px;
+    top: 17rem;
+    width: 0.653rem;
+    height: 1rem;
+  }
+  .huajian_big {
+    position: absolute;
+    right: 10px;
+    top: 17rem;
+    width: 0.653rem;
+    height: 1rem;
+  }
+  .huajian_fc {
+    position: absolute;
+    right: 10px;
+    top: 13rem;
+    width: 0.746rem;
+    height: 0.386rem;
+  }
+  .students_box {
+    margin-top: 0.2rem;
+    .img_boxs {
+      text-align: center;
+      width: 8.04rem;
+      margin: 0.8rem auto 0.4rem;
+      height: 2.333rem;
+      background: url("../images/title@2x.png") no-repeat top center;
+      background-size: cover;
+      .img_boxs_title {
+        padding-top: 0.8rem;
+        color: #D02E2A;
+        font-size: 0.58666rem;
+        font-family: 'MicrosoftYaHei';
+        font-weight: bold;
+      }
+    }
+  }
+  .swiper-container {
+    padding: 25px 0;
+    .swiper-slide {
+      width: 5.86rem;
+      .students_center {
+        width: 5.86rem;
+        height: 7.7rem;
+        margin: 0 auto;
+        border: 3px solid #FCDE92;
+        z-index: 999 !important;
+        text-align: center;
+        background-color: #fff;
+        padding-top: 0.2666rem;
+        position: relative;
+        .line_boxs {
+          position: absolute;
+          height: 14px;
+          width: 14px;
+          border: 3px solid #fcde92;
+          background-color: #D02E2A;
+          z-index: 9999 !important;
+        }
+        .one_line {
+          top: -14px;
+          left: -14px;
+        }
+        .two_line {
+          top: -14px;
+          right: -14px;
+        }
+        .three_line {
+          bottom: -13px;
+          left: -14px;
+        }
+        .four_line {
+          bottom: -13px;
+          right: -14px;
+        }
+        .student_head {
+          width: 1.986rem;
+          height: 1.973rem;
+          display: block;
+          margin: 0 auto 0.333rem;
+        }
+        .student_name {
+          color: #FD4F4A;
+          font-weight: bold;
+          font-family: 'MicrosoftYaHei';
+          font-size: 0.3733rem;
+          margin-bottom: 0.24rem;
+        }
+        .school_name {
+          color: #FD625D;
+          font-size: 0.373rem;
+          font-family: 'MicrosoftYaHei';
+          /*margin: 0.24rem 0 0.2666rem 0;*/
+        }
+        .students_line {
+          width: 54px;
+          height: 3px;
+          background-color: #950400;
+          margin: 0.226rem auto 0.326rem;
+        }
+        .teachers_center {
+          margin-bottom: 0.1rem;
+          font-size: 0.346rem;
+          color: #666666;
+        }
+      }
+    }
+    .swiper-slide:last-child {
+      margin-right: 0;
+    }
+  }
+  .curriculum_box {
+    position: relative;
+    margin-top: 30px;
+    .img_boxs {
+      text-align: center;
+      width: 8.04rem;
+      margin: 0 auto 0;
+      height: 2.333rem;
+      background: url("../images/title@2x.png") no-repeat top center;
+      background-size: cover;
+      .img_boxs_title {
+        padding-top: 0.8rem;
+        color: #D02E2A;
+        font-size: 0.58666rem;
+        font-family: 'MicrosoftYaHei';
+        font-weight: bold;
+      }
+    }
+    .curriculum_title {
+      padding: 0 0.30666rem;
+      color: #ffdda9;
+      font-family: 'MicrosoftYaHeiLight';
+      font-size: 0.32rem;
+      margin-bottom: 0.573rem;
+      text-align: center;
+    }
+    .curriculum_center {
+      padding: 0 0.76rem;
+      font-family: 'MicrosoftYaHei';
+      .curriculum_item {
+        list-style: none;
+        width: 100%;
+        position: relative;
+        margin-bottom: 0.493rem;
+        .curriculum_img {
+          width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+        .curriculum_item_box {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 4.693rem;
+          height: 100%;
+          background-color: #fff !important;
+          .curriculum_item_title {
+            margin: 0.2rem auto 0.1rem;
+            color: #333333;
+            font-size: 0.50666rem;
+            text-align: center;
+          }
+          .curriculum_item_year {
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+            font-size: 0.32rem;
+            margin-bottom: 0.08rem;
+          }
+          .curriculum_item_center {
+            padding: 0 0 0 0.4rem;
+            color: #333333;
+            font-size: 0.32rem;
+          }
+          .curriculum_item_button {
+            width: 2.506rem;
+            /*width: (188/7.5)+vw;*/
+            height: 0.6666rem;
+            line-height: 0.6666rem;
+            text-align: center;
+            background-color: #FD4F4A;
+            border-radius: 0.3333rem;
+            color: #fffefe;
+            font-size: 0.32rem;
+            position: absolute;
+            bottom: 0.3066rem;
+            left: 50%;
+            margin-left: -1.253rem;
+          }
+        }
+      }
+      .curriculum_item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .teaching_box {
+    margin-top: 1.333rem;
+    position: relative;
+    .img_boxs {
+      text-align: center;
+      width: 8.04rem;
+      margin: 0 auto 0.9066rem;
+      height: 2.333rem;
+      background: url("../images/title@2x.png") no-repeat top center;
+      background-size: cover;
+      .img_boxs_title {
+        padding-top: 0.8rem;
+        color: #D02E2A;
+        font-size: 0.58666rem;
+        font-family: 'MicrosoftYaHei';
+        font-weight: bold;
+      }
+    }
+    .teaching_box_item {
+      padding: 0 0.16rem 0 0.2266rem;
+      font-family: 'MicrosoftYaHei';
+      margin-bottom: 0.96rem;
+      .teaching_box_img {
+        height: 3.4133rem;
+        width: 3.4133rem;
+        float: left;
+        img {
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
+      .teaching_box_item_center {
+        background-color: #fff;
+        height: 3.4133rem;
+        border-radius: 2.76rem;
+        padding: 0.2rem 0.8rem 0 1.7rem;
+        .item_center_title {
+          color: #FD514C;
+          font-size: 0.4rem;
+          margin: 0 0 0.1rem 1.7rem;
+        }
+        .item_center_content {
+          color: #9A9A9A;
+          font-size: 0.34rem;
+          margin: 0 0 0 1.8rem;
+        }
+      }
+    }
+  }
+  .team_boxs {
+    margin-top: 1.306rem;
+    .img_boxs {
+      text-align: center;
+      width: 8.04rem;
+      margin: 0 auto 0.9333rem;
+      height: 2.333rem;
+      background: url("../images/title@2x.png") no-repeat top center;
+      background-size: cover;
+      .img_boxs_title {
+        padding-top: 0.8rem;
+        color: #D02E2A;
+        font-size: 0.58666rem;
+        font-family: 'MicrosoftYaHei';
+        font-weight: bold;
+      }
+    }
+  }
+  .evaluate_box {
+    margin-top: 0.8rem;
+    .img_boxs {
+      text-align: center;
+      width: 8.04rem;
+      margin: 0 auto 0.8666rem;
+      height: 2.333rem;
+      background: url("../images/title@2x.png") no-repeat top center;
+      background-size: cover;
+      .img_boxs_title {
+        padding-top: 0.8rem;
+        color: #D02E2A;
+        font-size: 0.58666rem;
+        font-family: 'MicrosoftYaHei';
+        font-weight: bold;
+      }
+    }
+    .evaluate_box_item {
+      font-family: 'MicrosoftYaHei';
+      .evaluate_box_item_one {
+        margin-bottom: 0.706rem;
+        .head_img_box {
+          float: left;
+          width: 1.333rem;
+          height: 1.333rem;
+          margin: 0 0.253rem 0 0.2rem;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+        .evaluate_box_item_center {
+          float: left;
+          width: 7.52rem;
+          height: 2.5rem;
+          border-radius: 0.106rem;
+          overflow: hidden;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+          .pingjia_text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0.3rem 0.4rem 0 0.533rem;
+            color: #950400;
+            font-size: 0.346rem;
+          }
+        }
+      }
+      .evaluate_box_item_two {
+        margin: 0 0 0.706rem 1.106rem;
+        .head_img_box {
+          float: left;
+          width: 1.333rem;
+          height: 1.333rem;
+          margin: 0 0.253rem 0 0.2rem;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+        .evaluate_box_item_center {
+          //float: left;
+          //width: 7.306rem;
+          overflow: hidden;
+          height: 1.92rem;
+          border-radius: 0.106rem 0 0 0.106rem;
+          overflow: hidden;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+          .pingjia_text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0.3rem 0.2rem 0 0.533rem;
+            color: #950400;
+            font-size: 0.346rem;
+          }
+        }
+      }
+      .evaluate_box_item_three {
+        margin-bottom: 0.706rem;
+        .head_img_box {
+          float: left;
+          width: 1.333rem;
+          height: 1.333rem;
+          margin: 0 0.253rem 0 0.2rem;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+        .evaluate_box_item_center {
+          float: left;
+          width: 7.52rem;
+          height: 2.5rem;
+          border-radius: 0.106rem;
+          overflow: hidden;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+          .pingjia_text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0.3rem 0.4rem 0 0.533rem;
+            color: #950400;
+            font-size: 0.346rem;
+          }
+        }
+      }
+      .evaluate_box_item_four {
+        margin: 0 0 0 0.6rem;
+        .head_img_box {
+          float: left;
+          width: 1.333rem;
+          height: 1.333rem;
+          margin: 0 0.253rem 0 0.2rem;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+        .evaluate_box_item_center {
+          float: left;
+          width: 7.52rem;
+          height: 2.9rem;
+          border-radius: 0.106rem;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+          .pingjia_text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0.2rem 0.2rem 0 0.533rem;
+            color: #950400;
+            font-size: 0.346rem;
+          }
+        }
+      }
+    }
+  }
+  .erweima_boxs {
+    margin-top: 1.7333rem;
+    position: relative;
+    .huajian_bigs {
+      position: absolute;
+      right: 40px;
+      top: 4rem;
+    }
+    .huajian_fcs {
+      position: absolute;
+      left: 50px;
+      top: 0;
+      width: 0.746rem;
+      height: 0.386rem;
+    }
+    .erweima_center {
+      width: 3.946rem;
+      height: 3.96rem;
+      margin: 0 auto 0.7rem;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .erweima_box {
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        border: 3px solid #fcde92;
+        background-color: #D02E2A;
+        z-index: 9999 !important;
+      }
+      .erweima_one {
+        top: -11px;
+        left: -9px;
+      }
+      .erweima_two {
+        top: -11px;
+        right: -9px;
+      }
+      .erweima_three {
+        bottom: -10px;
+        left: -9px;
+      }
+      .erweima_four {
+        bottom: -10px;
+        right: -9px;
+      }
+    }
+    .erweima_text {
+      text-align: center;
+      color: #fae3a8;
+      font-size: 0.41333rem;
+      font-family: 'MicrosoftYaHei';
+    }
+    .audition_box {
+      width: 4.44rem;
+      height: 1.106rem;
+      line-height: 1.106rem;
+      text-align: center;
+      color: #D02E2A;
+      font-weight: bold;
+      font-family: 'MicrosoftYaHei';
+      font-size: 0.4rem;
+      background-color: #fae3a8;
+      border-radius: 0.546rem;
+      margin: 0.8rem auto 0.533rem;
+    }
+  }
+  .modal-dialog {
+    position: absolute;
+    margin: 0px !important;
+    top: 30%;
+    left: 0;
+    width: 100% !important;
+    .modal-content {
+      .modal-header {
+        border-bottom: 0;
+      }
+      .modal-body {
+        padding: 0px;
+        .video_box {
+          width: 100%;
+          height: 5.2rem;
+          .video_center {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

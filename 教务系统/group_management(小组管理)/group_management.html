@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小组管理</title>
+    <link rel="stylesheet" href="css/all-bb2128e635.css">
+    <link rel="stylesheet" href="css/all_v2-27192990b8.css">
+    <link rel="stylesheet" href="css/group_management.css">
+</head>
+<body>
+<!--小班管理-->
+<div class="group_management">
+    <!--搜索框-->
+    <div class="search_box">
+        <div class="search_item">
+            <input type="text" placeholder="老师姓名">
+            <span class="search_btn">搜索</span>
+        </div>
+    </div>
+    <!--新增小组-->
+    <div class="group_nav">
+        <div class="group_nav_item">
+            <p class="group_nav_selected_text">已选老师共计
+                <span class="group_nav_selected">84</span>位
+                （Scratch <span class="scratch_text">35</span>；
+                Python <span class="python_text">12</span>；
+                NOIP <span class="NOIP_text">30</span>）
+            </p>
+            <p class="group_nav_select_txt">可选老师共计
+                <span class="group_nav_select_text">32</span>位
+                （Scratch <span class="scratch_text">3</span>；
+                Python <span class="python_text">12</span>；
+                NOIP <span class="NOIP_text">25</span>）
+            </p>
+        </div>
+        <span class="add_group_btn">新增小组</span>
+    </div>
+    <!--列表-->
+    <div class="group_table">
+        <ul class="group_theader">
+            <li class="th_curriculum">课程类别</li>
+            <li class="th_groupName">小组名称</li>
+            <li class="th_groupLeader">组长</li>
+            <li class="th_number">组员数量</li>
+            <li class="th_member">小组成员</li>
+            <li class="th_operation">操作</li>
+        </ul>
+        <!--Scratch课程-->
+        <div class="type_Scratch"></div>
+        <!--Python课程-->
+        <div class="type_Python"></div>
+        <!--NOIP课程-->
+        <div class="type_NOIP"></div>
+    </div>
+
+    <!--新增小组弹窗-->
+    <div class="modal fade" id="add_group_Modal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"> 新增小组
+                    <img src="images/delet_img.png" alt="" class="close_btn">
+                </div>
+                <div class="modal-body">
+                    <div class="curriculum_select">
+                        <span class="leable_txt">课程名称：</span>
+                        <select class="form-control selected_input">
+                            <option>请选择</option>
+                            <option value="Scratch">Scratch</option>
+                            <option value="Python">Python</option>
+                            <option value="NOIP">NOIP</option>
+                        </select>
+                    </div>
+                    <div class="input_box">
+                        <div class="curriculum_input">
+                            <span class="leable_txt">小组名称：</span>
+                            <input type="text" class="form-control input_item add_input_item">
+                        </div>
+                        <div class="curriculum_input">
+                            <span class="leable_txt">组长：</span>
+                            <input type="text" class="form-control input_item add_leader_item">
+                        </div>
+                    </div>
+                    <p class="member_text">
+                        小组成员（<span class="member_text_item add_member_num"></span>人）
+                    </p>
+                    <div class="member_number add_member_number"></div>
+                    <div class="selected_teachers">
+                        <p class="member_text">
+                            可选老师（<span class="teacher_text_item add_teachers_num"></span>人）
+                        </p>
+                        <div class="search_teachers">
+                            <input type="text" class="search_teachers_input add_search">
+                            <span class="search_teachers_icon">
+                                <img src="images/search.png" alt="" class="search_teachers_img">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="selected_teachers_boxs add_selected_teachers">
+                        <span class="selected_teachers_item add_name_item">亮亮亮1</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮2</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮3</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮4</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item add_name_item">亮亮亮</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close_buttons add_item_btn">保存</button>
+                </div>
+            </div>
+        </div>
+        <!--提示框-->
+        <div class="prompt_box">
+            <span class="prompt_box_txt"></span>
+        </div>
+    </div>
+
+    <!--编辑小组弹窗-->
+    <div class="modal fade" id="edit_group_Modal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"> 编辑小组
+                    <img src="images/delet_img.png" alt="" class="close_btn">
+                </div>
+                <div class="modal-body">
+                    <div class="curriculum_select">
+                        <span class="leable_txt">课程名称：</span>
+                        <select class="form-control selected_input" disabled>
+                            <option value="请选择">请选择</option>
+                            <option value="Scratch">Scratch</option>
+                            <option value="Python">Python</option>
+                            <option value="NOIP">NOIP</option>
+                        </select>
+                    </div>
+                    <div class="input_box">
+                        <div class="curriculum_input">
+                            <span class="leable_txt">小组名称：</span>
+                            <input type="text" class="form-control input_item">
+                        </div>
+                        <div class="curriculum_input">
+                            <span class="leable_txt">组长：</span>
+                            <input type="text" class="form-control input_item">
+                        </div>
+                    </div>
+                    <p class="member_text">
+                        小组成员（<span class="member_text_item edit_member_num"></span>人）
+                    </p>
+                    <div class="member_number edit_member_number"></div>
+                    <div class="selected_teachers">
+                        <p class="member_text">
+                            可选老师（<span class="teacher_text_item edit_teachers_num"></span>人）
+                        </p>
+                        <div class="search_teachers">
+                            <input type="text" class="search_teachers_input">
+                            <span class="search_teachers_icon">
+                                <img src="images/search.png" alt="" class="search_teachers_img">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="selected_teachers_boxs edit_name_item_box">
+                        <span class="selected_teachers_item edit_name_item">亮亮亮1</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮2</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮3</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮4</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                        <span class="selected_teachers_item edit_name_item">亮亮亮</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close_buttons edit_item_btn">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--可选老师弹窗-->
+    <div class="modal fade" id="teacher_group_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"> 可选老师
+                    <img src="images/delet_img.png" alt="" class="close_btn">
+                </div>
+                <div class="modal-body">
+                    <h2 class="selected_title">Scratch</h2>
+                    <div class="selected_box_scratch">
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                    </div>
+
+                    <h2 class="selected_title">Python</h2>
+                    <div class="selected_box_scratch">
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                    </div>
+
+                    <h2 class="selected_title">NOIP</h2>
+                    <div class="selected_box_scratch">
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                        <span class="selected_box_item">亮亮亮</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close_buttons" data-dismiss="modal">知道了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/group_management.js"></script>
+</body>
+</html>

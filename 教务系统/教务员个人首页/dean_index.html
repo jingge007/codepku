@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教务员个人首页</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dean_index.css">
+</head>
+<body>
+<div class="dean_container">
+    <!--教务员-->
+    <div class="xialakuan">
+        <span class="hengxian_one">—&nbsp;&nbsp;—</span>
+        <span class="juese_item"> 角色选择：</span>
+        <select>
+            <option value="教务管理员">教务管理员</option>
+        </select>
+        <span class="hengxian_two">—&nbsp;&nbsp;—</span>
+    </div>
+    <!--开班人数、待排课、待寄件-->
+    <div class="dean_item_center">
+        <div class="dean_item">
+            <h2 class="dean_item_title">即将开课、结班班级：</h2>
+            <ul class="dean_item_text">
+                <li class="dean_txt curriculums">课程</li>
+                <li class="dean_txt_fix">
+                    <span class="open_class curriculums">即将开课班级（个）</span>
+                    <div class="weeking_boxs">
+                        <div class="weeking_item thisweeks">本周</div>
+                        <div class="weeking_item nextweeks">下周</div>
+                    </div>
+                </li>
+                <li class="dean_txt_fix">
+                    <span class="open_class curriculums">即将结班班级（个）</span>
+                    <div class="weeking_boxs">
+                        <div class="weeking_item thisweeks">本周</div>
+                        <div class="weeking_item nextweeks">下周</div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="dean_item_text baise">
+                <li class="dean_txt heise">Scratch</li>
+                <li class="dean_text_fix heise lanse lanse_week">3个</li>
+                <li class="dean_text_fix heise lanse lanse_nextweek">3个</li>
+                <li class="dean_text_fix heise lanse soon_week_class">3个</li>
+                <li class="dean_text_fix heise lanse soon_nextweek_class">3个</li>
+            </ul>
+            <ul class="dean_item_text huise">
+                <li class="dean_txt heise">Python</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+            </ul>
+            <ul class="dean_item_text baise">
+                <li class="dean_txt heise">NOIP</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+            </ul>
+            <ul class="dean_item_text huise">
+                <li class="dean_txt heise">专题课</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+                <li class="dean_text_fix heise">0个</li>
+            </ul>
+        </div>
+        <div class="dean_item">
+            <h2 class="dean_item_title">待排课、待寄件：</h2>
+            <ul class="dean_item_text">
+                <li class="dean_txt curriculums">课程</li>
+                <li class="dean_txt thisweeks">待排课(人)</li>
+                <li class="dean_txt nextweeks">待寄件(人)</li>
+            </ul>
+            <ul class="dean_item_text baise">
+                <li class="dean_txt heise">Scratch</li>
+                <li class="dean_txt heise lanse lines_curriculum">3人</li>
+                <li class="dean_txt heise lanse lines_Send">3人</li>
+            </ul>
+            <ul class="dean_item_text huise">
+                <li class="dean_txt heise">Python</li>
+                <li class="dean_txt heise">0人</li>
+                <li class="dean_txt heise">0人</li>
+            </ul>
+            <ul class="dean_item_text baise">
+                <li class="dean_txt heise">NOIP</li>
+                <li class="dean_txt heise">0人</li>
+                <li class="dean_txt heise">0人</li>
+            </ul>
+            <ul class="dean_item_text huise">
+                <li class="dean_txt heise">专题课</li>
+                <li class="dean_txt heise">0人</li>
+                <li class="dean_txt heise">0人</li>
+            </ul>
+        </div>
+    </div>
+    <h2 class="notice_item">续班通知：</h2>
+    <!--时间筛选-->
+    <div class="timer_box">
+        <span class="time_text">时间筛选：</span>
+        <input type="text" class="one_input form-control">
+        ———
+        <input type="text" class="two_input form-control">
+        <span class="button_box">查询</span>
+    </div>
+    <!--时间筛选列表-->
+    <ul class="dean_content">
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level2、Scratch Level3、Scratch Level4、Python Level1、Python Level2、Python Level3、Python Level4、NOIP level1、NOIP level2、NOIP level3、NOIP level4！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+        <li class="dean_content_item">
+            <div class="circle_box">
+                <span class="yuanquan"></span>
+            </div>
+            <div class="dean_content_item_text">通知！XXX同学通过销售XXX成功续班Scratch Level1、Scratch Level4、Python Level1、Python Level2！</div>
+            <div class="timer_item_box">
+                <span class="times">( 2018-01-30  18:56:13 )</span>
+            </div>
+        </li>
+    </ul>
+    <!--分页-->
+    <div class="page_boxs">
+        <span class="lines_items">1</span>
+        <span class="lines_items">2</span>
+        <span class="lines_items">3</span>
+    </div>
+
+    <!--即将开课的弹窗-->
+    <!--本周-->
+    <div class="modal fade" id="myModal_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-body_titles">即将开课班级</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="tables_boxs jiachu">
+                        <li class="tables_items tables_items_one">序号</li>
+                        <li class="tables_items tables_items_frou">班级名称</li>
+                        <li class="tables_items">上课时间</li>
+                        <li class="tables_items">上课老师</li>
+                        <li class="tables_items last_items">班级人数</li>
+                    </ul>
+                    <div class="tanchuan_box">
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下周-->
+    <div class="modal fade" id="myModal_five" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-body_titles">即将开课班级</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="tables_boxs jiachu">
+                        <li class="tables_items tables_items_one">序号</li>
+                        <li class="tables_items tables_items_frou">班级名称</li>
+                        <li class="tables_items">上课时间</li>
+                        <li class="tables_items">上课老师</li>
+                        <li class="tables_items last_items">班级人数</li>
+                    </ul>
+                    <div class="tanchuan_box">
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">周日 14:00</li>
+                            <li class="tables_items">蔡龙</li>
+                            <li class="tables_items last_items">2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--即将结课的弹窗-->
+    <!--本周-->
+    <div class="modal fade" id="myModal_end_week" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-body_titles">即将结班班级</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="tables_boxs jiachu">
+                        <li class="tables_items tables_items_one">序号</li>
+                        <li class="tables_items tables_items_frou">班级名称</li>
+                        <li class="tables_items">所属课程</li>
+                        <li class="tables_items">已过期课时数</li>
+                        <li class="tables_items last_items">需要续班人数</li>
+                    </ul>
+                    <div class="tanchuan_box">
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下周-->
+    <div class="modal fade" id="myModal_end_nextweek" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-body_titles">即将结班班级</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="tables_boxs jiachu">
+                        <li class="tables_items tables_items_one">序号</li>
+                        <li class="tables_items tables_items_frou">班级名称</li>
+                        <li class="tables_items">所属课程</li>
+                        <li class="tables_items">已过期课时数</li>
+                        <li class="tables_items last_items">需要续班人数</li>
+                    </ul>
+                    <div class="tanchuan_box">
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items tables_items_one">1</li>
+                            <li class="tables_items banji tables_items_frou">第一期05班</li>
+                            <li class="tables_items">Scratch Level2</li>
+                            <li class="tables_items">8</li>
+                            <li class="tables_items last_items">6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--待排课弹窗-->
+    <!--<div class="modal fade" id="myModal_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-body_titles">待排课</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="tables_boxs jiachu">
+                        <li class="tables_items tables_items_one lefts_items">序号</li>
+                        <li class="tables_items tables_items_two">学生姓名</li>
+                        <li class="tables_items tables_items_three">课程名称</li>
+                        <li class="tables_items tables_items_frou">课程状态</li>
+                        <li class="tables_items tables_items_frou">剩余预约次数</li>
+                        <li class="tables_items tables_items_three last_items">备注</li>
+                    </ul>
+                    <div class="tanchuan_box">
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one lefts_items">
+                                <span class="tables_txts">1</span>
+                            </li>
+                            <li class="lefts_items banji tables_items_two">
+                                <span class="tables_txts">张三</span>
+                            </li>
+                            <li class="lefts_items tables_items_three">
+                                <span class="tables_txts">Scratch Level1</span>
+                            </li>
+                            <li class="lefts_items tables_items_frou">
+                                <span class="tables_txts">等待排课</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">5</span>
+                            </li>
+                            <li class="lefts_items tables_items_three last_items">
+                                <span class="tables_txts">备注内容</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one lefts_items">
+                                <span class="tables_txts">1</span>
+                            </li>
+                            <li class="lefts_items banji tables_items_two">
+                                <span class="tables_txts">张三</span>
+                            </li>
+                            <li class="lefts_items tables_items_three">
+                                <span class="tables_txts">Scratch Level1</span>
+                            </li>
+                            <li class="lefts_items tables_items_frou">
+                                <span class="tables_txts">等待排课</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">5</span>
+                            </li>
+                            <li class="lefts_items tables_items_three last_items">
+                                <span class="tables_txts">备注内容</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one lefts_items">
+                                <span class="tables_txts">1</span>
+                            </li>
+                            <li class="lefts_items banji tables_items_two">
+                                <span class="tables_txts">张三</span>
+                            </li>
+                            <li class="lefts_items tables_items_three">
+                                <span class="tables_txts">Scratch Level1</span>
+                            </li>
+                            <li class="lefts_items tables_items_frou">
+                                <span class="tables_txts">等待排课</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">5</span>
+                            </li>
+                            <li class="lefts_items tables_items_three last_items">
+                                <span class="tables_txts">备注内容</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one lefts_items">
+                                <span class="tables_txts">1</span>
+                            </li>
+                            <li class="lefts_items banji tables_items_two">
+                                <span class="tables_txts">张三</span>
+                            </li>
+                            <li class="lefts_items tables_items_three">
+                                <span class="tables_txts">Scratch Level1</span>
+                            </li>
+                            <li class="lefts_items tables_items_frou">
+                                <span class="tables_txts">等待排课</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">5</span>
+                            </li>
+                            <li class="lefts_items tables_items_three last_items">
+                                <span class="tables_txts">备注内容</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one lefts_items">
+                                <span class="tables_txts">1</span>
+                            </li>
+                            <li class="lefts_items banji tables_items_two">
+                                <span class="tables_txts">张三</span>
+                            </li>
+                            <li class="lefts_items tables_items_three">
+                                <span class="tables_txts">Scratch Level1</span>
+                            </li>
+                            <li class="lefts_items tables_items_frou">
+                                <span class="tables_txts">等待排课</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">5</span>
+                            </li>
+                            <li class="lefts_items tables_items_three last_items">
+                                <span class="tables_txts">备注内容</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one lefts_items">
+                                <span class="tables_txts">1</span>
+                            </li>
+                            <li class="lefts_items banji tables_items_two">
+                                <span class="tables_txts">张三</span>
+                            </li>
+                            <li class="lefts_items tables_items_three">
+                                <span class="tables_txts">Scratch Level1</span>
+                            </li>
+                            <li class="lefts_items tables_items_frou">
+                                <span class="tables_txts">等待排课</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">5</span>
+                            </li>
+                            <li class="lefts_items tables_items_three last_items">
+                                <span class="tables_txts">备注内容</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="modal fade" id="myModal_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-body_titles">待排课</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="tables_boxs jiachu">
+                        <li class="tables_items tables_items_one lefts_items">序号</li>
+                        <li class="tables_items tables_items_two">学生姓名</li>
+                        <li class="tables_items tables_items_three">课程名称</li>
+                        <li class="tables_items tables_items_three">课程状态</li>
+                        <li class="tables_items tables_items_three">剩余预约次数</li>
+                        <li class="tables_items tables_items_three last_items">备注</li>
+
+                    </ul>
+                    <div class="tanchuan_box">
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">Scratch Level1</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">等待排课</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">9</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_three">
+                                <span class="txt_itemss">备注内容</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--待寄件弹窗-->
+    <div class="modal fade" id="myModal_three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-body_titles">待寄件</h2>
+                </div>
+                <div class="modal-body">
+                    <ul class="tables_boxs jiachu">
+                        <li class="tables_items tables_items_one lefts_items">序号</li>
+                        <li class="tables_items tables_items_two">学员姓名</li>
+                        <li class="tables_items tables_items_three">电话号码</li>
+                        <li class="tables_items tables_items_frou">寄件内容</li>
+                        <li class="tables_items tables_items_five last_items">寄件地址</li>
+                    </ul>
+                    <div class="tanchuan_box">
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                        <ul class="tables_boxs">
+                            <li class="tables_items_one tables_txt lefts_items">
+                                <span class="txt_itemss">1</span>
+                            </li>
+                            <li class="lefts_items tables_txt banji tables_items_two">
+                                <span class="txt_itemss">张三</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_three">
+                                <span class="txt_itemss">13645878985</span>
+                            </li>
+                            <li class="lefts_items tables_txt tables_items_frou">
+                                <span class="txt_itemss">S2硬件</span>
+                            </li>
+                            <li class="lefts_items tables_txt last_items tables_items_five">
+                                <span class="txt_itemss">北京市北京市市辖区东城区5345大大大大啊大大十大</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="js/dean_index.js"></script>
+</body>
+</html>

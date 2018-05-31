@@ -1,0 +1,120 @@
+html, body {
+    background-color: #FAFAFA;
+}
+
+.Assessment_box {
+    width: 1144px;
+    border: solid 1px #ebebeb;
+    margin: 30px auto;
+    background-color: #fff;
+    font-family: MicrosoftYaHei;
+}
+
+.Assessment_box .score_contanier {
+    width: 717px;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.Assessment_box .score_contanier .mod-data-select {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.Assessment_box .score_contanier .mod-data-select .ea-cell {
+    margin: 0 20px 0 20px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.Assessment_box .score_contanier .mod-data-select .data-title {
+    text-align: center;
+    font-size: 16px;
+}
+
+.Assessment_box .score_contanier .xiaoji_box {
+    height: 40px;
+    line-height: 40px;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto 20px;
+    font-size: 20px;
+    color: #666666;
+    border-bottom: 2px solid #666;
+}
+
+.Assessment_box .score_contanier .centont_box {
+    width: 713px;
+    margin: 0 auto 20px;
+}
+
+.Assessment_box .score_contanier .centent_title {
+    width: 100%;
+    height: 40px;
+    background-color: #f6f7fb;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.Assessment_box .score_contanier tr td {
+    text-align: center;
+}
+
+.Assessment_box .score_contanier .tr_item {
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #ced0d7;
+    color: #666;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.Assessment_box .score_contanier .tr_item td:nth-child(2) {
+    border-left: 1px solid #ced0d7;
+    border-right: 1px solid #ced0d7;
+}
+
+.Assessment_box .score_contanier .tr_item .color_red {
+    color: red !important;
+}
+
+.Assessment_box .score_contanier .tr_item .color_greens {
+    color: green !important;
+}
+
+.Assessment_box .score_contanier .pagination {
+    margin: 0 0 15px 0;
+}
+
+.Assessment_box .beizu {
+    width: 713px;
+    margin: 0 auto;
+}
+
+.Assessment_box .beizu .beizu_text {
+    display: inline-block;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.Assessment_box .beizu .beizu_center {
+    width: 713px;
+    margin: 0 auto 20px;
+    /* height: 50px;*/
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+    padding: 10px 15px;
+}

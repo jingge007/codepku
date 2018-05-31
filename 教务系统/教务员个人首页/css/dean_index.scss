@@ -1,0 +1,343 @@
+.dean_container {
+  width: 1200px;
+  margin: 150px auto 0;
+  background-color: #fff;
+  padding: 10px 0 60px 0;
+  font-family: "Microsoft YaHei";
+  border: 1px solid #C0C0C0;
+  .xialakuan {
+    height: 35px;
+    margin: 10px 0 35px 45px;
+    font-size: 15px;
+    font-weight: bold;
+    .juese_item {
+      display: inline-block;
+      color: #19AAEA;
+      font-size: 15px;
+      font-weight: bolder;
+    }
+    .hengxian_one {
+      color: #363636;
+      display: inline-block;
+      margin-right: 5px;
+      line-height: 25px;
+    }
+    .hengxian_two {
+      color: #363636;
+      display: inline-block;
+      margin-left: 5px;
+    }
+    select {
+      height: 25px;
+      line-height: 25px;
+      color: #19AAEA;
+    }
+  }
+  .dean_item_center {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px;
+    .dean_item {
+      width: 520px;
+      .dean_item_title {
+        border-left: 11px solid #199ED8;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 18px;
+        font-size: 18px;
+        color: #333333;
+        font-weight: bolder;
+        margin-bottom: 25px;
+      }
+      .baise {
+        background-color: #fff;
+      }
+      .huise {
+        background-color: #F7F5F6;
+      }
+      .dean_item_text {
+        width: 100%;
+        display: flex;
+        cursor: pointer;
+        .curriculums {
+          background-color: #666666;
+        }
+        .thisweeks {
+          background-color: #97C852;
+        }
+        .nextweeks {
+          background-color: #65B5DA;
+        }
+        .dean_txt {
+          height: 64px;
+          flex: 1;
+          line-height: 64px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bolder;
+          color: #fff;
+        }
+        .dean_txt_fix {
+          width: 190px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bolder;
+          color: #fff;
+          .open_class {
+            display: block;
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            box-sizing: border-box;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+          }
+          .weeking_boxs {
+            height: 32px;
+            display: flex;
+            width: 100%;
+            .weeking_item {
+              height: 32px;
+              line-height: 32px;
+              box-sizing: border-box;
+              border-left: 1px solid #fff;
+              border-top: 1px solid #fff;
+              flex: 1;
+            }
+          }
+        }
+        .dean_text_fix {
+          height: 64px;
+          width: 95px;
+          line-height: 64px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bolder;
+          color: #fff;
+        }
+        .heise {
+          color: #000;
+        }
+        .lanse {
+          color: #3900FF !important;
+        }
+      }
+
+    }
+  }
+  .notice_item {
+    margin: 60px 45px 45px 45px;
+    border-left: 11px solid #199ED8;
+    padding-left: 18px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: bolder;
+  }
+  .timer_box {
+    width: 900px;
+    margin: 0 auto 34px;
+    height: 45px;
+    text-align: center;
+    input {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      color: #333;
+      font-size: 14px;
+      width: 130px;
+      outline: none;
+      text-align: center;
+    }
+    .one_input {
+      margin-right: 10px;
+    }
+    .two_input {
+      margin: 0 30px 0 10px;
+    }
+    .button_box {
+      width: 80px;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+      font-size: 15px;
+      background-color: #337AB7;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .time_text {
+      font-size: 15px;
+      color: #333;
+      font-weight: 600;
+    }
+  }
+  .dean_content {
+    margin: 0 45px;
+    .dean_content_item:nth-child(odd) {
+      background-color: #EFEDEE;
+    }
+    .dean_content_item:nth-child(even) {
+      background-color: #fff;
+    }
+    .dean_content_item {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      padding: 0 20px;
+      .circle_box {
+        flex: 1;
+        position: relative;
+        .yuanquan {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -4px 0 0 -4px;
+          width: 8px;
+          height: 8px;
+          background-color: #000;
+          border-radius: 50%;
+        }
+      }
+      .dean_content_item_text {
+        flex: 15;
+        color: #333333;
+        font-size: 15px;
+        padding: 10px 0;
+        text-align: left;
+      }
+      .timer_item_box {
+        flex: 4;
+        position: relative;
+        font-size: 14px;
+        color: #5E5E5E;
+        .times {
+          position: absolute;
+          width: 100%;
+          height: 22px;
+          left: 50%;
+          top: 50%;
+          margin: -11px 0 0 -50%;
+        }
+      }
+    }
+  }
+  .page_boxs {
+    margin: 50px auto 0;
+    padding-bottom: 40px;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+    .lines_items {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      color: #000;
+      display: inline-block;
+      border-radius: 8px;
+      margin: 0 8px;
+      cursor: pointer;
+    }
+  }
+  .modal {
+    .modal-dialog-top {
+      margin: 300px auto 0 !important;
+    }
+    .modal-dialog {
+      width: 830px;
+      margin: 150px auto 0;
+    }
+    .modal-header {
+      .modal-body_titles {
+        color: #2758b9;
+        font-weight: bolder;
+        position: relative;
+        font-size: 16px;
+        display: inline-block;
+      }
+    }
+    .modal-body {
+      padding: 15px 15px 20px 15px;
+      font-size: 12px;
+      .tanchuan_box {
+        /* height: 320px;
+         overflow-y: auto;*/
+      }
+      .last_items {
+        border-right: 1px solid #DDDDDD !important;
+      }
+      .lefts_items {
+        border-left: 1px solid #DDDDDD !important;
+      }
+      .jiachu {
+        font-weight: bolder !important;
+        /* background-color: #f2f2f2 !important;*/
+        border-top: 1px solid #DDDDDD;
+      }
+      .tables_boxs {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #DDDDDD;
+        li {
+          position: relative;
+        }
+        .banji {
+          color: #3366FF !important;
+        }
+        .tables_txts {
+          width: 100%;
+          position: absolute;
+          height: 20px;
+          top: 50%;
+          left: 50%;
+          margin: -10px 0 0 -50%;
+          text-align: center;
+        }
+        .tables_txt {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .txt_itemss {
+            display: inline-block;
+            padding: 10px;
+            line-height: 20px;
+          }
+        }
+        .tables_items {
+          flex: 3;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-left: 1px solid #DDDDDD;
+        }
+        .tables_items_one {
+          flex: 1 !important;
+        }
+        .tables_items_two {
+          flex: 2 !important;
+        }
+        .tables_items_three {
+          flex: 3 !important;
+        }
+        .tables_items_frou {
+          flex: 4 !important;
+        }
+        .tables_items_five {
+          flex: 5 !important;
+        }
+      }
+    }
+  }
+}
+
+.datetimepicker {
+  top: 750px !important;
+}
+

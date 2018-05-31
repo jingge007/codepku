@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python在线编码页面</title>
+    <link rel="stylesheet" href="css/console.css">
+</head>
+<body>
+<div class="console_edit_box">
+    <!--保存按钮-->
+    <div class="top_submit_plate">
+        <a href="javascript:;" class="preservation_works">保存</a>
+    </div>
+    <!--左边的代码编辑区域-->
+    <div class="console_conter">
+        <div id="menu" class="content_left clearfix">
+            <div class="python_top_left">
+                <div class="motion_button">
+                    <button class="circulate_code_button" id="runCode">运行</button>
+                </div>
+                <div class="python_code_content">
+                    <pre id="code_editor"> # Python  请先打开编玩边学Python助手
+ print("Hello,Python world of CodePKU!")</pre>
+                </div>
+            </div>
+        </div>
+        <!--屏幕两边的分隔条-->
+        <div id="rightbar"></div>
+    </div>
+    <!--右边的代码编辑区域-->
+    <div class="content_right">
+        <div id="console">
+            <div class="clearboxs">清屏</div>
+        </div>
+        <span id="output"></span>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/ace.js"></script>
+<script src="js/jqconsole.js"></script>
+<script src="js/skulpt.min.js"></script>
+<script src="js/skulpt-stdlib.js"></script>
+<script src="js/console.js"></script>
+</body>
+</html>

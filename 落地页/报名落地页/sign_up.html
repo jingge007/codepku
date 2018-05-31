@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>报名落地页</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sign_up.css">
+</head>
+<body>
+<div class="mobile_sign_up">
+    <!--banner图区域-->
+    <div class="mobile_sign_up_banner"></div>
+    <!--报名表单-->
+    <div class="mobile_sign_up_form">
+        <form>
+            <h2 class="mobile_sign_up_title">报名表</h2>
+            <input type="text" placeholder="孩子姓名" class="mobile_sign_up_input">
+            <select name="age" class="mobile_sign_up_select">
+                <option value="">请选择孩子年龄</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+            </select>
+            <input type="text" placeholder="家长手机号" class="mobile_sign_up_input">
+            <div class="verification_code_box">
+                <input type="text" placeholder="验证码" class="verification_code_input">
+                <span class="verification_code_btn">获取验证码</span>
+            </div>
+            <button type="submit" class="sign_up_btn">立即报名</button>
+        </form>
+    </div>
+    <!--领取福利-->
+    <div class="welfare_box">
+        <span>领取额外福利“价值239元少儿编程课程”</span>
+        <img src="images/01icon.png" alt="" class="receive_btn receive_icon">
+        <img src="images/03icon_gray.png" alt="" class="receive_btn unreceive_icon">
+    </div>
+    <!--额外福利详情-->
+    <div class="welfare_box_txt">
+        <span>额外福利详情</span>
+        <img src="images/04icon01.png" alt="" class="arrow_icon">
+    </div>
+    <div class="mobile_details_box">
+        <!--额外福利-->
+        <div class="extra_benefits_box">
+            <div class="extra_benefits_box_banner"></div>
+            <h2 class="extra_benefits_box_title">价值<span class="extra_benefits_color">239元</span>少儿编程课程一套，6-17岁零基础孩子适用</h2>
+            <h1 class="course_content">课程内容</h1>
+            <span class="line_icon"></span>
+            <div class="course_content_box">
+                <h2 class="course_content_title">项目一：追逐类游戏制作—大战苦力怕</h2>
+                <p class="course_content_txt">1、熟悉编程软件—Scratch编辑器的操作；</p>
+                <p class="course_content_txt">2、 Scratch的基本操作和角色的移动；</p>
+                <p class="course_content_txt">3、 制作角色Steve动态行走效果；</p>
+                <p class="course_content_txt">4、初识坐标和复制苦力怕；</p>
+
+                <h2 class="course_content_title">项目二：障碍类游戏制作—Flappy Bird</h2>
+                <p class="course_content_txt">1、 制作飞行的角色Steve</p>
+                <p class="course_content_txt">2、制作角色苦力怕；</p>
+                <p class="course_content_txt">3、实现苦力怕随机出现功能；</p>
+            </div>
+            <div class="harvest_banner"></div>
+        </div>
+        <!--常见问题-->
+        <div class="common_problem">
+            <h1 class="course_content">常见问题</h1>
+            <span class="line_icon"></span>
+            <div class="common_problem_box">
+                <div class="common_problem_content">
+                    <p class="common_problem_item">
+                        <span class="common_problem_icon icon_blue">Q</span>
+                        <span>在哪里学习这套课程呢？</span>
+                    </p>
+                    <p class="common_problem_item">
+                        <span class="common_problem_icon icon_yellow">A</span>
+                        <span>本套课程为在线课程，在家登录电脑即可学习。</span>
+                    </p>
+                </div>
+                <div class="common_problem_content">
+                    <p class="common_problem_item">
+                        <span class="common_problem_icon icon_blue">Q</span>
+                        <span>学习课程对电脑有什么要求吗？</span>
+                    </p>
+                    <p class="common_problem_item">
+                        <span class="common_problem_icon icon_yellow">A</span>
+                        <span>普通电脑即可，需配置耳机和摄像头。</span>
+                    </p>
+                </div>
+                <div class="common_problem_content">
+                    <p class="common_problem_item">
+                        <span class="common_problem_icon icon_blue">Q</span>
+                        <span>零基础孩子可以学习吗？</span>
+                    </p>
+                    <p class="common_problem_item">
+                        <span class="common_problem_icon icon_yellow">A</span>
+                        <span>6-17岁零基础孩子都可以学习。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--报名成功的弹窗-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default footer_icon" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/sign_up.js"></script>
+</body>
+</html>

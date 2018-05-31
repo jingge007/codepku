@@ -1,0 +1,652 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0; }
+
+.groundpage_box {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'MicrosoftYaHei';
+  background-color: #FAECDF;
+  /*banner图样式*/
+  /*活动简介样式*/
+  /*现金豪礼样式*/
+  /*我要创作、我的作品样式*/
+  /* 立即开抢的弹窗样式*/ }
+  .groundpage_box .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .groundpage_box .clearfix {
+    *zoom: 1; }
+  .groundpage_box p {
+    padding: 0;
+    margin: 0; }
+  .groundpage_box .groundpage_box_banner {
+    width: 100%;
+    height: 785px;
+    overflow: hidden; }
+    .groundpage_box .groundpage_box_banner img {
+      height: 785px;
+      vertical-align: middle;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  .groundpage_box .introduction_items {
+    width: 802px;
+    height: 381px;
+    background: url("../images/hongbaokapiao.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 775px;
+    left: 50%;
+    margin-left: -401px; }
+    .groundpage_box .introduction_items .introduction_items_text {
+      width: 470px;
+      position: absolute;
+      top: 45px;
+      right: 70px;
+      color: #76643c;
+      font-size: 16px; }
+      .groundpage_box .introduction_items .introduction_items_text .introduction_txt {
+        margin-bottom: 25px; }
+      .groundpage_box .introduction_items .introduction_items_text .introduction_txt_item {
+        margin-bottom: 8px; }
+      .groundpage_box .introduction_items .introduction_items_text .introduction_txts {
+        margin-bottom: 25px; }
+      .groundpage_box .introduction_items .introduction_items_text .introduction_bianse {
+        color: #ff454c; }
+    .groundpage_box .introduction_items .introduction_timer {
+      width: 434px;
+      height: 30px;
+      line-height: 30px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-30%);
+      -moz-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+      -o-transform: translateX(-30%);
+      transform: translateX(-30%);
+      bottom: 40px; }
+      .groundpage_box .introduction_items .introduction_timer .introduction_timer_text {
+        float: left;
+        color: #76643c;
+        font-size: 16px;
+        letter-spacing: 3px;
+        margin-right: 5px; }
+      .groundpage_box .introduction_items .introduction_timer .introduction_timer_box {
+        float: right;
+        font-size: 20px;
+        color: #de3c44;
+        letter-spacing: 4px; }
+  .groundpage_box .zhengfangxing_one {
+    width: 111px;
+    height: 104px;
+    position: absolute;
+    top: 1200px;
+    right: 57px; }
+  .groundpage_box .zhengfangxing_two {
+    width: 223px;
+    height: 271px;
+    position: absolute;
+    top: 1742px;
+    left: 0; }
+  .groundpage_box .zhengfangxing_three {
+    width: 149px;
+    height: 131px;
+    position: absolute;
+    top: 2410px;
+    right: 24px; }
+  .groundpage_box .cash_container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 183px; }
+    .groundpage_box .cash_container .cash_box {
+      width: 504px;
+      height: 89px;
+      margin: 227px auto 50px; }
+    .groundpage_box .cash_container .giftbox_title {
+      padding: 8px 0 0 26px;
+      letter-spacing: 2px;
+      color: #ff464d;
+      font-size: 22px;
+      display: inline-block; }
+      .groundpage_box .cash_container .giftbox_title .giftbox_title_item {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 26px !important;
+        font-family: 'MicrosoftYaHei-Bold';
+        font-weight: bolder;
+        color: #ff464d; }
+    .groundpage_box .cash_container .giftbox_title_text {
+      position: absolute;
+      top: 8px;
+      left: 545px;
+      font-size: 20px;
+      color: #9e885a; }
+    .groundpage_box .cash_container .giftbox_one {
+      width: 1200px;
+      height: 447px;
+      background: url("../images/kuang-01.png");
+      background-size: cover;
+      margin-bottom: 59px;
+      position: relative; }
+      .groundpage_box .cash_container .giftbox_one .progressbar_box {
+        margin: 130px 0 0 105px;
+        width: 968px;
+        height: 4px;
+        background-color: #e4c992;
+        position: relative; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .xiaogou_logo {
+          position: absolute;
+          top: -63px;
+          left: -20px;
+          width: 65px;
+          height: 68px;
+          z-index: 9999 !important; }
+          .groundpage_box .cash_container .giftbox_one .progressbar_box .xiaogou_logo img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle; }
+          .groundpage_box .cash_container .giftbox_one .progressbar_box .xiaogou_logo .xiaogou_logo_text {
+            color: #de3c44;
+            font-size: 18px;
+            position: absolute;
+            top: 10px;
+            left: 80px;
+            width: 230px;
+            display: none; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .circle_boxs {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #e4c992;
+          position: absolute;
+          top: -8px; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .lineboxs {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1%;
+          height: 4px;
+          background-image: linear-gradient(161deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#de3c44, #de3c44);
+          background-blend-mode: normal, normal; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .yuanquan_bg {
+          background-image: linear-gradient(161deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#de3c44, #de3c44);
+          background-blend-mode: normal, normal; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .circle_one {
+          left: 0px;
+          background-image: linear-gradient(161deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#de3c44, #de3c44);
+          background-blend-mode: normal, normal; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .circle_two {
+          left: 242px; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .circle_three {
+          left: 484px; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .circle_four {
+          left: 726px; }
+        .groundpage_box .cash_container .giftbox_one .progressbar_box .circle_five {
+          left: 968px; }
+      .groundpage_box .cash_container .giftbox_one .activity_boxs {
+        margin: 20px 0 0 9px;
+        height: 200px;
+        position: relative; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_boxs_item {
+          width: 194px;
+          height: 125px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          background-size: cover;
+          background: url("../images/hongbao-01.png"); }
+          .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_boxs_item .activity_boxs_item_text {
+            position: absolute;
+            top: 60px;
+            left: 76px;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-size: 18px;
+            font-weight: bolder;
+            color: #de3c44; }
+          .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_boxs_item .activity_boxs_item_txt {
+            padding-top: 15px;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 105px; }
+          .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_boxs_item .activity_boxs_item_text_center {
+            color: #de3c44;
+            font-size: 16px;
+            margin-bottom: 8px; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_one {
+          left: 7px; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_two {
+          left: 250px;
+          display: none; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_three {
+          left: 494px;
+          display: none; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_four {
+          left: 737px;
+          display: none; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .activity_five {
+          left: 980px;
+          display: none; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .haobao_item {
+          width: 195px;
+          height: 106px;
+          position: absolute;
+          top: 19px;
+          background-size: cover;
+          background: url("../images/hongbao-02.png"); }
+          .groundpage_box .cash_container .giftbox_one .activity_boxs .haobao_item .haobao_item_text {
+            display: block;
+            text-align: center;
+            line-height: 106px;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-size: 18px;
+            font-weight: bolder;
+            color: #de3c44; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .haobao_item_two {
+          left: 250px; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .haobao_item_three {
+          left: 494px; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .haobao_item_four {
+          left: 736px; }
+        .groundpage_box .cash_container .giftbox_one .activity_boxs .haobao_item_five {
+          left: 982px; }
+    .groundpage_box .cash_container .giftbox_two {
+      width: 1200px;
+      height: 469px;
+      background: url("../images/kuang-02.png");
+      background-size: cover;
+      margin-bottom: 61px;
+      position: relative; }
+      .groundpage_box .cash_container .giftbox_two .reward_box {
+        padding: 0;
+        margin: 45px auto 0;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none; }
+        .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item {
+          padding-top: 6px;
+          width: 246px;
+          height: 289px;
+          background-image: linear-gradient(146deg, #ff7b58 0%, #ff434c 100%), linear-gradient(#ff434c, #ff434c);
+          background-blend-mode: normal, normal;
+          border-radius: 10px;
+          text-align: center; }
+          .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .header_img {
+            width: 232px;
+            height: 210px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 0 auto;
+            background-color: #fff; }
+            .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .header_img .header_img_item {
+              width: 100%;
+              height: 166px;
+              vertical-align: top; }
+            .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .header_img .head_icon {
+              float: left;
+              margin: 12px 0 0 10px; }
+              .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .header_img .head_icon .header_icon_item {
+                width: 24px;
+                height: 23px;
+                vertical-align: middle;
+                margin-right: 8px;
+                display: inline-block; }
+              .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .header_img .head_icon .mingchengs {
+                display: inline-block;
+                font-size: 13px;
+                color: #AEBFCF; }
+            .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .header_img .timer_box_items {
+              float: right;
+              margin: 15px 8px 0 0;
+              font-size: 13px;
+              color: #AEBFCF; }
+          .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .first_itemss {
+            margin: 13px 0 4px 0;
+            color: #fff;
+            font-family: 'MicrosoftYaHei-Bold';
+            font-weight: bold;
+            font-size: 18px; }
+          .groundpage_box .cash_container .giftbox_two .reward_box .reward_box_item .reward_money {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 28px; }
+      .groundpage_box .cash_container .giftbox_two .giftbox_title_txts {
+        margin-top: 29px;
+        text-align: center;
+        color: #ff484d;
+        font-size: 18px;
+        letter-spacing: 3px; }
+    .groundpage_box .cash_container .giftbox_three {
+      width: 1200px;
+      height: 447px;
+      background: url("../images/kuang-03.png");
+      background-size: cover;
+      margin-bottom: 71px;
+      position: relative; }
+      .groundpage_box .cash_container .giftbox_three .programming_box {
+        padding: 0;
+        margin: 60px auto 0;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none; }
+        .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_tops {
+          padding-top: 60px; }
+        .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item {
+          width: 300px;
+          height: 290px;
+          text-align: center; }
+          .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item .programming_box_img1 {
+            width: 256px;
+            height: 143px;
+            vertical-align: top;
+            margin-bottom: 20px; }
+          .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item .programming_box_item_text {
+            font-size: 26px;
+            font-family: 'MicrosoftYaHei-Bold';
+            color: #c49d76;
+            margin-bottom: 5px; }
+          .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item .programming_box_item_txt {
+            color: #c49d76;
+            font-size: 18px; }
+          .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item .programming_box_img2 {
+            width: 265px;
+            height: 231px;
+            vertical-align: top;
+            margin-bottom: -13px; }
+          .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item .Shoot_button {
+            width: 201px;
+            height: 44px;
+            background-color: #ff4a4d;
+            border-radius: 22px;
+            font-size: 21px;
+            font-family: 'MicrosoftYaHei-Bold';
+            color: #f7f7f7;
+            text-align: center;
+            line-height: 44px;
+            margin: 130px auto 15px;
+            cursor: pointer;
+            font-weight: bolder;
+            letter-spacing: 8px; }
+          .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item .Shoot_button_end {
+            background-color: #888888;
+            cursor: not-allowed; }
+          .groundpage_box .cash_container .giftbox_three .programming_box .programming_box_item .Shoot_button_text {
+            letter-spacing: 4px;
+            color: #ff434c;
+            font-size: 20px; }
+  .groundpage_box .puppy_logo {
+    position: absolute;
+    top: 820px;
+    right: 57px;
+    width: 106px;
+    height: 182px;
+    background: url("../images/xuanfu.png");
+    background-size: cover;
+    text-align: center;
+    z-index: 999 !important; }
+    .groundpage_box .puppy_logo .creation_buttons, .groundpage_box .puppy_logo .works_boxs {
+      width: 100px;
+      height: 38px;
+      line-height: 38px;
+      text-decoration: none;
+      display: block;
+      color: #fff;
+      font-weight: bolder;
+      font-size: 16px;
+      margin: 85px auto 0; }
+    .groundpage_box .puppy_logo .works_boxs {
+      margin: 20px auto 0; }
+  .groundpage_box .footerboxs {
+    width: 100%;
+    height: 2423px;
+    background: url("../images/bg-hong.png");
+    background-size: cover;
+    padding-top: 43px;
+    /*如何参与样式*/
+    /*活动规则样式*/
+    /*常见问答样式*/
+    /*编玩边学logo样式*/ }
+    .groundpage_box .footerboxs .participate_box .footerboxs_title_one {
+      width: 506px;
+      height: 116px;
+      margin: 0 auto 31px; }
+      .groundpage_box .footerboxs .participate_box .footerboxs_title_one img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle; }
+    .groundpage_box .footerboxs .participate_box .footerboxs_center_one {
+      margin: 0 auto 30px;
+      width: 1196px;
+      height: 601px;
+      border-radius: 20px;
+      border: solid 2px #e8d39e; }
+      .groundpage_box .footerboxs .participate_box .footerboxs_center_one .footerboxs_center_one_title {
+        margin: 43px auto 40px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'MicrosoftYaHei-Bold';
+        color: #f6ecd1; }
+      .groundpage_box .footerboxs .participate_box .footerboxs_center_one .footerboxs_center_one_list {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none; }
+        .groundpage_box .footerboxs .participate_box .footerboxs_center_one .footerboxs_center_one_list .footerboxs_center_one_list_item {
+          width: 257px;
+          height: 310px; }
+          .groundpage_box .footerboxs .participate_box .footerboxs_center_one .footerboxs_center_one_list .footerboxs_center_one_list_item img {
+            width: 257px;
+            height: 164px;
+            vertical-align: top;
+            margin-bottom: 15px;
+            display: block; }
+          .groundpage_box .footerboxs .participate_box .footerboxs_center_one .footerboxs_center_one_list .footerboxs_center_one_list_item .step_titles {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #f6ecd1;
+            font-weight: normal; }
+          .groundpage_box .footerboxs .participate_box .footerboxs_center_one .footerboxs_center_one_list .footerboxs_center_one_list_item .step_center {
+            color: #f6ecd1;
+            font-size: 16px; }
+      .groundpage_box .footerboxs .participate_box .footerboxs_center_one .first_step_box {
+        font-size: 24px;
+        font-family: 'MicrosoftYaHei-Bold';
+        margin-bottom: 16px;
+        color: #f6ecd1;
+        text-align: center; }
+      .groundpage_box .footerboxs .participate_box .footerboxs_center_one .step_buttons {
+        width: 340px;
+        height: 74px;
+        background-image: linear-gradient(161deg, #fcdbae 0%, #e2bc8b 100%), linear-gradient(#f6ecd1, #f6ecd1);
+        background-blend-mode: normal, normal;
+        border-radius: 37px;
+        line-height: 74px;
+        text-align: center;
+        color: #e3434b;
+        font-family: 'MicrosoftYaHei-Bold';
+        font-size: 26px;
+        margin: 0 auto;
+        cursor: pointer;
+        font-weight: bolder; }
+    .groundpage_box .footerboxs .rule_boxs .footerboxs_title {
+      width: 506px;
+      height: 122px;
+      margin: 0 auto 34px; }
+      .groundpage_box .footerboxs .rule_boxs .footerboxs_title img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top; }
+    .groundpage_box .footerboxs .rule_boxs .rule_boxs_center {
+      width: 1196px;
+      height: 261px;
+      border-radius: 20px;
+      border: solid 2px #e8d39e;
+      margin: 0 auto 30px; }
+      .groundpage_box .footerboxs .rule_boxs .rule_boxs_center .rule_boxs_center_text:first-child {
+        padding-top: 40px; }
+      .groundpage_box .footerboxs .rule_boxs .rule_boxs_center .rule_boxs_center_text {
+        text-align: left;
+        color: #f6ecd1;
+        font-size: 16px;
+        line-height: 30px;
+        margin-left: 53px; }
+    .groundpage_box .footerboxs .problem_boxs .footerboxs_title {
+      width: 505px;
+      height: 117px;
+      margin: 0 auto 37px; }
+      .groundpage_box .footerboxs .problem_boxs .footerboxs_title img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top; }
+    .groundpage_box .footerboxs .problem_boxs .problem_boxs_center {
+      padding: 0;
+      width: 1196px;
+      height: 596px;
+      border-radius: 20px;
+      border: solid 2px #e8d39e;
+      margin: 0 auto 197px;
+      list-style: none; }
+      .groundpage_box .footerboxs .problem_boxs .problem_boxs_center .problem_boxs_center_item:first-child {
+        margin-top: 35px; }
+      .groundpage_box .footerboxs .problem_boxs .problem_boxs_center .problem_boxs_center_item {
+        padding: 0 53px 0 40px;
+        font-family: 'MicrosoftYaHei-Bold';
+        margin-bottom: 30px; }
+        .groundpage_box .footerboxs .problem_boxs .problem_boxs_center .problem_boxs_center_item .serial_number_title {
+          margin-bottom: 10px; }
+          .groundpage_box .footerboxs .problem_boxs .problem_boxs_center .problem_boxs_center_item .serial_number_title .serial_number_item {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-color: #fcdbae;
+            border-radius: 50%;
+            color: #e3424a;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
+            font-weight: bolder;
+            margin-right: 10px; }
+          .groundpage_box .footerboxs .problem_boxs .problem_boxs_center .problem_boxs_center_item .serial_number_title .serial_number_cnter {
+            display: inline-block;
+            font-size: 16px;
+            color: #fcdbae;
+            font-weight: bolder; }
+        .groundpage_box .footerboxs .problem_boxs .problem_boxs_center .problem_boxs_center_item .problem_boxs_center_text {
+          font-size: 16px;
+          color: #fcdbae;
+          margin-left: 35px;
+          line-height: 25px; }
+    .groundpage_box .footerboxs .bwbx_logo {
+      width: 189px;
+      height: 73px;
+      margin: 0 auto; }
+      .groundpage_box .footerboxs .bwbx_logo img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top; }
+  .groundpage_box .modal-dialog {
+    margin: 90px auto 0px !important;
+    width: 601px !important; }
+    .groundpage_box .modal-dialog .modal-content {
+      box-shadow: none;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background-color: transparent !important; }
+      .groundpage_box .modal-dialog .modal-content .modal-header {
+        padding: 0 !important;
+        border-bottom: 0 !important; }
+      .groundpage_box .modal-dialog .modal-content .modal-body {
+        padding: 0 !important; }
+        .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from {
+          width: 601px;
+          height: 513px;
+          margin: 0 auto;
+          z-index: 999 !important;
+          position: relative; }
+          .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from img {
+            width: 100%;
+            height: 100%;
+            vertical-align: top; }
+          .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input {
+            position: absolute;
+            bottom: 0;
+            left: 1px;
+            width: 600px;
+            height: 394px; }
+            .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .close_items_button {
+              width: 18px;
+              height: 18px;
+              position: absolute;
+              right: 0;
+              top: -40px;
+              cursor: pointer;
+              opacity: 0.5; }
+            .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .close_items_button:hover {
+              opacity: 1; }
+            .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .biaodan_from_input_title {
+              font-size: 26px;
+              color: #fff;
+              font-family: 'MicrosoftYaHei-Bold';
+              margin-top: 28px;
+              text-align: center;
+              font-weight: bolder; }
+            .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .biaodan_from_input_center {
+              padding: 21px 120px 0 120px; }
+              .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .biaodan_from_input_center input {
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                text-indent: 1em;
+                border-radius: 2px;
+                border: solid 1px #fe504e;
+                color: #bababa;
+                font-size: 17px;
+                margin-top: 30px;
+                outline: none; }
+              .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .biaodan_from_input_center .yangzhengma_inputs {
+                width: 208px;
+                float: left; }
+              .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .biaodan_from_input_center .yangzhengma_buttons {
+                float: right;
+                width: 127px;
+                height: 40px;
+                background-color: #ff534e;
+                line-height: 40px;
+                text-align: center;
+                outline: none;
+                border: 0;
+                border-radius: 2px;
+                margin-top: 30px;
+                color: #fff;
+                font-size: 17px; }
+            .groundpage_box .modal-dialog .modal-content .modal-body .biaodan_from .biaodan_from_input .receive_item_button {
+              text-align: center;
+              color: #fff;
+              font-size: 18px;
+              font-family: 'MicrosoftYaHeiLight';
+              width: 355px;
+              height: 40px;
+              background-image: linear-gradient(0deg, #fd5e48 0%, #ff4f4f 100%);
+              border-radius: 4px;
+              margin: 35px 0 0 120px;
+              border: 0;
+              outline: none; }
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50) !important;
+  opacity: .7 !important; }
+
+/*# sourceMappingURL=groundpage.css.map */

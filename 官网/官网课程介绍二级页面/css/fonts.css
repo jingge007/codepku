@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'KaiGenGothicSC-Light';
+    src: url('../fonts/NotoSansHans-Bold.otf');
+    font-family: 'KaiGenGothicSC-Light';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KaiGenGothicSCLight';
+    src: url('../fonts/NotoSansHans-Light.otf');
+    font-family: 'KaiGenGothicSCLight';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "STXingkai";
+    src: url("../fonts/STXingkai.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+

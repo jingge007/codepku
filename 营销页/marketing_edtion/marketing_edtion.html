@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>视频试看营销页</title>
+    <script src="js/video.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/marketing_edtion.css">
+</head>
+<body>
+<div class="marketing_box">
+    <!--学编程-->
+    <div class="programming_box">
+        <div class="programming_title">
+            <img src="images/t1@2x.png" alt="">
+        </div>
+        <div class="video_box">
+            <video id="video_item" class="video-js vjs-big-play-centered video_center" controls poster="video/video_img.png" data-setup='{}' webkit-playsinline=""
+                   playsinline="" x5-playsinline="" x-webkit-airplay="allow">
+                <source src='http://video.699pic.com/videos/11/01/98/MwizZDxVfNMr1512110198_10s.mp4' type='video/mp4'>
+            </video>
+        </div>
+    </div>
+    <!--页面的banner区域-->
+    <div class="marketing_banner">
+        <img src="images/banner.png" alt="">
+        <div class="banner_button">免费试听</div>
+    </div>
+    <!--banner区域的弹窗-->
+    <div class="popup_item_banner">
+        <div class="modal fade modal_item" data-backdrop="static" id="myModal_banner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body" style="padding: 0;">
+                        <div class="audition_items_box">
+                            <div class="audition_items_box_title">申请免费试听课
+                                <img src="images/delete@2x.png" alt="" class="delete_boxs">
+                            </div>
+                            <div class="audition_items_box_input">
+                                <input type="text" placeholder="孩子姓名">
+                                <select class="select_inputs">
+                                    <option>请选择孩子年龄</option>
+                                </select>
+                                <input type="text" placeholder="家长手机号">
+                                <input type="text" placeholder="验证码" class="banner_yzm clearfix">
+                                <button class="banner_items_buttom clearfix">获取验证码</button>
+                                <button class="receive_item_button">立即领取</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--为什么要学编程-->
+    <div class="studying_box">
+        <div class="studying_title">
+            <img src="images/t2@2x.png" alt="">
+        </div>
+        <ul>
+            <li class="study_item clearfix">
+                <div class="img_box">
+                    <img src="images/why1@2x.png" alt="">
+                </div>
+                <div class="study_center">
+                    <h2 class="study_title">提升逻辑与思维能力</h2>
+                    <p class="study_text">在思考分析问题和完成程序的过程中培养变成思维</p>
+                </div>
+            </li>
+            <li class="study_item clearfix">
+                <div class="img_box">
+                    <img src="images/why2@2x.png" alt="">
+                </div>
+                <div class="study_center">
+                    <h2 class="study_title">培养孩子耐心与专注力</h2>
+                    <p class="study_text">趣味化编程和严密的编程语言，是培养孩子细心和专注的最佳工具</p>
+                </div>
+            </li>
+            <li class="study_item clearfix">
+                <div class="img_box">
+                    <img src="images/why3@2x.png" alt="">
+                </div>
+                <div class="study_center">
+                    <h2 class="study_title">锻炼孩子团队协作能力</h2>
+                    <p class="study_text">再组队完成创作作品的过程中，提升孩子的团队协作能力</p>
+                </div>
+            </li>
+            <li class="study_item clearfix">
+                <div class="img_box">
+                    <img src="images/why4@2x.png" alt="">
+                </div>
+                <div class="study_center">
+                    <h2 class="study_title">培养解决问题的能力</h2>
+                    <p class="study_text">基于PBL的教学模式，让孩子在探索问题过程中，增强解决问题的能力</p>
+                </div>
+            </li>
+            <li class="study_item clearfix">
+                <div class="img_box">
+                    <img src="images/why5@2x.png" alt="">
+                </div>
+                <div class="study_center">
+                    <h2 class="study_title">AI时代的需求</h2>
+                    <p class="study_text">适应人工智能时代，编程能力是一项必不可少的技能</p>
+                </div>
+            </li>
+            <li class="study_item clearfix">
+                <div class="img_box">
+                    <img src="images/why6@2x.png" alt="">
+                </div>
+                <div class="study_center">
+                    <h2 class="study_title">增加升学竞争力</h2>
+                    <p class="study_text">编程逐渐纳入基础教育，学习编程知识，参加编程比赛，为留学升学加码</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--学编程从什么时候开始-->
+    <div class="starting_box">
+        <div class="starting_title">
+            <img src="images/t3@2x.png" alt="">
+        </div>
+        <ul>
+            <li class="start_item clearfix">
+                <img src="images/when1@2x.png" class="start_img">
+                <div class="subject_box">
+                    <p class="subject_item">Scratch</p>
+                    <p class="subject_title">初级阶段——图形编程</p>
+                    <p class="subject_center">轻松创建动画和游戏、与智能硬件结合完成创客项目</p>
+                </div>
+            </li>
+            <li class="start_item clearfix">
+                <img src="images/when2@2x.png" class="start_img">
+                <div class="subject_box">
+                    <p class="subject_item">Python</p>
+                    <p class="subject_title">中级阶段——代码编程</p>
+                    <p class="subject_center">制作有趣的小游戏，开发小网站编写网络爬虫等</p>
+                </div>
+            </li>
+            <li class="start_item clearfix">
+                <img src="images/when3@2x.png" class="start_img">
+                <div class="subject_box">
+                    <p class="subject_item">NOIP</p>
+                    <p class="subject_title">高级阶段——算法编程</p>
+                    <p class="subject_center">掌握各种核心算法知识，参加NOIP比赛为国内升学、国外留学添砖加瓦</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--我们有优秀的师资团队-->
+    <div class="team_box">
+        <div class="team_title">
+            <img src="images/t4@2x.png" alt="">
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="team_box_items">
+                        <img src="images/teacher1@2x.png" alt="">
+                        <h2 class="teachers_name">郝祥林</h2>
+                        <p class="school_name">北京大学硕士</p>
+                        <p class="school_name">新加坡国立大学硕士</p>
+                        <div class="teachers_content">
+                            <p class="teachers_center">参加新加坡教育部编程课设计</p>
+                            <p class="teachers_center">热衷编程技术跨学科领域应用</p>
+                            <p class="teachers_center">培养学生包揽NOIP深圳前三</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team_box_items">
+                        <img src="images/teacher2@2x.png" alt="">
+                        <h2 class="teachers_name">李涛</h2>
+                        <p class="school_name">北京大学硕士</p>
+                        <p class="school_name">新加坡国立大学硕士</p>
+                        <div class="teachers_content">
+                            <p class="teachers_center">获得“新加坡-北大-牛津”</p>
+                            <p class="teachers_center">研究联盟全额奖学金</p>
+                            <p class="teachers_center">精通多门语言与开发框架</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team_box_items">
+                        <img src="images/teacher3@2x.png" alt="">
+                        <h2 class="teachers_name">戴亮</h2>
+                        <p class="school_name">北京大学计算机硕士</p>
+                        <div class="teachers_content">
+                            <p class="teachers_center">架构师，算法工程师</p>
+                            <p class="teachers_center">前阿里巴巴工程师</p>
+                            <p class="teachers_center">热衷于教育事业</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="team_box_items">
+                        <img src="images/teacher4@2x.png" alt="">
+                        <h2 class="teachers_name">王钦石</h2>
+                        <p class="school_name">普林斯顿大学计算机博士</p>
+                        <div class="teachers_content">
+                            <p class="teachers_center">原清华大学ACM队队长</p>
+                            <p class="teachers_center">获得多枚ACM全球<br/>/亚洲金牌、银牌</p>
+                            <p class="teachers_center">高中获得NOIP一等奖</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="team_box_items">
+                        <img src="images/teacher5@2x.png" alt="">
+                        <h2 class="teachers_name">伍建霖</h2>
+                        <p class="school_name">NOIP算法课程老师</p>
+                        <div class="teachers_content">
+                            <p class="teachers_center">全球大学生设计<br/>竞赛ACM-ICPC</p>
+                            <p class="teachers_center">亚洲赛银奖2次 铜奖3次</p>
+                            <p class="teachers_center">省级赛一等奖2次</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹窗-->
+    <div class="modal fade modal_item" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close close_item_button" aria-hidden="true">&times;</button>
+                <div class="modal-body">
+                    <div class="modal_one">
+                        <div class="popup_title">试看结束~<br>完善信息让你看个够</div>
+                        <div class="input_box clearfix">
+                            <input type="text" placeholder="孩子姓名">
+                            <input type="text" placeholder="请选择孩子年龄">
+                            <input type="text" placeholder="家长手机号">
+                            <input type="text" class="lasting"><span class="buttom_items">获取验证码</span>
+                        </div>
+                        <span class="submit_item">提交并继续观看</span>
+                    </div>
+                    <div class="modal_two">
+                        <img src="images/IP@2x.png" alt="" class="ip_img">
+                        <h1 class="end_title">没看过瘾？更多精彩等你来！</h1>
+                        <div class="nav_bottom clearfix">
+                            <span class="bottom_one">了解更多</span>
+                            <span class="bottom_two">在线咨询</span>
+                            <span class="bottom_three">拨打热线</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/flexible.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/marketing_edtion.js"></script>
+</body>
+</html>

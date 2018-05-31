@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教学统计</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/statistics.css">
+</head>
+<body>
+<div class="statistics_box" style="margin-top: 150px">
+    <!--科目分类-->
+    <div class="center_box">
+        <span class="item selected">Scratch</span>
+        <span class="item">Python</span>
+        <span class="item">NOIP</span>
+    </div>
+    <!--老师的分类-->
+    <div class="tearcher_box">
+        <span class="tearcher_item">孙小鸿1</span>
+        <span class="tearcher_item">蔡龙2</span>
+        <span class="tearcher_item">杨小龙3</span>
+        <span class="tearcher_item">蔡龙4</span>
+        <span class="tearcher_item">杨小龙5</span>
+        <span class="tearcher_item">蔡龙6</span>
+        <span class="tearcher_item">杨小龙7</span>
+        <span class="tearcher_item">蔡龙8</span>
+        <span class="tearcher_item">杨小龙9</span>
+        <span class="tearcher_item">蔡龙10</span>
+        <span class="tearcher_item">杨小龙11</span>
+        <span class="tearcher_item">蔡龙12</span>
+        <span class="tearcher_item">杨小龙13</span>
+    </div>
+    <!--考勤统计-->
+    <div class="worker_box">
+        <div class="nav_titles clearfix">
+            <select class="form-control select_item_boxs">
+                <option value="">考勤</option>
+                <option value="">作业提交</option>
+                <option value="">评价进度</option>
+            </select>
+            <div class="mod-data-select">
+                <button class="ea-cell" value="-1"><i class="fa fa-angle-left"></i></button>
+                <span class="data-title" text="2018-03-04">2018年02月26日-03月04日</span>
+                <button class="ea-cell" value="1"><i class="fa fa-angle-right"></i></button>
+            </div>
+            <button class="bottom_text">查看本周</button>
+        </div>
+        <h2 class="kq_title">一周<span class="passengers_txt_01">考勤</span>情况统计</h2>
+        <p class="page_item item_next">上一页</p>
+        <p class="page_item item_paty">下一页</p>
+        <div class="attendance_box">
+            <div class="add_txt">
+                <div class="border_tiem">考勤</div>
+            </div>
+            <div class="conter-kaoqin">
+                <ul class="kaoqin_center">
+                    <li class="tr_titlers clearfix">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="numbers">
+                <div class="absence_box"><span class="passengers_txt_02">缺勤</span>人次(月)</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/statistics.js"></script>
+</body>
+</html>

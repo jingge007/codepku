@@ -1,0 +1,348 @@
+@charset "UTF-8";
+.body {
+  background-color: #F5F6FA; }
+
+.group_management {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 14px;
+  font-family: '微软雅黑'; }
+  .group_management .search_box {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 22px; }
+    .group_management .search_box .search_item {
+      width: 380px;
+      display: flex;
+      justify-content: space-between; }
+      .group_management .search_box .search_item input {
+        width: 300px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        border: solid 1px #d2d2d2;
+        outline: none;
+        line-height: 30px;
+        padding: 0 0 0 8px !important;
+        outline: none !important;
+        color: #666;
+        font-size: 14px; }
+      .group_management .search_box .search_item input::-webkit-input-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+      .group_management .search_box .search_item input:-moz-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+      .group_management .search_box .search_item input::-moz-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+      .group_management .search_box .search_item input:-ms-input-placeholder {
+        color: #ccc;
+        font-size: 14px; }
+      .group_management .search_box .search_item .search_btn {
+        display: inline-block;
+        width: 66px;
+        height: 30px;
+        background-color: #4381e6;
+        border-radius: 2px;
+        line-height: 30px;
+        text-align: center;
+        color: #fefeff;
+        font-size: 14px;
+        cursor: pointer; }
+  .group_management .group_nav {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 14px 0 35px; }
+    .group_management .group_nav .group_nav_item {
+      flex: 1; }
+    .group_management .group_nav .group_nav_selected_text, .group_management .group_nav .group_nav_select_txt {
+      font-size: 14px;
+      color: #999;
+      margin: 0;
+      display: inline-block; }
+    .group_management .group_nav .group_nav_select_txt {
+      margin-left: 30px; }
+      .group_management .group_nav .group_nav_select_txt .group_nav_select_text {
+        color: #4381e6 !important;
+        cursor: pointer; }
+    .group_management .group_nav .add_group_btn {
+      width: 90px;
+      height: 30px;
+      background-color: #4381e6;
+      border-radius: 2px;
+      display: inline-block;
+      line-height: 30px;
+      text-align: center;
+      color: #fefeff;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: '微软雅黑'; }
+  .group_management .group_table {
+    width: 100%;
+    background-color: #fff; }
+    .group_management .group_table .type_Scratch, .group_management .group_table .type_Python, .group_management .group_table .type_NOIP {
+      margin-bottom: 10px; }
+    .group_management .group_table .group_theader {
+      display: flex;
+      list-style: none;
+      padding: 0 !important;
+      margin: 0;
+      align-items: center;
+      text-align: center;
+      font-family: '微软雅黑';
+      font-size: 13px;
+      color: #fff;
+      height: 50px;
+      background-color: #b7c7d4; }
+    .group_management .group_table .group_tbody {
+      padding: 0 !important;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      align-items: center;
+      font-family: '微软雅黑';
+      font-size: 13px;
+      color: #666;
+      background-color: #F5F8FB; }
+      .group_management .group_table .group_tbody:hover {
+        background-color: #dee8f1 !important; }
+      .group_management .group_table .group_tbody span {
+        word-wrap: break-word;
+        word-break: break-all; }
+      .group_management .group_table .group_tbody .tbody_item {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .group_management .group_table .group_tbody .tbody_item span {
+          display: inline-block;
+          padding: 16px; }
+      .group_management .group_table .group_tbody .th_edit_btn {
+        color: #4381e6 !important;
+        cursor: pointer; }
+    .group_management .group_table .th_member {
+      flex: 5; }
+    .group_management .group_table .th_groupName {
+      flex: 2; }
+    .group_management .group_table .th_groupLeader, .group_management .group_table .th_curriculum, .group_management .group_table .th_number, .group_management .group_table .th_operation {
+      flex: 1; }
+  .group_management #add_group_Modal .modal-dialog, .group_management #edit_group_Modal .modal-dialog, .group_management #teacher_group_Modal .modal-dialog {
+    width: 650px !important;
+    max-width: 650px;
+    overflow: hidden;
+    margin-top: 180px !important; }
+    .group_management #add_group_Modal .modal-dialog .modal-content, .group_management #edit_group_Modal .modal-dialog .modal-content, .group_management #teacher_group_Modal .modal-dialog .modal-content {
+      border: none !important;
+      border-radius: 2px !important;
+      background-color: #ffffff;
+      box-shadow: 0px 25px 24px 0px rgba(0, 0, 0, 0.13); }
+      .group_management #add_group_Modal .modal-dialog .modal-content .modal-header, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-header, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-header {
+        display: block;
+        font-size: 20px !important;
+        height: 57px;
+        line-height: 57px;
+        text-align: center;
+        width: 100%;
+        color: #2284f1;
+        padding: 0 !important;
+        border-bottom: 1px solid #E5E5E5;
+        position: relative; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-header .close_btn, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-header .close_btn, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-header .close_btn {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          top: 17px;
+          right: 17px;
+          cursor: pointer; }
+      .group_management #add_group_Modal .modal-dialog .modal-content .modal-body, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body {
+        padding: 30px 60px 10px 40px; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .curriculum_select, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .curriculum_select, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .curriculum_select {
+          display: flex;
+          margin-bottom: 20px; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .input_box, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .input_box, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .input_box {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .curriculum_input, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .curriculum_input, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .curriculum_input {
+          display: flex; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .leable_txt, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .leable_txt, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .leable_txt {
+          height: 26px;
+          line-height: 26px;
+          width: auto;
+          letter-spacing: 1px;
+          color: #666;
+          font-size: 14px; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .selected_input, .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .input_item, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .selected_input, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .input_item, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .selected_input, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .input_item {
+          height: 26px;
+          padding: 0 0 0 5px !important;
+          font-size: 14px;
+          color: #bcbcbc;
+          line-height: 26px;
+          width: 150px;
+          border-radius: 2px !important; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .member_text, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .member_text, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .member_text {
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 8px; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .member_number, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .member_number, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .member_number {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          max-height: 204px;
+          overflow-y: auto; }
+          .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .member_number .member_number_item, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .member_number .member_number_item, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .member_number .member_number_item {
+            width: 84px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5ca9ff;
+            border-radius: 2px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            margin: 0 22px 14px 0;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none; }
+            .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .member_number .member_number_item .close_icon, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .member_number .member_number_item .close_icon, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .member_number .member_number_item .close_icon {
+              display: block;
+              width: 10px;
+              height: 10px;
+              background: url("../images/delete.png");
+              background-size: cover;
+              cursor: pointer;
+              margin-left: 10px; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 20px; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .search_teachers, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .search_teachers, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .search_teachers {
+          display: flex; }
+          .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_input, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_input, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_input {
+            height: 26px;
+            border: solid 1px #cccccc;
+            border-right: 0 !important;
+            font-size: 14px;
+            color: #bcbcbc;
+            padding: 0 0 0 8px !important;
+            width: 163px;
+            outline: none; }
+          .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_icon, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_icon, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_icon {
+            height: 26px;
+            /*border-left: 1px solid rgba(130, 130, 130, 0.2);*/
+            width: 25px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 26px;
+            border: solid 1px #cccccc;
+            border-left: 0 !important;
+            position: relative;
+            cursor: pointer; }
+          .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_img, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_img, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .search_teachers .search_teachers_img {
+            width: 12px;
+            height: 13px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs {
+          width: 100%;
+          display: flex;
+          margin-bottom: 14px;
+          flex-wrap: wrap;
+          max-height: 204px;
+          overflow-y: scroll; }
+          .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs .selected_teachers_item, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs .selected_teachers_item, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs .selected_teachers_item {
+            width: 64px;
+            height: 24px;
+            line-height: 24px;
+            background-color: #f0f2f4;
+            border-radius: 2px;
+            text-align: center;
+            color: #8f8d8d;
+            font-size: 14px;
+            margin: 0 13px 10px 0;
+            cursor: pointer;
+            display: inline-block;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none; }
+            .group_management #add_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs .selected_teachers_item:hover, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs .selected_teachers_item:hover, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-body .selected_teachers_boxs .selected_teachers_item:hover {
+              color: #fff !important;
+              background-color: #5ca9ff !important; }
+      .group_management #add_group_Modal .modal-dialog .modal-content .modal-footer, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-footer, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-footer {
+        padding: 25px 0 !important;
+        border: none !important;
+        text-align: center !important; }
+        .group_management #add_group_Modal .modal-dialog .modal-content .modal-footer .close_buttons, .group_management #edit_group_Modal .modal-dialog .modal-content .modal-footer .close_buttons, .group_management #teacher_group_Modal .modal-dialog .modal-content .modal-footer .close_buttons {
+          width: 74px;
+          height: 30px;
+          background-color: #2284f1;
+          border-radius: 2px;
+          line-height: 30px;
+          text-align: center;
+          margin: 0 auto;
+          border: none !important;
+          outline: none !important;
+          color: #fff;
+          font-size: 14px; }
+  .group_management #add_group_Modal .prompt_box, .group_management #edit_group_Modal .prompt_box, .group_management #teacher_group_Modal .prompt_box {
+    width: 250px;
+    padding: 10px;
+    position: absolute;
+    background-color: #fefefe;
+    top: 123px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #F3341B;
+    display: none; }
+    .group_management #add_group_Modal .prompt_box:before, .group_management #edit_group_Modal .prompt_box:before, .group_management #teacher_group_Modal .prompt_box:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: -10px;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #fefefe; }
+  .group_management #teacher_group_Modal .modal-body {
+    padding: 15px 40px 25px 20px !important; }
+    .group_management #teacher_group_Modal .modal-body .selected_title {
+      border-left: 5px solid #2284F1;
+      padding-left: 10px !important;
+      font-size: 16px;
+      color: #2284F1;
+      font-family: '微软雅黑';
+      margin: 25px 0 8px 0;
+      height: 16px;
+      line-height: 16px; }
+    .group_management #teacher_group_Modal .modal-body .selected_box_scratch {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .group_management #teacher_group_Modal .modal-body .selected_box_scratch .selected_box_item {
+        line-height: 25px;
+        height: 25px;
+        width: 65px;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin: 0 0px 7px 7px;
+        display: inline-block; }
+
+/*# sourceMappingURL=group_management.css.map */

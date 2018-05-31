@@ -1,0 +1,244 @@
+body {
+  background-color: #F7F7F7; }
+
+.mobile_sign_up {
+  width: 100%;
+  background-color: #F7F7F7; }
+  .mobile_sign_up .mobile_sign_up_banner {
+    width: 100%;
+    height: 67.0666666667vw;
+    background: url("../images/00bcg.png") no-repeat;
+    background-size: cover; }
+  .mobile_sign_up .mobile_sign_up_form {
+    margin: -20vw auto 0;
+    width: 93.6vw;
+    height: 93.3333333333vw;
+    background-color: #fff;
+    z-index: 9999;
+    text-align: center; }
+    .mobile_sign_up .mobile_sign_up_form form {
+      padding-top: 4vw; }
+    .mobile_sign_up .mobile_sign_up_form .mobile_sign_up_title {
+      margin: 0 auto 2.6666666667vw;
+      font-size: 6.1333333333vw;
+      font-family: 'PingFang-SC-Heavy';
+      color: #3b95ff; }
+    .mobile_sign_up .mobile_sign_up_form .mobile_sign_up_input, .mobile_sign_up .mobile_sign_up_form .mobile_sign_up_select {
+      margin: 0;
+      display: block;
+      width: 59.0666666667vw;
+      height: 10.5333333333vw;
+      background-color: #f7f7f7;
+      border-radius: 1.0666666667vw;
+      margin: 0 auto 3.7333333333vw;
+      border: none !important;
+      font-size: 4vw;
+      font-family: 'PingFang-SC-Regular';
+      color: #999999;
+      padding: 2vw 0 2vw 4.5333333333vw;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none; }
+    .mobile_sign_up .mobile_sign_up_form .mobile_sign_up_input::-webkit-input-placeholder {
+      color: #999999; }
+    .mobile_sign_up .mobile_sign_up_form .mobile_sign_up_input:-moz-placeholder {
+      color: #999999; }
+    .mobile_sign_up .mobile_sign_up_form .mobile_sign_up_input::-moz-placeholder {
+      color: #999999; }
+    .mobile_sign_up .mobile_sign_up_form .mobile_sign_up_input:-ms-input-placeholder {
+      color: #999999; }
+    .mobile_sign_up .mobile_sign_up_form .verification_code_box {
+      width: 59.0666666667vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto; }
+      .mobile_sign_up .mobile_sign_up_form .verification_code_box .verification_code_input {
+        margin: 0;
+        width: 27.2vw;
+        height: 10.5333333333vw;
+        border: none !important;
+        background-color: #f7f7f7;
+        border-radius: 1.0666666667vw;
+        font-size: 4vw;
+        font-family: 'PingFang-SC-Regular';
+        color: #999999;
+        padding: 2vw 0 2vw 4.5333333333vw;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none; }
+      .mobile_sign_up .mobile_sign_up_form .verification_code_box .verification_code_btn {
+        border: none;
+        outline: none;
+        width: 27.2vw;
+        height: 10.5333333333vw;
+        line-height: 10.5333333333vw;
+        background-color: #3b95ff;
+        border-radius: 0.5333333333vw;
+        font-family: 'PingFang-SC-Medium';
+        font-size: 3.6vw;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+    .mobile_sign_up .mobile_sign_up_form .sign_up_btn {
+      margin: 4.1333333333vw auto 0;
+      width: 59.0666666667vw;
+      height: 10.5333333333vw;
+      line-height: 10.5333333333vw;
+      border: none !important;
+      outline: none;
+      background-color: #3b95ff;
+      border-radius: 0.5333333333vw;
+      font-family: 'PingFang-SC-Medium';
+      font-size: 3.8666666667vw;
+      color: #fff;
+      padding: 0;
+      text-align: center; }
+  .mobile_sign_up .welfare_box {
+    margin: 1.3333333333vw auto 0;
+    width: 94.2666666667vw;
+    height: 13.8666666667vw;
+    line-height: 14.6666666667vw;
+    border-left: 0.5333333333vw solid #3B95FF;
+    padding-left: 4.5333333333vw;
+    font-family: 'PingFang-SC-Bold';
+    font-size: 3.7333333333vw;
+    color: #333;
+    background-color: #fff;
+    font-weight: 600; }
+    .mobile_sign_up .welfare_box .receive_icon {
+      float: right;
+      margin: 5.2vw 4.6666666667vw 0 0;
+      width: 4.8vw;
+      height: 4.8vw;
+      display: block; }
+    .mobile_sign_up .welfare_box .unreceive_icon {
+      float: right;
+      margin: 5.2vw 4.6666666667vw 0 0;
+      width: 4.8vw;
+      height: 4.8vw;
+      display: none; }
+  .mobile_sign_up .welfare_box_txt {
+    display: block;
+    height: 13.3333333333vw;
+    line-height: 13.3333333333vw;
+    text-align: center;
+    font-family: 'PingFang-SC-Medium';
+    font-size: 3.7333333333vw;
+    color: #3b95ff; }
+    .mobile_sign_up .welfare_box_txt .arrow_icon {
+      margin-left: 1.8666666667vw;
+      width: 4vw;
+      height: 2.1333333333vw;
+      vertical-align: middle; }
+  .mobile_sign_up .course_content {
+    text-align: center;
+    font-family: 'PingFang-SC-Bold';
+    font-size: 4.8vw;
+    color: #4d4d4d;
+    margin: 0 0 1.4666666667vw 0; }
+  .mobile_sign_up .line_icon {
+    display: block;
+    margin: 0 auto;
+    width: 4vw;
+    height: 0.8vw;
+    background-color: #ffd200; }
+  .mobile_sign_up .mobile_details_box {
+    display: none; }
+    .mobile_sign_up .mobile_details_box .extra_benefits_box .extra_benefits_box_banner {
+      width: 100%;
+      height: 25.3333333333vw;
+      background: url("../images/banner_icon.png") no-repeat;
+      background-size: cover;
+      margin-top: 2.6666666667vw; }
+    .mobile_sign_up .mobile_details_box .extra_benefits_box .extra_benefits_box_title {
+      font-family: 'PingFang-SC-Medium';
+      font-size: 3.7333333333vw;
+      color: #333333;
+      margin: 5.6vw auto 6.2666666667vw;
+      text-align: center; }
+      .mobile_sign_up .mobile_details_box .extra_benefits_box .extra_benefits_box_title .extra_benefits_color {
+        font-family: 'PingFang-SC-Heavy';
+        font-size: 4.5333333333vw;
+        color: #0474f8 !important; }
+    .mobile_sign_up .mobile_details_box .extra_benefits_box .course_content_box {
+      padding-left: 4.1333333333vw; }
+      .mobile_sign_up .mobile_details_box .extra_benefits_box .course_content_box .course_content_title {
+        margin: 4vw auto 0;
+        font-family: 'PingFang-SC-Medium';
+        font-size: 3.7333333333vw;
+        color: #048bfd; }
+      .mobile_sign_up .mobile_details_box .extra_benefits_box .course_content_box .course_content_txt {
+        margin: 2.6666666667vw auto 0;
+        font-family: 'PingFang-SC-Regular';
+        color: #808080; }
+    .mobile_sign_up .mobile_details_box .extra_benefits_box .harvest_banner {
+      width: 100%;
+      height: 48vw;
+      background: url("../images/05bcg2.png") no-repeat;
+      background-size: cover;
+      margin: 4vw 0 2.6666666667vw 0; }
+    .mobile_sign_up .mobile_details_box .common_problem {
+      padding-bottom: 6.6666666667vw; }
+      .mobile_sign_up .mobile_details_box .common_problem .common_problem_box {
+        margin: 5.0666666667vw auto 0;
+        padding-left: 4.4vw; }
+        .mobile_sign_up .mobile_details_box .common_problem .common_problem_box .common_problem_content {
+          margin-bottom: 4.2666666667vw; }
+          .mobile_sign_up .mobile_details_box .common_problem .common_problem_box .common_problem_content .common_problem_item {
+            display: flex;
+            font-size: 3.4666666667vw;
+            align-items: center;
+            font-family: 'PingFang-SC-Regular';
+            color: #808080;
+            margin-bottom: 1.0666666667vw; }
+            .mobile_sign_up .mobile_details_box .common_problem .common_problem_box .common_problem_content .common_problem_item .common_problem_icon {
+              width: 4.8vw;
+              height: 4.8vw;
+              border-radius: 50%;
+              overflow: hidden;
+              text-align: center;
+              line-height: 4.8vw;
+              color: #fff;
+              font-size: 3.4666666667vw;
+              font-family: 'PingFang-SC-Bold';
+              margin-right: 2.9333333333vw; }
+            .mobile_sign_up .mobile_details_box .common_problem .common_problem_box .common_problem_content .common_problem_item .icon_blue {
+              background-color: #0091ff; }
+            .mobile_sign_up .mobile_details_box .common_problem .common_problem_box .common_problem_content .common_problem_item .icon_yellow {
+              background-color: #fecb01; }
+  .mobile_sign_up #myModal .modal-dialog {
+    width: 66.9333333333vw;
+    margin: 53.3333333333vw auto 0; }
+    .mobile_sign_up #myModal .modal-dialog .modal-content {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: transparent !important; }
+      .mobile_sign_up #myModal .modal-dialog .modal-content .modal-body {
+        padding: 0;
+        width: 100%;
+        height: 41.3333333333vw;
+        background: url("../images/00ele@2x.png");
+        background-size: cover; }
+      .mobile_sign_up #myModal .modal-dialog .modal-content .modal-footer {
+        padding: 0;
+        text-align: center;
+        border-top: none; }
+        .mobile_sign_up #myModal .modal-dialog .modal-content .modal-footer .footer_icon {
+          margin: 4.6666666667vw auto 0;
+          width: 30.6666666667vw;
+          height: 8vw;
+          line-height: 8vw;
+          font-family: 'PingFang-SC-Heavy';
+          color: black;
+          font-size: 4vw;
+          border-radius: 8vw;
+          overflow: hidden;
+          background: url("../images/01button@2x.png");
+          background-size: cover;
+          outline: none;
+          border: none;
+          padding: 0; }
+
+/*# sourceMappingURL=sign_up.css.map */
