@@ -1,0 +1,868 @@
+body {
+  background-color: #EAF0F2;
+}
+
+.change_classes {
+  width: 1300px;
+  height: 1260px;
+  background-color: #ffffff;
+  box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+  border-radius: 4px;
+  margin: 20px auto 0;
+  .change_classes_content_txt {
+    font-family: '微软雅黑';
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 19px 0;
+  }
+  .change_classes_nav {
+    height: 65px;
+    width: 100%;
+    padding-left: 75px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #f0f0f0;
+    box-sizing: border-box;
+    .doub_title {
+      margin-right: 10px;
+      color: #333333;
+      font-size: 18px;
+      font-family: '微软雅黑';
+    }
+    .doub_icont {
+      background: url("../images/doub_icont.png") no-repeat;
+      background-size: cover;
+      width: 21px;
+      height: 21px;
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      .notes_box {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 686px;
+        height: 400px;
+        z-index: 9999;
+        background-color: #ffffff;
+        box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+        border-radius: 10px;
+        border: solid 1px #dcdcdc;
+        padding: 28px 31px 0 38px;
+        font-family: '微软雅黑';
+        .notes_box_title {
+          font-size: 18px;
+          color: #333;
+          margin: 0;
+          font-weight: 600;
+        }
+        .notes_box_txt {
+          margin: 25px 0 0 0;
+          font-size: 14px;
+          color: #666;
+        }
+        .notes_box_text {
+          font-size: 14px;
+          color: #666;
+          font-weight: 600;
+          display: inline-block;
+          margin-top: 20px;
+        }
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 41px;
+          height: 100%;
+          position: absolute;
+          left: -37px;
+          top: 0;
+        }
+      }
+      &:hover {
+        .notes_box {
+          display: block;
+        }
+      }
+    }
+  }
+  .change_classes_content {
+    padding: 39px 75px 0 75px;
+    .change_classes_center {
+      width: 1148px;
+      height: 71px;
+      padding: 0 100px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .change_classes_btn {
+        width: 109px;
+        height: 36px;
+        background-color: #4381e6;
+        border-radius: 2px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        font-family: '微软雅黑';
+        font-size: 14px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .change_information {
+        display: none;
+        width: 100%;
+        .change_information_item {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          p {
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+  .course_information {
+    padding-top: 80px;
+    .course_information_center {
+      display: flex;
+      justify-content: space-between;
+      .course_information_item {
+        font-size: 14px;
+        color: #666666;
+        display: flex;
+        width: 315px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+        margin: 20px auto 0;
+        .money_txt {
+          color: #333;
+        }
+      }
+      .course_information_01 {
+        .original_course {
+          width: 612px;
+          height: 395px;
+          border-radius: 4px;
+          border: solid 1px #DEDDDD;
+          padding: 20px 30px 0 30px;
+          .original_title {
+            display: block;
+            margin-bottom: 15px;
+            font-family: '微软雅黑';
+            color: #333;
+            font-size: 16px;
+          }
+          .select_box {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .select_box_item_01 {
+              display: flex;
+              .select_box_center {
+                width: 130px;
+                height: 28px;
+                line-height: 28px;
+                outline: none;
+                font-family: '微软雅黑';
+                color: #666;
+                font-size: 14px;
+                margin-right: 10px;
+              }
+              .text_link {
+                height: 28px;
+                line-height: 28px;
+                text-decoration: none;
+                color: #2284f1;
+                font-family: '微软雅黑';
+                font-size: 14px;
+              }
+            }
+            .select_box_item_02 {
+              display: none;
+              font-family: '微软雅黑';
+              color: #666666;
+              font-size: 14px;
+              align-items: center;
+              .doub_img {
+                background: url("../images/doub_icont.png") no-repeat;
+                background-size: cover;
+                width: 17px;
+                height: 17px;
+                display: inline-block;
+                margin-left: 8px;
+                cursor: pointer;
+                position: relative;
+                .doub_item_01, .doub_item_02 {
+                  display: none;
+                  position: absolute;
+                  top: 30px;
+                  left: -30px;
+                  width: 686px;
+                  height: 400px;
+                  z-index: 9999;
+                  background-color: #ffffff;
+                  box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+                  border-radius: 10px;
+                  border: solid 1px #dcdcdc;
+                  padding: 28px 28px 0 30px;
+                  font-family: '微软雅黑';
+                  .doub_item_01_title {
+                    font-size: 18px;
+                    color: #333;
+                    margin: 0;
+                    font-weight: 600;
+                  }
+                  p {
+                    margin: 20px 0 0 0;
+                    color: #666;
+                    font-size: 14px;
+                  }
+                  &:before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    height: 30px;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+          .original_table_item {
+            width: 100%;
+            margin-top: 15px;
+            box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: none;
+            .original_table {
+              width: 100%;
+              font-family: '微软雅黑';
+              .original_item {
+                width: 100%;
+                display: inline-block;
+                height: 50px;
+                line-height: 50px;
+                background-color: #b7c7d4;
+                font-size: 14px;
+                color: #fff;
+                tr {
+                  display: flex;
+                  width: 100%;
+                  align-items: center;
+                  justify-content: center;
+                  table-layout: fixed;
+                  td {
+                    display: inline-block;
+                    height: 50px;
+                    text-align: center;
+                  }
+                  td:nth-child(1) {
+                    flex: 3;
+                  }
+                  td:nth-child(2) {
+                    flex: 2.5;
+                  }
+                  td:nth-child(3) {
+                    flex: 2.5;
+                  }
+                  td:nth-child(4) {
+                    flex: 2;
+                  }
+                  td:nth-child(5) {
+                    flex: 2;
+                  }
+                  td:nth-child(6) {
+                    flex: 2;
+                  }
+                }
+              }
+              .original_item_tbody {
+                display: block;
+                height: 220px;
+                overflow-y: auto;
+                overflow-y: overlay;
+                .original_curriculum {
+                  width: 100%;
+                  display: flex;
+                  height: 44px;
+                  font-size: 14px;
+                  color: #666;
+                  line-height: 44px;
+                  text-align: center;
+                  table-layout: fixed;
+                  .checkbox_item {
+                    width: 18px;
+                    height: 18px;
+                    background-color: #ffffff;
+                    border: solid 1px #d2d2d2;
+                    cursor: pointer;
+                    margin: 0;
+                  }
+                  td:nth-child(1) {
+                    flex: 3;
+                  }
+                  td:nth-child(2) {
+                    flex: 2.5;
+                  }
+                  td:nth-child(3) {
+                    flex: 2.5;
+                  }
+                  td:nth-child(4) {
+                    flex: 2;
+                  }
+                  td:nth-child(5) {
+                    flex: 2;
+                  }
+                  td:nth-child(6) {
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+                }
+                .original_curriculum:nth-child(odd) {
+                  background-color: #fff;
+                }
+                .original_curriculum:nth-child(even) {
+                  background-color: #f5f8fb;
+                }
+              }
+            }
+          }
+
+        }
+      }
+      .course_information_02 {
+        .pre_course {
+          width: 514px;
+          height: 395px;
+          border-radius: 4px;
+          border: solid 1px #DEDDDD;
+          padding: 20px 20px 0 30px;
+          .pre_course_title {
+            display: block;
+            margin-bottom: 15px;
+            font-family: '微软雅黑';
+            color: #333;
+            font-size: 16px;
+          }
+          .select_pre_course {
+            width: 100%;
+            display: flex;
+            font-family: '微软雅黑';
+            margin-bottom: 30px;
+            .pre_course_item_01, .pre_course_item_02 {
+              width: 130px;
+              height: 28px;
+              line-height: 28px;
+              color: #666666;
+              font-size: 14px;
+              margin-right: 30px;
+              outline: none;
+            }
+            .pre_course_item_02 {
+              margin-right: 40px;
+            }
+            .pre_course_btn {
+              width: 69px;
+              height: 28px;
+              background-color: #4381e6;
+              border-radius: 2px;
+              line-height: 28px;
+              text-align: center;
+              color: #fff;
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+          .select_pre_box {
+            width: 100%;
+            height: 240px;
+            padding-right: 10px;
+            overflow-y: auto;
+            box-sizing: border-box;
+            display: none;
+            .pre_course_content {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              font-family: '微软雅黑';
+              color: #666666;
+              text-align: center;
+              margin-bottom: 25px;
+              .pre_course_content_txt {
+                width: 110px;
+                height: 28px;
+                line-height: 28px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              .select_pre_course_content {
+                width: 130px;
+                height: 28px;
+                line-height: 28px;
+                margin: 0 20px;
+              }
+              .pre_course_content_item {
+                min-width: 150px;
+                height: 35px;
+                line-height: 35px;
+                background-color: #f9f9f9;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              .subtraction_btn {
+                margin-left: 10px;
+                display: inline-block;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 18px;
+                border: 1px solid #C4C4C4;
+                font-size: 12px;
+                color: #C4C4C4;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    .price_difference {
+      margin: 45px auto 0;
+      width: 835px;
+      display: flex;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      .difference_money, .difference_add {
+        font-family: '微软雅黑';
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+      }
+      .difference_add {
+        display: none;
+      }
+      .difference_txt {
+        font-family: '微软雅黑';
+        font-size: 16px;
+        color: #999;
+        font-weight: 600;
+        margin-right: 50px;
+      }
+      .difference_money_input {
+        width: 160px;
+        height: 28px;
+        line-height: 28px;
+        font-family: '微软雅黑';
+        font-size: 16px;
+        color: #666;
+        margin-right: 5px;
+        outline: none;
+        padding-left: 8px;
+        font-size: 14px;
+      }
+    }
+  }
+  .remarks_box {
+    padding-top: 70px;
+    .remarks_box_title {
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      color: #333;
+      font-family: '微软雅黑';
+      font-weight: 600;
+    }
+    .remarks_box_item {
+      padding-left: 30px;
+      width: 100%;
+      .remarks_box_item_title {
+        color: #666;
+        font-size: 14px;
+        font-family: '微软雅黑';
+        margin-bottom: 10px;
+      }
+      .remarks_box_item_text {
+        width: 1120px;
+        height: 116px;
+        background-color: #ffffff;
+        border: solid 1px #d2d2d2;
+        padding: 10px;
+        resize: none;
+        overflow-y: auto;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: #333;
+        font-family: '微软雅黑';
+        outline: none;
+      }
+    }
+    .remarks_box_butttom {
+      width: 180px;
+      height: 30px;
+      line-height: 30px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      font-family: '微软雅黑';
+      font-size: 14px;
+      margin: 50px auto 0;
+      .remarks_box_cancel {
+        color: #4381e6;
+        cursor: pointer;
+        background-color: #ffffff;
+        border-radius: 2px;
+        border: solid 1px #4381e6;
+        width: 58px;
+      }
+      .remarks_box_determine {
+        background-color: #4381e6;
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        width: 58px;
+      }
+    }
+  }
+  #select_students_modal {
+    .modal-dialog {
+      margin: 245px auto 0;
+      width: 711px !important;
+      overflow: hidden;
+      .modal-content {
+        border: none;
+        box-shadow: none;
+        border-radius: 8px;
+        background-color: #ffffff;
+        .modal-header {
+          padding: 0 !important;
+          border: none;
+          border-radius: 8px 8px 0 0;
+          background-color: #4381e6;
+          height: 59px;
+          .select_students_close {
+            color: #fff !important;
+            font-size: 38px !important;
+            outline: none;
+            margin: 12px 20px 0 0;
+            opacity: 1;
+            text-shadow: none;
+            font-weight: normal;
+          }
+          .modal-title {
+            margin-left: 30px;
+            font-family: '微软雅黑';
+            font-size: 16px;
+            color: #fff;
+            line-height: 59px;
+          }
+        }
+        .modal-body {
+          padding: 29px 35px 15px 60px;
+          .select_students_input {
+            margin-bottom: 20px;
+            display: flex;
+            .select_elect_students {
+              width: 436px;
+              height: 28px;
+              line-height: 28px;
+              padding-left: 7px;
+              background-color: #ffffff;
+              border: solid 1px #d2d2d2;
+              outline: none;
+              font-size: 14px;
+              color: #666;
+              margin-right: 40px;
+            }
+            .search_students {
+              width: 74px;
+              height: 28px;
+              background-color: #4381e6;
+              border-radius: 1px;
+              font-size: 14px;
+              color: #fff;
+              text-align: center;
+              line-height: 28px;
+              cursor: pointer;
+            }
+          }
+          .select_students_box {
+            height: 270px;
+            box-sizing: border-box;
+            .select_students_table {
+              width: 550px;
+              background-color: #ffffff;
+              margin-right: 52px;
+              border-radius: 4px;
+              font-family: '微软雅黑';
+              font-size: 14px;
+              color: #666;
+              text-align: center;
+              thead {
+                display: inline-block;
+                width: 550px;
+                background-color: #b7c7d4;
+                color: #fff;
+                .select_students_title {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 50px;
+                  width: 100%;
+                  table-layout: fixed;
+                  td {
+                    text-align: center;
+                  }
+                  td:nth-child(1) {
+                    flex: 2;
+                  }
+                  td:nth-child(2) {
+                    flex: 2;
+                  }
+                  td:nth-child(3) {
+                    flex: 3;
+                  }
+                  td:nth-child(4) {
+                    flex: 2;
+                  }
+                }
+              }
+              .select_students_tbody {
+                display: none;
+                height: 220px;
+                overflow-y: auto;
+                overflow-y: overlay;
+                .select_students_text {
+                  height: 44px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  cursor: pointer;
+                  table-layout: fixed;
+                  td {
+                    text-align: center;
+                  }
+                  td:nth-child(1) {
+                    flex: 2;
+                  }
+                  td:nth-child(2) {
+                    flex: 2;
+                  }
+                  td:nth-child(3) {
+                    flex: 3;
+                  }
+                  td:nth-child(4) {
+                    flex: 2;
+                  }
+                  &:hover {
+                    background-color: #f5f8fb;
+                  }
+                }
+                .select_students_bs {
+                  background-color: #f5f8fb;
+                }
+              }
+            }
+            .select_students_text_tiem {
+              width: 550px;
+              text-align: center;
+              font-size: 16px;
+              color: #666;
+              margin: 30px auto;
+              display: none;
+            }
+          }
+        }
+        .modal-footer {
+          display: none;
+          padding: 0;
+          height: 70px;
+          line-height: 70px;
+          border: none;
+          padding: 15px 0 0 0;
+          .modal_footer_btn {
+            margin: 0 auto;
+            width: 180px;
+            display: flex;
+            justify-content: space-between;
+            .btn-default {
+              width: 58px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              font-family: '微软雅黑';
+              color: #4381e6;
+              background-color: #ffffff;
+              border-radius: 2px;
+              border: solid 1px #4381e6;
+              padding: 0;
+              outline: none;
+              font-size: 14px;
+            }
+            .btn-primary {
+              width: 58px;
+              height: 30px;
+              background-color: #4381e6;
+              border-radius: 2px;
+              line-height: 30px;
+              text-align: center;
+              font-family: '微软雅黑';
+              color: #fff;
+              padding: 0;
+              outline: none;
+              font-size: 14px;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  #again_modal {
+    .modal-dialog {
+      margin: 130px auto 0;
+      width: 527px !important;
+      overflow: hidden;
+      .modal-content {
+        border: none;
+        box-shadow: none;
+        border-radius: 10px;
+        background-color: #ffffff;
+        height: 342px;
+        .modal-header {
+          padding: 0 !important;
+          border: none;
+          border-radius: 8px 8px 0 0;
+          background-color: #4381e6;
+          height: 50px;
+          .select_students_close {
+            color: #fff !important;
+            font-size: 38px !important;
+            outline: none;
+            margin: 7px 20px 0 0;
+            opacity: 1;
+            text-shadow: none;
+            font-weight: normal;
+          }
+          .modal-title {
+            margin-left: 30px;
+            font-family: '微软雅黑';
+            font-size: 16px;
+            color: #fff;
+            line-height: 50px;
+          }
+        }
+        .modal-body {
+          padding: 30px 58px 0 58px;
+          .modal_body_title {
+            font-family: '微软雅黑';
+            font-size: 16px;
+            color: #333;
+            margin: 0 0 14px 0;
+          }
+          .withdraw_box {
+            width: 100%;
+            box-sizing: border-box;
+            height: 146px;
+            background-color: #ffffff;
+            border: solid 1px #d2d2d2;
+            padding: 8px 10px;
+            font-size: 14px;
+            color: #333;
+            font-family: '微软雅黑';
+            resize: none;
+            outline: none;
+          }
+        }
+        .modal-footer {
+          padding: 0;
+          height: 58px;
+          line-height: 58px;
+          border: none;
+          margin: 25px auto 0;
+          width: 180px;
+          display: flex;
+          justify-content: space-between;
+          .btn-default {
+            width: 58px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-family: '微软雅黑';
+            color: #4381e6;
+            background-color: #ffffff;
+            border-radius: 2px;
+            border: solid 1px #4381e6;
+            padding: 0;
+            outline: none;
+            font-size: 14px;
+          }
+          .btn-primary {
+            width: 58px;
+            height: 30px;
+            background-color: #4381e6;
+            border-radius: 2px;
+            line-height: 30px;
+            text-align: center;
+            font-family: '微软雅黑';
+            color: #fff;
+            padding: 0;
+            outline: none;
+            font-size: 14px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  .select_students_box::-webkit-scrollbar,
+  .original_table_item::-webkit-scrollbar,
+  .select_pre_box::-webkit-scrollbar,
+  .select_students_tbody::-webkit-scrollbar,
+  .original_item_tbody::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    background-color: #f5f5f5;
+  }
+
+  /*定义滚动条轨道 内阴影+圆角*/
+  .select_students_box::-webkit-scrollbar-track,
+  .original_table_item::-webkit-scrollbar-track,
+  .select_pre_box::-webkit-scrollbar-track,
+  .select_students_tbody::-webkit-scrollbar-track,
+  .original_item_tbody::-webkit-scrollbar-track {
+    border-radius: 9px;
+    background-color: #F5F5F5;
+  }
+
+  /*定义滑块 内阴影+圆角*/
+  .select_students_box::-webkit-scrollbar-thumb,
+  .original_table_item::-webkit-scrollbar-thumb,
+  .select_pre_box::-webkit-scrollbar-thumb,
+  .select_students_tbody::-webkit-scrollbar-thumb,
+  .original_item_tbody::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: #ccdafa;
+  }
+}

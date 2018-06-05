@@ -1,0 +1,1182 @@
+@charset "UTF-8";
+body {
+  background-color: #EAF0F2; }
+
+.change_management {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 16px 0 50px 0;
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  /*定义滚动条轨道 内阴影+圆角*/
+  /*定义滑块 内阴影+圆角*/ }
+  .change_management .nav_search {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px; }
+    .change_management .nav_search .expand_btn {
+      background-color: #ffffff;
+      border-radius: 4px;
+      border: solid 1px #d6d6d6;
+      color: #0087ef;
+      font-size: 14px;
+      font-family: "微软雅黑", FontAwesome;
+      box-shadow: none;
+      position: relative;
+      width: 94px;
+      height: 28px;
+      line-height: 28px;
+      text-align: left;
+      padding: 0 0 0 6px; }
+      .change_management .nav_search .expand_btn:after {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-47%) rotate(90deg);
+        content: "\f105";
+        font-size: 20px;
+        color: #0087ef;
+        transition: all .25s; }
+    .change_management .nav_search .tagsrow {
+      text-align: justify; }
+      .change_management .nav_search .tagsrow .label-info {
+        padding: 7px 8px;
+        margin: 0 4px;
+        border-radius: 4px;
+        background-color: #fbfbfb;
+        border: solid 1px #d6d6d6;
+        color: #666;
+        font-size: 13px;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        overflow: hidden;
+        line-height: 15px;
+        -webkit-transition: .25s linear;
+        transition: .25s linear; }
+      .change_management .nav_search .tagsrow .tag:hover {
+        background-color: #fff;
+        color: #666;
+        padding-right: 28px;
+        padding-left: 14px; }
+        .change_management .nav_search .tagsrow .tag:hover span {
+          opacity: 1;
+          -webkit-filter: none;
+          filter: none; }
+      .change_management .nav_search .tagsrow .tag > span {
+        color: #666;
+        cursor: pointer;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        text-decoration: none;
+        top: 0;
+        bottom: 0;
+        padding: 0 10px 0 0;
+        z-index: 2;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: opacity .25s linear;
+        transition: opacity .25s linear; }
+        .change_management .nav_search .tagsrow .tag > span:after {
+          content: "×";
+          font-size: 20px;
+          line-height: 1.3;
+          color: #666;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+      .change_management .nav_search .tagsrow .empty_btn {
+        display: none;
+        transition: all 0.5s; }
+        .change_management .nav_search .tagsrow .empty_btn:hover {
+          background-color: #666;
+          color: #fff; }
+    .change_management .nav_search .expand_down:after {
+      transform: translateY(-47%) rotate(-90deg);
+      transition: all .25s; }
+    .change_management .nav_search .search_input {
+      display: flex;
+      align-items: center; }
+      .change_management .nav_search .search_input .search_input_item {
+        outline: none;
+        width: 300px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        border: solid 1px #d2d2d2;
+        line-height: 30px;
+        padding-left: 12px;
+        margin-right: 12px;
+        font-family: '微软雅黑';
+        color: #cccccc;
+        font-size: 14px; }
+      .change_management .nav_search .search_input .search_input_btn {
+        display: inline-block;
+        width: 66px;
+        height: 30px;
+        background-color: #4381e6;
+        border-radius: 2px;
+        line-height: 30px;
+        text-align: center;
+        color: #fefeff;
+        font-family: '微软雅黑';
+        font-size: 14px;
+        cursor: pointer; }
+  .change_management .expand_cont {
+    width: 1300px;
+    margin: 0 auto;
+    background-color: #fff; }
+    .change_management .expand_cont .category_card {
+      border: none !important;
+      background: none !important;
+      box-shadow: none !important;
+      padding: 0 20px 0px; }
+      .change_management .expand_cont .category_card .category_row {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px dashed #eee;
+        width: 100%;
+        margin: 0 auto;
+        padding: 13px 0; }
+        .change_management .expand_cont .category_card .category_row .category_name {
+          text-align: right;
+          color: #999;
+          min-width: 130px;
+          font-size: 14px;
+          font-family: "微软雅黑";
+          padding-right: 30px; }
+        .change_management .expand_cont .category_card .category_row .row_form {
+          display: flex;
+          flex: 1; }
+          .change_management .expand_cont .category_card .category_row .row_form .category_cont {
+            display: flex;
+            flex: 1; }
+            .change_management .expand_cont .category_card .category_row .row_form .category_cont .category_cont_title {
+              padding: 0;
+              width: 175px;
+              text-align: center; }
+            .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type {
+              margin-bottom: 0 !important;
+              width: 100px;
+              float: left;
+              font-size: 15px;
+              font-weight: 500;
+              position: relative;
+              display: inline-block;
+              height: 36px;
+              padding-left: 25px;
+              line-height: 38px;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; }
+              .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type input {
+                position: absolute;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden; }
+              .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type input[type=checkbox]:checked + .mdui_checkout_icon:after {
+                background-color: #2284f1;
+                border-color: #2284f1; }
+              .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type input[type=checkbox]:checked + .mdui_checkout_icon:before {
+                opacity: 1;
+                -webkit-transform: rotateZ(37deg) scale(1);
+                transform: rotateZ(37deg) scale(1); }
+              .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type .mdui_checkout_icon {
+                position: absolute;
+                top: 9px;
+                left: 0;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+                background-color: transparent;
+                border: none;
+                border-radius: 18px;
+                -webkit-transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                display: none; }
+                .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type .mdui_checkout_icon:before {
+                  position: absolute;
+                  top: 2px;
+                  left: 0;
+                  z-index: 1;
+                  width: 8px;
+                  height: 13px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  content: ' ';
+                  border-right: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  opacity: 0;
+                  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  -webkit-transform: rotateZ(37deg) scale(0);
+                  transform: rotateZ(37deg) scale(0);
+                  -webkit-transform-origin: 100% 100%;
+                  transform-origin: 100% 100%; }
+                .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type .mdui_checkout_icon:after {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                  width: 18px;
+                  height: 18px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  content: ' ';
+                  border: 2px solid #cccccc;
+                  border-radius: 2px;
+                  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+              .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type:hover {
+                color: #4381e6; }
+              .change_management .expand_cont .category_card .category_row .row_form .category_cont .select_type .select_type_txts {
+                margin-left: 0;
+                padding-left: 0; }
+            .change_management .expand_cont .category_card .category_row .row_form .category_cont .course_row {
+              width: 100px; }
+        .change_management .expand_cont .category_card .category_row .category_cont {
+          display: flex;
+          flex: 1; }
+          .change_management .expand_cont .category_card .category_row .category_cont span {
+            height: 36px;
+            padding-left: 25px;
+            line-height: 36px;
+            cursor: pointer;
+            width: 100px; }
+            .change_management .expand_cont .category_card .category_row .category_cont span:hover {
+              color: #4381E6; }
+          .change_management .expand_cont .category_card .category_row .category_cont span.active {
+            color: #0087ef;
+            font-size: 20px; }
+        .change_management .expand_cont .category_card .category_row .expand_right {
+          text-align: right;
+          display: flex;
+          align-items: center; }
+          .change_management .expand_cont .category_card .category_row .expand_right .choose_btn {
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: solid 1px #d6d6d6;
+            color: #999;
+            font-size: 12px;
+            background: none;
+            outline: none;
+            margin-right: 10px; }
+          .change_management .expand_cont .category_card .category_row .expand_right .operation {
+            display: none;
+            line-height: 30px; }
+            .change_management .expand_cont .category_card .category_row .expand_right .operation .sure_btn {
+              padding: 0;
+              border: none;
+              background: none;
+              outline: none;
+              border-radius: 4px;
+              background-color: #4381e6;
+              color: #fff;
+              margin-right: 10px;
+              text-align: center;
+              width: 49px;
+              height: 29px;
+              line-height: 29px; }
+            .change_management .expand_cont .category_card .category_row .expand_right .operation .cancel_btn {
+              padding: 0;
+              width: 46px;
+              height: 29px;
+              text-align: center;
+              line-height: 29px;
+              border-radius: 4px;
+              border: solid 1px #d6d6d6;
+              color: #999;
+              font-size: 12px;
+              background: none;
+              outline: none;
+              margin-right: 10px; }
+          .change_management .expand_cont .category_card .category_row .expand_right .more_down {
+            position: relative;
+            color: #999;
+            font-size: 12px;
+            font-family: "微软雅黑", FontAwesome;
+            padding-right: 20px;
+            background: none;
+            border: none;
+            outline: none; }
+            .change_management .expand_cont .category_card .category_row .expand_right .more_down:after {
+              content: "\f105";
+              font-size: 20px;
+              position: absolute;
+              right: 5px;
+              top: 50%;
+              transform: translateY(-50%) rotate(-90deg);
+              transition: all 0.25s; }
+          .change_management .expand_cont .category_card .category_row .expand_right .btn_in::after {
+            transform: translateY(-50%) rotate(90deg); }
+          .change_management .expand_cont .category_card .category_row .expand_right .select_time {
+            display: none;
+            align-items: center;
+            margin-right: 10px;
+            position: relative; }
+            .change_management .expand_cont .category_card .category_row .expand_right .select_time .center_gap {
+              margin: 0 5px; }
+            .change_management .expand_cont .category_card .category_row .expand_right .select_time .input-group {
+              width: 140px; }
+            .change_management .expand_cont .category_card .category_row .expand_right .select_time .start_numb, .change_management .expand_cont .category_card .category_row .expand_right .select_time .end_numb {
+              max-width: 50px;
+              height: 26px;
+              border-radius: 4px;
+              border: solid 1px #dedede; }
+            .change_management .expand_cont .category_card .category_row .expand_right .select_time .time_tipsCla {
+              display: none;
+              position: absolute;
+              bottom: -28px;
+              left: 20px;
+              color: red;
+              padding: 5px; }
+            .change_management .expand_cont .category_card .category_row .expand_right .select_time .time_tipsExp {
+              display: none;
+              position: absolute;
+              bottom: -28px;
+              left: 20px;
+              color: red;
+              padding: 5px; }
+        .change_management .expand_cont .category_card .category_row:last-of-type {
+          border: none; }
+      .change_management .expand_cont .category_card .course_class {
+        overflow: hidden;
+        padding: 0 365px 0 145px; }
+        .change_management .expand_cont .category_card .course_class .course_form {
+          display: flex;
+          flex-direction: row; }
+          .change_management .expand_cont .category_card .course_class .course_form .course_item {
+            flex: 1;
+            display: flex;
+            flex-direction: column; }
+            .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type {
+              float: left;
+              font-size: 15px;
+              font-weight: 500;
+              position: relative;
+              display: inline-block;
+              height: 36px;
+              padding-left: 30px;
+              line-height: 38px;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; }
+              .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type input {
+                position: absolute;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden; }
+              .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type input[type=checkbox]:checked + .mdui_checkout_icon:after {
+                background-color: #2284f1;
+                border-color: #2284f1; }
+              .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type input[type=checkbox]:checked + .mdui_checkout_icon:before {
+                opacity: 1;
+                -webkit-transform: rotateZ(37deg) scale(1);
+                transform: rotateZ(37deg) scale(1); }
+              .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type .mdui_checkout_icon {
+                position: absolute;
+                top: 9px;
+                left: 0;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+                background-color: transparent;
+                border: none;
+                border-radius: 18px;
+                -webkit-transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+                display: none; }
+                .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type .mdui_checkout_icon:before {
+                  position: absolute;
+                  top: 2px;
+                  left: 0;
+                  z-index: 1;
+                  width: 8px;
+                  height: 13px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  content: ' ';
+                  border-right: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  opacity: 0;
+                  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  -webkit-transform: rotateZ(37deg) scale(0);
+                  transform: rotateZ(37deg) scale(0);
+                  -webkit-transform-origin: 100% 100%;
+                  transform-origin: 100% 100%; }
+                .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type .mdui_checkout_icon:after {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 0;
+                  width: 18px;
+                  height: 18px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  content: ' ';
+                  border: 2px solid #cccccc;
+                  border-radius: 2px;
+                  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+              .change_management .expand_cont .category_card .course_class .course_form .course_item .select_type:hover {
+                color: #4381e6; }
+  .change_management .apply_change_management {
+    margin: 10px auto;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .change_management .apply_change_management .screening_results {
+      display: flex;
+      font-family: '微软雅黑';
+      color: #333;
+      font-size: 14px; }
+      .change_management .apply_change_management .screening_results .huise_color {
+        color: #999999;
+        margin: 0 0 0 35px; }
+      .change_management .apply_change_management .screening_results .highlight_color {
+        color: #0087ef;
+        margin: 0; }
+      .change_management .apply_change_management .screening_results .screening_txt {
+        margin: 0 0 0 40px; }
+    .change_management .apply_change_management .change_management_btn {
+      text-decoration: none;
+      margin-right: 14px;
+      width: 90px;
+      height: 30px;
+      background-color: #4381e6;
+      border-radius: 2px;
+      line-height: 30px;
+      text-align: center;
+      font-family: '微软雅黑';
+      color: #fefeff;
+      font-size: 14px; }
+  .change_management .change_management_table {
+    width: 100%;
+    background-color: #fff; }
+    .change_management .change_management_table .change_management_thead {
+      width: 100%;
+      display: inline-block;
+      background-color: #b7c7d4; }
+      .change_management .change_management_table .change_management_thead tr {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .change_management .change_management_table .change_management_thead tr td {
+          display: inline-block;
+          font-size: 14px;
+          color: #fff;
+          font-family: '微软雅黑';
+          text-align: center; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(1) {
+          flex: 1; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(2) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(3) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(4) {
+          flex: 2.6; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(5) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(6) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(7) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(8) {
+          flex: 3; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(9) {
+          flex: 1; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(10) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(11) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(12) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(13) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(14) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_thead tr td:nth-child(15) {
+          flex: 2; }
+    .change_management .change_management_table .change_management_tbody {
+      width: 100%;
+      display: inline-block; }
+      .change_management .change_management_table .change_management_tbody tr {
+        height: 56px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .change_management .change_management_table .change_management_tbody tr td {
+          display: inline-block;
+          font-size: 14px;
+          color: #666;
+          font-family: '微软雅黑';
+          text-align: center; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(1) {
+          flex: 1; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(2) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(3) {
+          flex: 2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(4) {
+          flex: 2.6; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(5) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(6) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(7) {
+          flex: 2;
+          color: #51b600; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(8) {
+          flex: 3; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(9) {
+          flex: 1; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(10) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(11) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(12) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(13) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(14) {
+          flex: 2; }
+        .change_management .change_management_table .change_management_tbody tr td:nth-child(15) {
+          flex: 2; }
+          .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 18px;
+            height: 15px;
+            margin: 0 auto;
+            cursor: pointer;
+            position: relative; }
+            .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .line_btn {
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              overflow: hidden;
+              display: inline-block;
+              background-color: #666666; }
+            .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box {
+              display: none;
+              position: absolute;
+              top: 20px;
+              left: 50%;
+              z-index: 100;
+              transform: translateX(-60%);
+              width: 93px;
+              min-height: 62px;
+              background-color: #e1edf8;
+              border-radius: 4px;
+              padding: 0 18px 6px 18px;
+              text-align: center;
+              font-size: 14px;
+              color: #666666;
+              font-family: '微软雅黑'; }
+              .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box .operation_item_txt {
+                display: inline-block;
+                text-decoration: none;
+                margin: 6px 0 0 0;
+                color: #666666;
+                cursor: pointer; }
+                .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box .operation_item_txt:hover {
+                  color: #2284f1; }
+              .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -7px;
+                left: 48px;
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid #e1edf8; }
+              .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box:after {
+                content: '';
+                position: absolute;
+                top: -14px;
+                left: 0;
+                height: 15px;
+                width: 100%; }
+            .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_color {
+              color: #2284f1; }
+            .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn:hover .operation_item_box {
+              display: block !important; }
+      .change_management .change_management_table .change_management_tbody tr:nth-child(odd) {
+        background-color: #fff; }
+      .change_management .change_management_table .change_management_tbody tr:nth-child(even) {
+        background-color: #f5f8fb; }
+      .change_management .change_management_table .change_management_tbody .reduce_color {
+        color: #cb0e24; }
+      .change_management .change_management_table .change_management_tbody .adopt_color {
+        color: #51b600; }
+      .change_management .change_management_table .change_management_tbody .reject_color {
+        color: #f87b00; }
+      .change_management .change_management_table .change_management_tbody .overdue_color {
+        color: #bcb9b9; }
+  .change_management .paging_item_box {
+    margin: 10px auto 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    text-align: center; }
+    .change_management .paging_item_box .pagination {
+      color: #969696; }
+      .change_management .paging_item_box .pagination li a {
+        background-color: #fff;
+        border-radius: 4px;
+        margin-right: 8px;
+        text-align: center;
+        font-size: 12px;
+        box-shadow: none;
+        color: #333333;
+        font-weight: bold;
+        border: 1px solid #c8c8c8; }
+        .change_management .paging_item_box .pagination li a:hover {
+          color: #3f66f6; }
+      .change_management .paging_item_box .pagination li span {
+        border-radius: 4px;
+        margin-right: 8px;
+        text-align: center;
+        font-size: 12px;
+        box-shadow: none;
+        color: #3f66f6;
+        font-weight: bold;
+        background: none; }
+      .change_management .paging_item_box .pagination li span.goto_page {
+        border: none;
+        padding: 0 12px;
+        line-height: 28px;
+        color: #969696; }
+        .change_management .paging_item_box .pagination li span.goto_page input {
+          outline: none;
+          border: 1px solid #c8c8c8;
+          background: none;
+          box-shadow: none;
+          display: inline-block;
+          width: 40px;
+          height: 28px;
+          margin: 0 5px;
+          border-radius: 4px;
+          padding: 2px; }
+      .change_management .paging_item_box .pagination li.active {
+        border: none; }
+        .change_management .paging_item_box .pagination li.active span, .change_management .paging_item_box .pagination li.active a {
+          background-color: #4381e6;
+          color: #fff;
+          border: none;
+          cursor: pointer; }
+  .change_management #withdraw_modal .modal-dialog, .change_management #again_modal .modal-dialog {
+    margin: 130px auto 0;
+    width: 527px !important;
+    overflow: hidden; }
+    .change_management #withdraw_modal .modal-dialog .modal-content, .change_management #again_modal .modal-dialog .modal-content {
+      border: none;
+      box-shadow: none;
+      border-radius: 10px;
+      background-color: #ffffff;
+      height: 342px; }
+      .change_management #withdraw_modal .modal-dialog .modal-content .modal-header, .change_management #again_modal .modal-dialog .modal-content .modal-header {
+        padding: 0 !important;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        background-color: #4381e6;
+        height: 50px; }
+        .change_management #withdraw_modal .modal-dialog .modal-content .modal-header .select_students_close, .change_management #again_modal .modal-dialog .modal-content .modal-header .select_students_close {
+          color: #fff !important;
+          font-size: 38px !important;
+          outline: none;
+          margin: 7px 20px 0 0;
+          opacity: 1;
+          text-shadow: none;
+          font-weight: normal; }
+        .change_management #withdraw_modal .modal-dialog .modal-content .modal-header .modal-title, .change_management #again_modal .modal-dialog .modal-content .modal-header .modal-title {
+          margin-left: 30px;
+          font-family: '微软雅黑';
+          font-size: 16px;
+          color: #fff;
+          line-height: 50px; }
+      .change_management #withdraw_modal .modal-dialog .modal-content .modal-body, .change_management #again_modal .modal-dialog .modal-content .modal-body {
+        padding: 30px 58px 0 58px; }
+        .change_management #withdraw_modal .modal-dialog .modal-content .modal-body .modal_body_title, .change_management #again_modal .modal-dialog .modal-content .modal-body .modal_body_title {
+          font-family: '微软雅黑';
+          font-size: 16px;
+          color: #333;
+          margin: 0 0 14px 0; }
+        .change_management #withdraw_modal .modal-dialog .modal-content .modal-body .withdraw_box, .change_management #again_modal .modal-dialog .modal-content .modal-body .withdraw_box {
+          width: 100%;
+          box-sizing: border-box;
+          height: 146px;
+          background-color: #ffffff;
+          border: solid 1px #d2d2d2;
+          padding: 8px 10px;
+          font-size: 14px;
+          color: #333;
+          font-family: '微软雅黑';
+          resize: none;
+          outline: none; }
+      .change_management #withdraw_modal .modal-dialog .modal-content .modal-footer, .change_management #again_modal .modal-dialog .modal-content .modal-footer {
+        padding: 0;
+        height: 58px;
+        line-height: 58px;
+        border: none;
+        margin: 25px auto 0;
+        width: 180px;
+        display: flex;
+        justify-content: space-between; }
+        .change_management #withdraw_modal .modal-dialog .modal-content .modal-footer .btn-default, .change_management #again_modal .modal-dialog .modal-content .modal-footer .btn-default {
+          width: 58px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-family: '微软雅黑';
+          color: #4381e6;
+          background-color: #ffffff;
+          border-radius: 2px;
+          border: solid 1px #4381e6;
+          padding: 0;
+          outline: none;
+          font-size: 14px; }
+        .change_management #withdraw_modal .modal-dialog .modal-content .modal-footer .btn-primary, .change_management #again_modal .modal-dialog .modal-content .modal-footer .btn-primary {
+          width: 58px;
+          height: 30px;
+          background-color: #4381e6;
+          border-radius: 2px;
+          line-height: 30px;
+          text-align: center;
+          font-family: '微软雅黑';
+          color: #fff;
+          padding: 0;
+          outline: none;
+          font-size: 14px;
+          border: none; }
+  .change_management #urge_modal .modal-dialog {
+    margin: 220px auto 0;
+    width: 527px !important;
+    overflow: hidden; }
+    .change_management #urge_modal .modal-dialog .modal-content {
+      border: none;
+      box-shadow: none;
+      border-radius: 10px;
+      background-color: #ffffff;
+      height: 342px; }
+      .change_management #urge_modal .modal-dialog .modal-content .modal-header {
+        padding: 0 !important;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        background-color: #4381e6;
+        height: 50px; }
+        .change_management #urge_modal .modal-dialog .modal-content .modal-header .select_students_close {
+          color: #fff !important;
+          font-size: 38px !important;
+          outline: none;
+          margin: 7px 20px 0 0;
+          opacity: 1;
+          text-shadow: none;
+          font-weight: normal; }
+        .change_management #urge_modal .modal-dialog .modal-content .modal-header .modal-title {
+          margin-left: 30px;
+          font-family: '微软雅黑';
+          font-size: 16px;
+          color: #fff;
+          line-height: 50px; }
+      .change_management #urge_modal .modal-dialog .modal-content .modal-body {
+        padding: 50px 58px 0 58px; }
+        .change_management #urge_modal .modal-dialog .modal-content .modal-body .modal_body_title {
+          display: flex;
+          margin: 0 0 40px 0;
+          font-size: 16px;
+          color: #333333;
+          font-family: '微软雅黑'; }
+        .change_management #urge_modal .modal-dialog .modal-content .modal-body .modal_body_item {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          color: #333333;
+          font-family: '微软雅黑';
+          margin: 0 0 80px 0; }
+          .change_management #urge_modal .modal-dialog .modal-content .modal-body .modal_body_item .modal_body_txt {
+            margin-right: 55px; }
+          .change_management #urge_modal .modal-dialog .modal-content .modal-body .modal_body_item .modal_body_label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: normal;
+            cursor: pointer;
+            margin: 0; }
+          .change_management #urge_modal .modal-dialog .modal-content .modal-body .modal_body_item .modal_body_checkbox {
+            -webkit-appearance: none;
+            appearance: none;
+            outline: none;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            vertical-align: center;
+            background: #fff;
+            border: solid 1px #4381e6;
+            border-radius: 2px;
+            position: relative;
+            margin: 0 6px; }
+          .change_management #urge_modal .modal-dialog .modal-content .modal-body .modal_body_item .modal_body_checkbox:checked::after {
+            border: none !important;
+            border-radius: 0;
+            background-color: transparent;
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 20px;
+            height: 20px;
+            background: url("../images/icon-gouxuan.png") no-repeat;
+            background-size: cover; }
+      .change_management #urge_modal .modal-dialog .modal-content .modal-footer {
+        padding: 0;
+        height: 58px;
+        line-height: 58px;
+        border: none;
+        margin: 25px auto 0;
+        width: 180px;
+        display: flex;
+        justify-content: space-between; }
+        .change_management #urge_modal .modal-dialog .modal-content .modal-footer .btn-default {
+          width: 58px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-family: '微软雅黑';
+          color: #4381e6;
+          background-color: #ffffff;
+          border-radius: 2px;
+          border: solid 1px #4381e6;
+          padding: 0;
+          outline: none;
+          font-size: 14px; }
+        .change_management #urge_modal .modal-dialog .modal-content .modal-footer .btn-primary {
+          width: 58px;
+          height: 30px;
+          background-color: #4381e6;
+          border-radius: 2px;
+          line-height: 30px;
+          text-align: center;
+          font-family: '微软雅黑';
+          color: #fff;
+          padding: 0;
+          outline: none;
+          font-size: 14px;
+          border: none; }
+  .change_management #process_modal .modal-dialog {
+    margin: 220px auto 80px;
+    width: 711px !important;
+    overflow: hidden; }
+    .change_management #process_modal .modal-dialog .modal-content {
+      border: none;
+      box-shadow: none;
+      border-radius: 10px;
+      background-color: #ffffff;
+      min-height: 472px; }
+      .change_management #process_modal .modal-dialog .modal-content .modal-header {
+        padding: 0 !important;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        background-color: #4381e6;
+        height: 50px; }
+        .change_management #process_modal .modal-dialog .modal-content .modal-header .select_students_close {
+          color: #fff !important;
+          font-size: 38px !important;
+          outline: none;
+          margin: 7px 20px 0 0;
+          opacity: 1;
+          text-shadow: none;
+          font-weight: normal; }
+        .change_management #process_modal .modal-dialog .modal-content .modal-header .modal-title {
+          margin-left: 30px;
+          font-family: '微软雅黑';
+          font-size: 16px;
+          color: #fff;
+          line-height: 50px; }
+      .change_management #process_modal .modal-dialog .modal-content .modal-body {
+        width: 100%;
+        padding: 0; }
+        .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_body_nav {
+          margin: 0;
+          padding: 0 30px;
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          border-bottom: solid 1px #e9eaeb;
+          box-sizing: border-box; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_body_nav .modal_nav_item {
+            height: 50px;
+            line-height: 50px;
+            z-index: 10;
+            box-sizing: border-box;
+            margin-right: 39px;
+            color: #666;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: '微软雅黑'; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_body_nav .modal_bottom_color {
+            border-bottom: 2px solid #198cff; }
+        .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 {
+          padding: 30px 0;
+          display: none; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_center_titles, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_center_titles, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_center_titles, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_center_titles {
+            display: flex;
+            align-items: center;
+            font-family: '微软雅黑';
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 37px 0; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_center_titles .modal_center_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_center_titles .modal_center_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_center_titles .modal_center_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_center_titles .modal_center_txt {
+              color: #333;
+              font-size: 16px;
+              margin-right: 20px;
+              padding-left: 30px; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_center_titles .modal_text_color, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_center_titles .modal_text_color, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_center_titles .modal_text_color, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_center_titles .modal_text_color {
+              color: #0087ef;
+              margin-right: 4px; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_center_titles .modal_juli, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_center_titles .modal_juli, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_center_titles .modal_juli, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_center_titles .modal_juli {
+              margin-left: 30px; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .icon_item_left, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .icon_item_left, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .icon_item_left, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .icon_item_left {
+            font-size: 40px;
+            position: absolute;
+            top: 169px;
+            left: 10px;
+            cursor: pointer;
+            color: #198cff;
+            display: none;
+            padding: 0 10px; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .icon_item_right, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .icon_item_right, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .icon_item_right, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .icon_item_right {
+            font-size: 40px;
+            position: absolute;
+            top: 169px;
+            right: 10px;
+            cursor: pointer;
+            color: #198cff;
+            padding: 0 10px; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar {
+            padding: 50px 44px 0 44px;
+            margin: 0 auto 30px;
+            height: 140px;
+            width: 628px;
+            overflow: hidden; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .withdraw_item_text, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .withdraw_item_text, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .withdraw_item_text, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .withdraw_item_text {
+              position: absolute;
+              top: -50px;
+              left: 220px;
+              line-height: 20px;
+              font-size: 14px;
+              color: #999999; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .withdraw_item_text .withdraw_color, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .withdraw_item_text .withdraw_color, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .withdraw_item_text .withdraw_color, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .withdraw_item_text .withdraw_color {
+                color: #cb0e24; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .withdraw_item_text:before, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .withdraw_item_text:before, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .withdraw_item_text:before, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .withdraw_item_text:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 22px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 6px;
+                height: 6px;
+                background-color: #cb0e24;
+                border-radius: 50%; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .withdraw_item_text:after, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .withdraw_item_text:after, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .withdraw_item_text:after, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .withdraw_item_text:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 27px;
+                left: 50%;
+                height: 25px;
+                transform: translateX(-50%);
+                border: 1px dashed #cb0e24; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line {
+              width: 780px;
+              height: 2px;
+              background-color: #e9eaeb;
+              position: relative;
+              left: 0;
+              transition: all .5s; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .process_bar_line_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .process_bar_line_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .process_bar_line_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .process_bar_line_item {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 200;
+                height: 2px;
+                width: 325px;
+                background: #198cff; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .bar_line_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .bar_line_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .bar_line_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .bar_line_item {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                background-color: #198cff;
+                border-radius: 50%; }
+                .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .bar_line_item .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .bar_line_item .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .bar_line_item .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .bar_line_item .check_name {
+                  position: absolute;
+                  top: 22px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  margin: 0;
+                  color: #999;
+                  font-family: '微软雅黑';
+                  font-size: 14px;
+                  width: 110px;
+                  text-align: center; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_item_01, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_item_01, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_item_01, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_item_01 {
+                left: 0px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_item_02, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_item_02, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_item_02, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_item_02 {
+                left: 130px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_item_03, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_item_03, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_item_03, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_item_03 {
+                left: 260px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_item_04, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_item_04, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_item_04, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_item_04 {
+                left: 390px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_item_05, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_item_05, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_item_05, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_item_05 {
+                left: 520px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_item_06, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_item_06, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_item_06, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_item_06 {
+                left: 650px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_item_07, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_item_07, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_item_07, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_item_07 {
+                left: 780px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_content_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_none_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_content_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_none_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_content_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_none_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_content_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_none_item {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 22px;
+                height: 22px;
+                background-color: #198cff;
+                text-align: center;
+                line-height: 22px;
+                z-index: 200;
+                border-radius: 50%; }
+                .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_content_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_content_item .fa-times, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_none_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_none_item .fa-times, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_content_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_content_item .fa-times, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_none_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_none_item .fa-times, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_content_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_content_item .fa-times, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_none_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_none_item .fa-times, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_content_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_content_item .fa-times, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_none_item .fa-check, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_none_item .fa-times {
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: normal; }
+                .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_content_item .fa_check_none, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_none_item .fa_check_none, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_content_item .fa_check_none, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_none_item .fa_check_none, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_content_item .fa_check_none, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_none_item .fa_check_none, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_content_item .fa_check_none, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_none_item .fa_check_none {
+                  display: none; }
+                .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_content_item .check_item_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_none_item .check_item_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_content_item .check_item_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_none_item .check_item_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_content_item .check_item_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_none_item .check_item_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_content_item .check_item_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_none_item .check_item_box {
+                  position: absolute;
+                  top: 55px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  font-size: 14px;
+                  color: #666;
+                  width: 80px;
+                  text-align: center;
+                  font-family: '微软雅黑'; }
+                  .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_content_item .check_item_box .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_none_item .check_item_box .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_content_item .check_item_box .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_none_item .check_item_box .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_content_item .check_item_box .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_none_item .check_item_box .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_content_item .check_item_box .check_name, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_none_item .check_item_box .check_name {
+                    margin: 0 0 4px 0; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .check_none_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .check_none_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .check_none_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .check_none_item {
+                background-color: #ee2f38; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_big_01, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_big_01, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_big_01, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_big_01 {
+                left: -11px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_big_02, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_big_02, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_big_02, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_big_02 {
+                left: 119px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_big_03, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_big_03, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_big_03, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_big_03 {
+                left: 249px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_big_04, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_big_04, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_big_04, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_big_04 {
+                left: 379px;
+                display: none; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .process_bar .process_bar_line .line_big_05, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .process_bar .process_bar_line .line_big_05, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .process_bar .process_bar_line .line_big_05, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .process_bar .process_bar_line .line_big_05 {
+                left: 509px;
+                display: none; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .opinion_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .opinion_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .opinion_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .opinion_box {
+            margin-top: 30px;
+            width: 100%; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .opinion_box .opinion_box_title, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .opinion_box .opinion_box_title, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .opinion_box .opinion_box_title, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .opinion_box .opinion_box_title {
+              font-size: 16px;
+              color: #333;
+              font-family: '微软雅黑';
+              margin: 0 0 20px 0;
+              padding-left: 30px; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .opinion_box .opinion_box_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .opinion_box .opinion_box_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .opinion_box .opinion_box_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .opinion_box .opinion_box_txt {
+              width: 550px;
+              margin: 0 auto 5px;
+              display: flex;
+              font-size: 14px;
+              color: #666;
+              font-family: '微软雅黑'; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .opinion_box .opinion_box_txt .opinion_box_timer, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .opinion_box .opinion_box_txt .opinion_box_timer, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .opinion_box .opinion_box_txt .opinion_box_timer, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .opinion_box .opinion_box_txt .opinion_box_timer {
+                color: #999; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .opinion_box .opinion_box_text, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .opinion_box .opinion_box_text, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .opinion_box .opinion_box_text, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .opinion_box .opinion_box_text {
+              width: 550px;
+              height: 70px;
+              background-color: #ffffff;
+              overflow-y: auto;
+              padding: 6px;
+              border: solid 1px #d2d2d2;
+              font-family: '微软雅黑';
+              color: #333;
+              font-size: 14px;
+              margin: 0 auto 20px; }
+          .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_content_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_content_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_content_item, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_content_item {
+            padding: 0 60px 0 30px;
+            width: 100%;
+            height: 320px;
+            overflow-y: auto;
+            overflow-y: overlay; }
+            .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_content_item .modal_content_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_content_item .modal_content_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_content_item .modal_content_box, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_content_item .modal_content_box {
+              list-style: none;
+              padding: 0;
+              margin: 0 0 20px 0;
+              font-family: '微软雅黑';
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_content_item .modal_content_box .modal_content_box_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_content_item .modal_content_box .modal_content_box_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_content_item .modal_content_box .modal_content_box_txt, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_content_item .modal_content_box .modal_content_box_txt {
+                color: #666;
+                width: 430px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+                .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_content_item .modal_content_box .modal_content_box_txt .color_names, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_content_item .modal_content_box .modal_content_box_txt .color_names, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_content_item .modal_content_box .modal_content_box_txt .color_names, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_content_item .modal_content_box .modal_content_box_txt .color_names {
+                  color: #0087ef;
+                  display: inline-block;
+                  cursor: pointer;
+                  margin: 0 5px; }
+              .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_01 .modal_content_item .modal_content_box .modal_content_box_time, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_02 .modal_content_item .modal_content_box .modal_content_box_time, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_03 .modal_content_item .modal_content_box .modal_content_box_time, .change_management #process_modal .modal-dialog .modal-content .modal-body .modal_center_04 .modal_content_item .modal_content_box .modal_content_box_time {
+                color: #999;
+                font-size: 14px;
+                font-family: '微软雅黑'; }
+  .change_management .modal_content_item::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    background-color: #f5f5f5; }
+  .change_management .modal_content_item::-webkit-scrollbar-track {
+    border-radius: 9px;
+    background-color: #F5F5F5; }
+  .change_management .modal_content_item::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: #ccdafa; }
+
+/*# sourceMappingURL=refund_management.css.map */

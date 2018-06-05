@@ -114,40 +114,20 @@ body {
     height: (104/7.5)+vw;
     line-height: (110/7.5)+vw;
     border-left: (4/7.5)+vw solid #3B95FF;
-    padding-left: (34/7.5)+vw;
-    font-family: 'PingFang-SC-Bold';
-    font-size: (28/7.5)+vw;
-    color: #333;
-    background-color: #fff;
+    padding-left: (28/7.5)+vw;
+    font-family: '微软雅黑';
     font-weight: 600;
+    font-size: (40/7.5)+vw;
+    color: #3B95FF;
+    background-color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .receive_icon {
-      float: right;
-      margin: (39/7.5)+vw (35/7.5)+vw 0 0;
-      width: (36/7.5)+vw;
-      height: (36/7.5)+vw;
-      display: block;
-    }
-    .unreceive_icon {
-      float: right;
-      margin: (39/7.5)+vw (35/7.5)+vw 0 0;
-      width: (36/7.5)+vw;
-      height: (36/7.5)+vw;
-      display: none;
-    }
-  }
-  .welfare_box_txt {
-    display: block;
-    height: (100/7.5)+vw;
-    line-height: (100/7.5)+vw;
-    text-align: center;
-    font-family: 'PingFang-SC-Medium';
-    font-size: (28/7.5)+vw;
-    color: #3b95ff;
-    .arrow_icon {
-      margin-left: (14/7.5)+vw;
-      width: (30/7.5)+vw;
-      height: (16/7.5)+vw;
-      vertical-align: middle;
+      margin: 0 (15/7.5)+vw 0 0;
+      width: (50/7.5)+vw;
+      height: (50/7.5)+vw;
     }
   }
   .course_content {
@@ -164,50 +144,49 @@ body {
     height: (6/7.5)+vw;
     background-color: #ffd200;
   }
-  .mobile_details_box {
-    display: none;
-    .extra_benefits_box {
-      .extra_benefits_box_banner {
-        width: 100%;
-        height: (190/7.5)+vw;
-        background: url("../images/banner_icon.png") no-repeat;
-        background-size: cover;
-        margin-top: (20/7.5)+vw;
-      }
-      .extra_benefits_box_title {
-        font-family: 'PingFang-SC-Medium';
-        font-size: (28/7.5)+vw;
-        color: #333333;
-        margin: (42/7.5)+vw auto (47/7.5)+vw;
-        text-align: center;
-        .extra_benefits_color {
-          font-family: 'PingFang-SC-Heavy';
-          font-size: (34/7.5)+vw;
-          color: #0474f8 !important;
-        }
-      }
-      .course_content_box {
-        padding-left: (31/7.5)+vw;
-        .course_content_title {
-          margin: (30/7.5)+vw auto 0;
-          font-family: 'PingFang-SC-Medium';
-          font-size: (28/7.5)+vw;
-          color: #048bfd;
-        }
-        .course_content_txt {
-          margin: (20/7.5)+vw auto 0;
-          font-family: 'PingFang-SC-Regular';
-          color: #808080;
-        }
-      }
-      .harvest_banner {
-        width: 100%;
-        height: (360/7.5)+vw;
-        background: url("../images/05bcg2.png") no-repeat;
-        background-size: cover;
-        margin: (30/7.5)+vw 0 (20/7.5)+vw 0;
+  .extra_benefits_box {
+    .extra_benefits_box_banner {
+      width: 100%;
+      height: (190/7.5)+vw;
+      background: url("../images/banner_icon.png") no-repeat;
+      background-size: cover;
+      margin-top: (20/7.5)+vw;
+    }
+    .extra_benefits_box_title {
+      font-family: 'PingFang-SC-Medium';
+      font-size: (28/7.5)+vw;
+      color: #333333;
+      margin: (42/7.5)+vw auto (47/7.5)+vw;
+      text-align: center;
+      .extra_benefits_color {
+        font-family: 'PingFang-SC-Heavy';
+        font-size: (34/7.5)+vw;
+        color: #0474f8 !important;
       }
     }
+    .course_content_box {
+      padding-left: (31/7.5)+vw;
+      .course_content_title {
+        margin: (30/7.5)+vw auto 0;
+        font-family: 'PingFang-SC-Medium';
+        font-size: (28/7.5)+vw;
+        color: #048bfd;
+      }
+      .course_content_txt {
+        margin: (20/7.5)+vw auto 0;
+        font-family: 'PingFang-SC-Regular';
+        color: #808080;
+      }
+    }
+    .harvest_banner {
+      width: 100%;
+      height: (360/7.5)+vw;
+      background: url("../images/05bcg2.png") no-repeat;
+      background-size: cover;
+      margin: (30/7.5)+vw 0 (20/7.5)+vw 0;
+    }
+  }
+  .mobile_details_box {
     .common_problem {
       padding-bottom: (50/7.5)+vw;
       .common_problem_box {

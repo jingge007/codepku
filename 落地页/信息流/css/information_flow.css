@@ -1,22 +1,13 @@
+@charset "UTF-8";
 .information_flow {
-  width: 100%;
-  position: relative; }
+  width: 100%; }
   .information_flow .information_flow_banner {
     width: 100%;
-    height: 71.8666666667vw;
+    height: 49.3333333333vw;
     background: url("../images/flow_banner.png") no-repeat;
     background-size: cover; }
-  .information_flow .information_flow_banner_01 {
-    margin-top: -2px;
-    width: 100%;
-    height: 81.6vw;
-    background: url("../images/flow_banner_01.png") no-repeat;
-    background-size: cover; }
   .information_flow .mobile_sign_up_form {
-    position: absolute;
-    top: 71.3333333333vw;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: -4.6666666667vw auto 0;
     width: 93.3333333333vw;
     height: 96vw;
     background-color: #fff;
@@ -28,8 +19,9 @@
     .information_flow .mobile_sign_up_form .mobile_sign_up_title {
       margin: 0 auto 5.3333333333vw;
       font-size: 5.0666666667vw;
-      font-family: 'PingFang-SC-Heavy';
-      color: #3b95ff; }
+      font-family: '微软雅黑';
+      color: #3b95ff;
+      font-weight: 600; }
     .information_flow .mobile_sign_up_form .mobile_sign_up_input, .information_flow .mobile_sign_up_form .mobile_sign_up_select {
       margin: 0;
       display: block;
@@ -40,7 +32,7 @@
       margin: 0 auto 3.7333333333vw;
       border: none !important;
       font-size: 4vw;
-      font-family: 'PingFang-SC-Regular';
+      font-family: '微软雅黑';
       color: #999999;
       padding: 2vw 0 2vw 4.5333333333vw;
       -webkit-appearance: none;
@@ -68,7 +60,7 @@
         background-color: #f7f7f7;
         border-radius: 1.0666666667vw;
         font-size: 4vw;
-        font-family: 'PingFang-SC-Regular';
+        font-family: '微软雅黑';
         color: #999999;
         padding: 2vw 0 2vw 4.5333333333vw;
         -webkit-appearance: none;
@@ -83,7 +75,7 @@
         line-height: 10.5333333333vw;
         background-color: #3b95ff;
         border-radius: 0.5333333333vw;
-        font-family: 'PingFang-SC-Medium';
+        font-family: '微软雅黑';
         font-size: 3.6vw;
         color: #fff;
         margin: 0;
@@ -98,34 +90,36 @@
       outline: none;
       background-color: #3b95ff;
       border-radius: 0.5333333333vw;
-      font-family: 'PingFang-SC-Medium';
+      font-family: '微软雅黑';
       font-size: 3.8666666667vw;
       color: #fff;
       padding: 0;
       text-align: center; }
   .information_flow .information_flow_content {
-    padding-top: 14.6666666667vw;
+    margin-top: -2px;
     width: 100%;
-    background: url("../images/flow_bg.png") repeat;
-    background-size: cover; }
+    background: url("../images/flow_bg.png");
+    background-size: 30%; }
     .information_flow .information_flow_content .course_introduction_title {
       position: relative;
       text-align: center;
       margin: 4.4vw auto 1.3333333333vw; }
       .information_flow .information_flow_content .course_introduction_title .number_txt {
         display: block;
-        font-family: 'NotoSansHans-Bold';
+        font-family: '微软雅黑';
         font-size: 13.3333333333vw;
-        color: #e7efff; }
+        color: #e7efff;
+        font-weight: 600; }
       .information_flow .information_flow_content .course_introduction_title .number_text {
         display: inline-block;
-        font-family: 'NotoSansHans-Bold';
+        font-family: '微软雅黑';
         font-size: 4.8vw;
         color: #2284f1;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%); }
+        transform: translate(-50%, -50%);
+        font-weight: 600; }
     .information_flow .information_flow_content .course_introduction {
       width: 93.3333333333vw;
       height: 156vw;
@@ -165,7 +159,7 @@
       background-color: #fff; }
       .information_flow .information_flow_content .period_introduction .period_introduction_txt, .information_flow .information_flow_content .period_introduction .period_introduction_text {
         text-align: center;
-        font-family: 'NotoSansHans-Regular';
+        font-family: '微软雅黑';
         font-size: 3.4666666667vw;
         color: #2284f1;
         margin: 2.6666666667vw auto; }
@@ -207,11 +201,11 @@
       .information_flow .information_flow_content .qr_code .qr_code_title {
         margin: 10.6666666667vw auto 4vw;
         font-size: 4.5333333333vw;
-        font-family: 'NotoSansHans-Bold';
+        font-family: '微软雅黑';
         color: #ffe400; }
       .information_flow .information_flow_content .qr_code .qr_code_txt {
         font-size: 3.4666666667vw;
-        font-family: 'NotoSansHans-Regular';
+        font-family: '微软雅黑';
         color: #ffe400;
         margin: 0 0 6.6666666667vw 0; }
       .information_flow .information_flow_content .qr_code .erweima_box {
@@ -236,7 +230,7 @@
         width: 10vw; }
       .information_flow .information_flow_content .footer_box .btm_tipst {
         color: #499cf8;
-        font-family: "NotoSansHans-Bold";
+        font-family: "微软雅黑";
         align-items: center;
         flex: 1;
         font-size: 3.7333333333vw;
@@ -255,6 +249,6 @@
         justify-content: center;
         display: flex;
         align-items: center;
-        font-family: 'NotoSansHans-Bold'; }
+        font-family: '微软雅黑'; }
 
 /*# sourceMappingURL=information_flow.css.map */

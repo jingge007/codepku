@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请退款</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/refund.css">
+</head>
+<body>
+<div style="width: 100%; height: 60px;background-color: #4381E6;"></div>
+<div class="change_classes">
+    <!--申请换课-->
+    <div class="change_classes_nav">
+        <span class="doub_title">申请退款</span>
+        <div class="doub_icont">
+            <div class="notes_box">
+                <h2 class="notes_box_title">换课须知</h2>
+                <p class="notes_box_txt">1、申请换课前需将相应课程设为停课状态，否则无法读取</p>
+                <p class="notes_box_txt">2、单次换课只能针对同一笔订单下的课程</p>
+                <p class="notes_box_txt">3、若提交申请时已填写具体班级，则在该条申请处于“审批中“时，系统会为该学员保留对应席位，若该申请变为其它任何状态，则不再为其保留对应班级席位</p>
+                <p class="notes_box_txt">4、申请审批完成后，系统会自动按照申请时填入的班级进行排课；对于没有选择班级的欲换课程，会自动关闭其课程权限，需要时自行打开即可</p>
+                <p class="notes_box_txt">5.原课程可退金额的计算方式与退款规则一致，按订单协议类型区分计算；对于欲换课程的应缴金额计算方式如下：（A=原订单总价 B=原订单实付金额 C=该课程官网原价 D=该课程应缴金额）
+                    <span class="notes_box_text">该课程应缴金额=原订单折扣比例*官网原价=（B/A）*C</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="change_classes_content">
+        <!--学员信息-->
+        <h2 class="change_classes_content_txt">学员信息</h2>
+        <div class="change_classes_center">
+            <span class="change_classes_btn">选择学员</span>
+            <div class="change_information">
+                <div class="change_information_item">
+                    <p>
+                        <span>姓名：</span>
+                        <span class="change_classes_name">张三</span>
+                    </p>
+                    <p>
+                        <span>用户名：</span>
+                        <span class="change_classes_user">聪明的张三</span>
+                    </p>
+                    <p>
+                        <span>手机号：</span>
+                        <span class="change_classes_mobile">15365656561</span>
+                    </p>
+                    <p>
+                        <span>销售负责人：</span>
+                        <span class="change_classes_name">马丹</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--课程信息-->
+        <div class="course_information">
+            <h2 class="change_classes_content_txt">课程信息</h2>
+            <div class="course_information_center">
+                <div class="select_box">
+                    <div class="select_box_item_01">
+                        <select class="select_box_center">
+                            <option value="">选择订单</option>
+                            <option value="111111111111">111111111111</option>
+                        </select>
+                        <a href="#" class="text_link">点击查看原订单</a>
+                    </div>
+                    <div class="select_box_item_02">
+                        <div class="protocol_type_item">
+                            <span>协议类型：</span>
+                            <span class="protocol_type">新协议</span>
+                            <div class="doub_img">
+                                <div class="doub_item_01">
+                                    <h2 class="doub_item_01_title">退款规则（新）</h2>
+                                    <div class="doub_item_01_center">
+                                        <p>购买课程时的费用分为两部分：直播课费用、录播课费用，目前两者占比各为50%。在退费时除了扣除已上直播课费用和已看录播课费用之外，还需额外扣除3%的手续费，故可退费用的计算公式如下：</p>
+                                        <p>单个直播课可退金额 = 该课程实付金额*直播费用占比*剩余节数占比 = A *（1-p%）*（1-n1/m1</p>
+                                        <p>单个录播课可退金额 = 该课程实付金额*录播费用占比*剩余节数占比 = A * p% *（1-n2/m2</p>
+                                        <p>单个课程手续费 = 3%*A</p>
+                                        <p>可退总额 = 所有直播课和录播课可退金额之和 - 所有课程手续费之和</p>
+                                        <p>（A：该课程实付总额 n1：直播课已看节数 m1：该课程对应的直播课总节数</p>
+                                        <p>p%：录播课占比 （默认50%） n2：录播课已上节数 m2：该课程对应的录播课总节数）</p>
+                                    </div>
+                                </div>
+                                <div class="doub_item_02">
+                                    <h2 class="doub_item_01_title">退款规则（默认）</h2>
+                                    <div class="doub_item_01_center">
+                                        <p>（以即将要退课程第一课时的上课时间作为判断条件，分为两种：全额退款、部分退款）</p>
+                                        <p>1、第一课时上课时间＞当前时间：全额退款，可退金额等于实付金额，且无手续费</p>
+                                        <p>2、第一课时上课时间≤当前时间：部分退款，录播课费用全部扣除，直播课费用按所上节数收取另收取3%手续费，具体计算公式如下：</p>
+                                        <p>单个课程可退金额 = 该课程实付总额 - 录播课费用 - 直播课已上费用 = A - 0.5 * A - n / m * 0.5 * A</p>
+                                        <p>单个课程手续费 = 3%*A</p>
+                                        <p>可退总额 = 所有课程可退金额之和 - 所有课程手续费之和</p>
+                                        <p>（A：该课程实付总额 n：直播课已上节数 m：该课程对应的直播课总节数）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="original_table">
+                    <thead class="original_item">
+                    <tr>
+                        <td>课程名称</td>
+                        <td>课程实付金额</td>
+                        <td>直播课进度</td>
+                        <td>录播课进度</td>
+                        <td>可退金额</td>
+                        <td>是否退课</td>
+                    </tr>
+                    </thead>
+                    <tbody class="original_item_tbody">
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    <tr class="original_curriculum">
+                        <td>Scratch Level1</td>
+                        <td class="original_money">1899.00</td>
+                        <td>n1/m1</td>
+                        <td>n1/m1</td>
+                        <td>500.21</td>
+                        <td>
+                            <input type="checkbox" class="checkbox_item">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="price_difference">
+                <span class="difference_money">可退总额：</span>
+                <span class="difference_money difference_value">0.00</span>
+                <span class="difference_money difference_line">元</span>
+                <span class="difference_money">实退金额：</span>
+                <input type="text" class="difference_money_input">
+                <span class="difference_money">元</span>
+            </div>
+        </div>
+        <!--换课原因及备注-->
+        <div class="remarks_box">
+            <h2 class="remarks_box_title">退款原因及备注</h2>
+            <div class="remarks_box_item">
+                <p class="refunds_title">退款原因：</p>
+                <div class="refunds_label">
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>A、销售环节</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>B、教学原因</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>C、课堂体验</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>D、课程设置</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>E、开班原因</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>F、学员自身因素</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>G、教务服务</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>H、上课模式</span>
+                    </label>
+                    <label class="label_item_box">
+                        <input type="checkbox" class="label_checked">
+                        <span>G、其他</span>
+                    </label>
+                </div>
+                <h2 class="remarks_box_item_title">对内备注:</h2>
+                <textarea rows="3" cols="20" class="remarks_box_item_text"></textarea>
+            </div>
+            <div class="remarks_box_butttom">
+                <span class="remarks_box_cancel">取消</span>
+                <span class="remarks_box_determine">提交</span>
+            </div>
+        </div>
+    </div>
+    <!--选择学员的弹窗-->
+    <div class="modal fade" id="select_students_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close select_students_close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">选择学员</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="select_students_input">
+                        <input type="text" class="select_elect_students" placeholder="请输入学员用户名/姓名/手机号">
+                        <span class="search_students">搜索</span>
+                    </div>
+                    <div class="select_students_box">
+                        <table class="select_students_table">
+                            <thead>
+                            <tr class="select_students_title">
+                                <td>姓名</td>
+                                <td>用户名</td>
+                                <td>手机号</td>
+                                <td>可转课程</td>
+                            </tr>
+                            </thead>
+                            <tbody class="select_students_tbody">
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="select_students_text">
+                                <td>张三</td>
+                                <td>张三</td>
+                                <td>15365656561</td>
+                                <td>1</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal_footer_btn">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary students_determine" data-dismiss="modal">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/refund.js"></script>
+</body>
+</html>

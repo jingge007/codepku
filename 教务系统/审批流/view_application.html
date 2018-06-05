@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看申请</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/view_application.css">
+</head>
+<body>
+<div style="width: 100%; height: 60px;background-color: #4381E6;"></div>
+<div class="view_application">
+    <!--申请换课-->
+    <div class="change_classes_nav">
+        <div class="doub_item_boxs">
+            <span class="doub_title">查看申请</span>
+            <div class="doub_icont">
+                <div class="notes_box">
+                    <h2 class="notes_box_title">换课须知</h2>
+                    <p class="notes_box_txt">1、申请换课前需将相应课程设为停课状态，否则无法读取</p>
+                    <p class="notes_box_txt">2、单次换课只能针对同一笔订单下的课程</p>
+                    <p class="notes_box_txt">3、若提交申请时已填写具体班级，则在该条申请处于“审批中“时，系统会为该学员保留对应席位，若该申请变为其它任何状态，则不再为其保留对应班级席位</p>
+                    <p class="notes_box_txt">4、申请审批完成后，系统会自动按照申请时填入的班级进行排课；对于没有选择班级的欲换课程，会自动关闭其课程权限，需要时自行打开即可</p>
+                    <p class="notes_box_txt">5.原课程可退金额的计算方式与退款规则一致，按订单协议类型区分计算；对于欲换课程的应缴金额计算方式如下：（A=原订单总价 B=原订单实付金额 C=该课程官网原价 D=该课程应缴金额）
+                        <span class="notes_box_text">该课程应缴金额=原订单折扣比例*官网原价=（B/A）*C</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="select_application">
+            <select class="select_application_box">
+                <option value="">第一次申请</option>
+                <option value="">第二次申请</option>
+                <option value="">第三次申请</option>
+            </select>
+            <img src="images/icon-fanhui.png" alt="" class="select_application_back">
+        </div>
+    </div>
+    <div class="change_classes_content">
+        <!--学员信息-->
+        <h2 class="change_classes_content_txt">学员信息</h2>
+        <div class="change_classes_center">
+            <div class="change_information_item">
+                <p>
+                    <span>姓名：</span>
+                    <span class="change_classes_name">张三</span>
+                </p>
+                <p>
+                    <span>用户名：</span>
+                    <span class="change_classes_user">聪明的张三</span>
+                </p>
+                <p>
+                    <span>手机号：</span>
+                    <span class="change_classes_mobile">15365656561</span>
+                </p>
+                <p>
+                    <span>可退课程数：</span>
+                    <span class="change_classes_mobile">20节</span>
+                </p>
+                <p>
+                    <span>销售负责人：</span>
+                    <span class="change_classes_name">马丹</span>
+                </p>
+            </div>
+        </div>
+        <!--课程信息-->
+        <div class="course_information">
+            <h2 class="change_classes_content_txt">课程信息</h2>
+            <div class="course_information_center">
+                <div class="course_information_01">
+                    <div class="original_course">
+                        <span class="original_title">原课程</span>
+                        <div class="select_box">
+                            <div class="select_box_item_01">
+                                <span class="select_box_center">所属订单编号：</span>
+                                <a href="#" class="text_link">1545151564145</a>
+                            </div>
+                            <div class="select_box_item_02">
+                                <span>协议类型：</span>
+                                <span class="protocol_type">新协议</span>
+                                <div class="doub_img">
+                                    <div class="doub_item_01">
+                                        <h2 class="doub_item_01_title">退款规则（新）</h2>
+                                        <div class="doub_item_01_center">
+                                            <p>购买课程时的费用分为两部分：直播课费用、录播课费用，目前两者占比各为50%。在退费时除了扣除已上直播课费用和已看录播课费用之外，还需额外扣除3%的手续费，故可退费用的计算公式如下：</p>
+                                            <p>单个直播课可退金额 = 该课程实付金额*直播费用占比*剩余节数占比 = A *（1-p%）*（1-n1/m1</p>
+                                            <p>单个录播课可退金额 = 该课程实付金额*录播费用占比*剩余节数占比 = A * p% *（1-n2/m2</p>
+                                            <p>单个课程手续费 = 3%*A</p>
+                                            <p>可退总额 = 所有直播课和录播课可退金额之和 - 所有课程手续费之和</p>
+                                            <p>（A：该课程实付总额 n1：直播课已看节数 m1：该课程对应的直播课总节数</p>
+                                            <p>p%：录播课占比 （默认50%） n2：录播课已上节数 m2：该课程对应的录播课总节数）</p>
+                                        </div>
+                                    </div>
+                                    <div class="doub_item_02">
+                                        <h2 class="doub_item_01_title">退款规则（默认）</h2>
+                                        <div class="doub_item_01_center">
+                                            <p>（以即将要退课程第一课时的上课时间作为判断条件，分为两种：全额退款、部分退款）</p>
+                                            <p>1、第一课时上课时间＞当前时间：全额退款，可退金额等于实付金额，且无手续费</p>
+                                            <p>2、第一课时上课时间≤当前时间：部分退款，录播课费用全部扣除，直播课费用按所上节数收取另收取3%手续费，具体计算公式如下：</p>
+                                            <p>单个课程可退金额 = 该课程实付总额 - 录播课费用 - 直播课已上费用 = A - 0.5 * A - n / m * 0.5 * A</p>
+                                            <p>单个课程手续费 = 3%*A</p>
+                                            <p>可退总额 = 所有课程可退金额之和 - 所有课程手续费之和</p>
+                                            <p>（A：该课程实付总额 n：直播课已上节数 m：该课程对应的直播课总节数）</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="original_table_item">
+                            <table class="original_table">
+                                <thead class="original_item">
+                                <tr>
+                                    <td>课程名称</td>
+                                    <td>课程实付金额</td>
+                                    <td>直播课进度</td>
+                                    <td>录播课进度</td>
+                                    <td>可退金额</td>
+                                </tr>
+                                </thead>
+                                <tbody class="original_item_tbody">
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                <tr class="original_curriculum">
+                                    <td>Scratch Level1</td>
+                                    <td class="original_money">1899.00</td>
+                                    <td>n1/m1</td>
+                                    <td>n1/m1</td>
+                                    <td>500.21</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="course_information_item">
+                        <span class="money_txt">可退总额：</span>
+                        <span class="original_money_total">0</span>
+                        <span>元</span>
+                    </div>
+                </div>
+                <div class="course_information_02">
+                    <div class="pre_course">
+                        <span class="pre_course_title">预换课程</span>
+                        <div class="select_pre_box">
+                            <div class="pre_course_content">
+                                <span class="pre_course_content_txt">Scratch Level1</span>
+                                <span class="select_pre_course_content">这里是班级名</span>
+                                <div class="pre_course_content_item">
+                                    <span>应缴金额：</span>
+                                    <span class="payable_money">2399.00</span>
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="pre_course_content">
+                                <span class="pre_course_content_txt">Scratch Level1</span>
+                                <span class="select_pre_course_content">这里是班级名</span>
+                                <div class="pre_course_content_item">
+                                    <span>应缴金额：</span>
+                                    <span class="payable_money">2399.00</span>
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="pre_course_content">
+                                <span class="pre_course_content_txt">Scratch Level1</span>
+                                <span class="select_pre_course_content">这里是班级名</span>
+                                <div class="pre_course_content_item">
+                                    <span>应缴金额：</span>
+                                    <span class="payable_money">2399.00</span>
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="pre_course_content">
+                                <span class="pre_course_content_txt">Scratch Level1</span>
+                                <span class="select_pre_course_content">这里是班级名</span>
+                                <div class="pre_course_content_item">
+                                    <span>应缴金额：</span>
+                                    <span class="payable_money">2399.00</span>
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="pre_course_content">
+                                <span class="pre_course_content_txt">Scratch Level1</span>
+                                <span class="select_pre_course_content">这里是班级名</span>
+                                <div class="pre_course_content_item">
+                                    <span>应缴金额：</span>
+                                    <span class="payable_money">2399.00</span>
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="pre_course_content">
+                                <span class="pre_course_content_txt">Scratch Level1</span>
+                                <span class="select_pre_course_content">这里是班级名</span>
+                                <div class="pre_course_content_item">
+                                    <span>应缴金额：</span>
+                                    <span class="payable_money">2399.00</span>
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="pre_course_content">
+                                <span class="pre_course_content_txt">Scratch Level1</span>
+                                <span class="select_pre_course_content">这里是班级名</span>
+                                <div class="pre_course_content_item">
+                                    <span>应缴金额：</span>
+                                    <span class="payable_money">2399.00</span>
+                                    <span>元</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course_information_item">
+                        <span class="money_txt">应缴总额：</span>
+                        <span class="payable_money_total">0</span>
+                        <span>元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price_difference">
+                <span class="difference_money">应付差价：</span>
+                <span class="difference_add">+</span>
+                <span class="difference_reduce"></span>
+                <span class="difference_money difference_value">0</span>
+                <span class="difference_money">元</span>
+                <span class="difference_txt">（应付差价=应缴总额-可退总额）</span>
+                <span class="difference_money">实付差价：</span>
+                <span class="difference_money_input">+100000000.00</span>
+                <span class="difference_money">元</span>
+            </div>
+        </div>
+        <!--换课原因及备注-->
+        <div class="remarks_box">
+            <h2 class="remarks_box_title">换课原因及备注</h2>
+            <div class="remarks_box_item">
+                <h2 class="remarks_box_item_title">对内备注:</h2>
+                <div class="remarks_box_item_text">
+                    这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息
+                    这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息
+                    这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息这是备注信息
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/view_application.js"></script>
+</body>
+</html>

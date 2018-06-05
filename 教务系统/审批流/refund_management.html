@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>退款管理</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/refund_management.css">
+</head>
+<body>
+<div style="width: 100%; height: 60px;background-color: #4381E6;"></div>
+<div class="change_management">
+    <!--头部搜索-->
+    <div class="nav_search">
+        <a class="btn col-md-1 expand_btn" role="button" data-toggle="collapse" aria-expanded="false" href="#collapseExample" aria-controls="collapseExample">展开选项</a>
+        <div class="tagsrow col-sm-8">
+            <span class="label label-info empty_btn">清空</span>
+        </div>
+        <div class="search_input">
+            <input type="text" placeholder="学员用户名/姓名/手机" class="search_input_item">
+            <span class="search_input_btn">搜索</span>
+        </div>
+    </div>
+    <!--选项内容-->
+    <div class="expand_cont">
+        <div class="panel-collapse collapse" aria-expanded="true" id="collapseExample">
+            <div class="category_card">
+                <div class="category_row rolerow">
+                    <div class="category_name">审批状态：</div>
+                    <form class="row_form">
+                        <div class="category_cont">
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="1" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">审批中</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="2" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">审批通过</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="3" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">已驳回</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="4" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">已过期</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="4" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">已撤回</span>
+                            </label>
+                        </div>
+                        <div class="expand_right">
+                            <button class="choose_btn" type="button">多选</button>
+                            <div class="operation">
+                                <button class="sure_btn" type="button">确认</button>
+                                <button class="cancel_btn" type="reset">取消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="category_row classtime">
+                    <div class="category_name">申请人：</div>
+                    <form class="row_form">
+                        <div class="category_cont">
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="1" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">沈维</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="2" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">易灿</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="3" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">胡冬梅</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="4" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">李毅华</span>
+                            </label>
+                        </div>
+                        <div class="expand_right">
+                            <button class="choose_btn" type="button">多选</button>
+                            <div class="operation">
+                                <button class="sure_btn" type="button">确认</button>
+                                <button class="cancel_btn" type="reset">取消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="category_row classnumb">
+                    <div class="category_name">退款课程：</div>
+                    <form class="row_form">
+                        <div class="category_cont">
+                            <span class="category_cont_title">Scratch</span>
+                            <span class="category_cont_title">Python</span>
+                            <span class="category_cont_title">NOIP</span>
+                            <span class="category_cont_title">专题课</span>
+                        </div>
+                        <div class="expand_right">
+                            <button class="choose_btn" type="button">多选</button>
+                            <div class="operation">
+                                <button class="sure_btn" type="button">确认</button>
+                                <button class="cancel_btn" type="reset">取消</button>
+                            </div>
+                            <button class="more_down" data-toggle="collapse" aria-expanded="true" href="#morecont" aria-controls="morecont">更多</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="panel-collapse collapse" aria-expanded="false" id="morecont">
+                    <div class="course_class">
+                        <form class="course_form">
+                            <div class="course_item" name="scratch">
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="scratch"><i class="mdui_checkout_icon"></i>
+                                    Scratch Level 1
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="scratch"><i class="mdui_checkout_icon"></i>
+                                    Scratch Level 2
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="scratch"><i class="mdui_checkout_icon"></i>
+                                    Scratch Level 3
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="scratch"><i class="mdui_checkout_icon"></i>
+                                    Scratch Level 4
+                                </label>
+                            </div>
+
+                            <div class="course_item" name="python">
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="python"><i class="mdui_checkout_icon"></i>
+                                    Python Level 1
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="python"><i class="mdui_checkout_icon"></i>
+                                    Python Level 2
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="python"><i class="mdui_checkout_icon"></i>
+                                    Python Level 3
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="python"><i class="mdui_checkout_icon"></i>
+                                    Python Level 4
+                                </label>
+                            </div>
+
+                            <div class="course_item" name="noip">
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="noip"><i class="mdui_checkout_icon"></i>
+                                    NOIP Level 1
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="noip"><i class="mdui_checkout_icon"></i>
+                                    NOIP Level 2
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="noip"><i class="mdui_checkout_icon"></i>
+                                    NOIP Level 3
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="noip"><i class="mdui_checkout_icon"></i>
+                                    NOIP Level 4
+                                </label>
+                            </div>
+
+                            <div class="course_item" name="special">
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="星球大战"><i class="mdui_checkout_icon"></i>
+                                    星球大战
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="异世界之旅"><i class="mdui_checkout_icon"></i>
+                                    异世界之旅
+                                </label>
+                                <label class="select_type">
+                                    <input type="checkbox" name="remember" value="黑客计划"><i class="mdui_checkout_icon"></i>
+                                    黑客计划
+                                </label>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+                <div class="category_row category">
+                    <div class="category_name">退课数量：</div>
+                    <form class="row_form">
+                        <div class="category_cont">
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="1" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">1</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="2" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">2</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="3" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">3</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="4" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">4</span>
+                            </label>
+                            <label class="select_type course_row">
+                                <input type="checkbox" name="remember" value="4" disabled><i class="mdui_checkout_icon"></i>
+                                <span class="select_type_txts">4以上</span>
+                            </label>
+                        </div>
+                        <div class="expand_right">
+                            <button class="choose_btn" type="button">多选</button>
+                            <div class="operation">
+                                <button class="sure_btn" type="button">确认</button>
+                                <button class="cancel_btn" type="reset">取消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="category_row endclass">
+                    <div class="category_name">申请时间：</div>
+                    <form class="row_form">
+                        <div class=" category_cont">
+                            <span>一周内</span>
+                            <span>一个月内</span>
+                            <span>三个月内</span>
+                            <span>半年内</span>
+                            <span>一年内</span>
+                        </div>
+                        <div class="expand_right">
+                            <button class="choose_btn" type="button">自定义时间段</button>
+                            <div class="select_time">
+                                <div class='input-group date' id='classstart'>
+                                    <input type='text' class="form-control input_one"/>
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </div>
+                                </div>
+                                <span class="center_gap">至</span>
+                                <div class='input-group date' id='classend'>
+                                    <input type='text' class="form-control input_two"/>
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="operation">
+                                <button class="sure_btn" type="button">确认</button>
+                                <button class="cancel_btn" type="reset">取消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--申请换课-->
+    <div class="apply_change_management">
+        <div class="screening_results">
+            <p class="huise_color">筛选结果：</p>
+            <p class="screening_txt">申请总计：</p>
+            <p class="highlight_color">35人</p>
+            <p class="screening_txt">已支付：</p>
+            <p class="highlight_color">22人</p>
+            <p class="screening_txt"> 实际应补差价总计：</p>
+            <p class="highlight_color">+230000.23元</p>
+        </div>
+        <a href="#" class="change_management_btn">申请换课</a>
+    </div>
+    <!--table表单-->
+    <table class="change_management_table">
+        <thead class="change_management_thead">
+        <tr>
+            <td>序号</td>
+            <td>学员姓名</td>
+            <td>用户名</td>
+            <td>手机</td>
+            <td>原课程数</td>
+            <td>预换课程数</td>
+            <td>实付差价</td>
+            <td>申请时间</td>
+            <td>申请人</td>
+            <td>剩余时间</td>
+            <td>审批转态</td>
+            <td>支付转态</td>
+            <td>审批进度</td>
+            <td>当前节点</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody class="change_management_tbody">
+        <tr>
+            <td>1</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td>+500</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td>2h</td>
+            <td class="adopt_color">审批通过</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <a href="#" class="operation_item_txt" data-index="1">查看申请</a>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <p class="operation_item_txt" data-index="3">催办</p>
+                        <p class="operation_item_txt" data-index="4">撤回</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td>+500</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td>2h</td>
+            <td>审批中</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <p class="operation_item_txt" data-index="1">查看申请</p>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <a href="#" class="operation_item_txt">重新申请</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td>+500</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td>2h</td>
+            <td class="reduce_color">已撤回</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <p class="operation_item_txt" data-index="1">查看申请</p>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <p class="operation_item_txt" data-index="3">催办</p>
+                        <p class="operation_item_txt" data-index="4">撤回</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td class="reduce_color">-1050</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td class="reduce_color">2h</td>
+            <td class="reject_color">已驳回</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <p class="operation_item_txt" data-index="1">查看申请</p>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <p class="operation_item_txt" data-index="3">催办</p>
+                        <p class="operation_item_txt" data-index="4">撤回</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td>+500</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td>2h</td>
+            <td class="overdue_color">已过期</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <p class="operation_item_txt" data-index="1">查看申请</p>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <p class="operation_item_txt" data-index="3">催办</p>
+                        <p class="operation_item_txt" data-index="4">撤回</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td>+500</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td>2h</td>
+            <td>审批通过</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <p class="operation_item_txt" data-index="1">查看申请</p>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <p class="operation_item_txt" data-index="3">催办</p>
+                        <p class="operation_item_txt" data-index="4">撤回</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td>+500</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td>2h</td>
+            <td>审批通过</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <p class="operation_item_txt" data-index="1">查看申请</p>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <p class="operation_item_txt" data-index="3">催办</p>
+                        <p class="operation_item_txt" data-index="4">撤回</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>黄小明</td>
+            <td>聪明的小明</td>
+            <td>18676585465</td>
+            <td>2</td>
+            <td>4</td>
+            <td>+500</td>
+            <td>2018-05-03 18:00:00</td>
+            <td>沈维</td>
+            <td>2h</td>
+            <td>审批通过</td>
+            <td>支付失败</td>
+            <td>0/6</td>
+            <td>李毅华</td>
+            <td>
+                <div class="line_box_btn">
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <span class="line_btn"></span>
+                    <div class="operation_item_box">
+                        <p class="operation_item_txt" data-index="1">查看申请</p>
+                        <p class="operation_item_txt" data-index="2">进程</p>
+                        <p class="operation_item_txt" data-index="3">催办</p>
+                        <p class="operation_item_txt" data-index="4">撤回</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--分页-->
+    <div class="paging_item_box">
+        <ul class="pagination">
+            <li class="disabled"><span>上一页</span></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+            <li><a href="javascript:;">6</a></li>
+            <li><a href="javascript:;">7</a></li>
+            <li><a href="javascript:;">8</a></li>
+            <li class="disabled"><span>...</span></li>
+            <li><a href="javascript:;">50</a></li>
+            <li><a href="javascript:;" rel="next">下一页</a></li>
+            <li><span class="goto_page">共50页</span></li>
+            <li><span class="goto_page">到<input type="text"/>页</span></li>
+            <li class="active"><a href="javascript:;">确定</a></li>
+        </ul>
+    </div>
+    <!------------------------------------------------------------操作栏的弹窗-------------------------------------------------------------->
+    <!--撤回弹窗-->
+    <div class="modal fade" id="withdraw_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close select_students_close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">撤回</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="modal_body_title">撤回原因：</p>
+                    <textarea cols="30" rows="10" class="withdraw_box"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--催办的弹窗-->
+    <div class="modal fade" id="urge_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close select_students_close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">催办</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="modal_body_title">
+                        <span>当前节点：</span>
+                        <span>李毅华</span>
+                    </p>
+                    <p class="modal_body_item">
+                        <span>催促方式：</span>
+                        <label class="modal_body_label">
+                            <input type="radio" class="modal_body_checkbox" name="radio_item" checked>
+                            <span class="modal_body_txt">微信提醒</span>
+                        </label>
+                        <label class="modal_body_label">
+                            <input type="radio" class="modal_body_checkbox" name="radio_item">
+                            <span>短信提醒</span>
+                        </label>
+                    </p>
+                    </p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--重新申请的弹窗-->
+    <div class="modal fade" id="again_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close select_students_close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">重新申请</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="modal_body_title">备注：</p>
+                    <textarea cols="30" rows="10" class="withdraw_box"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--进程的弹窗-->
+    <div class="modal fade" id="process_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close select_students_close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">进程</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal_body_nav">
+                        <li class="modal_nav_item modal_bottom_color">第一次申请</li>
+                        <li class="modal_nav_item">第二次申请</li>
+                        <li class="modal_nav_item">催办记录</li>
+                        <li class="modal_nav_item">付款记录</li>
+                    </ul>
+                    <div class="modal_center_item modal_center_01" style="display: block;">
+                        <!--流程-->
+                        <p class="modal_center_titles">
+                            <span class="modal_center_txt">流程</span>
+                            <span>( 已审批：</span>
+                            <span class="modal_text_color">23小时24分 </span>
+                            <span class="modal_juli">剩余：</span>
+                            <span class="modal_text_color">3小时15分</span>
+                            <span class="modal_juli">审批节点：</span>
+                            <span class="modal_text_color">3/5</span>
+                            <span> )</span>
+                        </p>
+                        <!--进程条-->
+                        <i class="fa fa-angle-left icon_item_left"></i>
+                        <i class="fa fa-angle-right icon_item_right"></i>
+                        <div class="process_bar">
+                            <div class="process_bar_line">
+                                <div class="withdraw_item_text">
+                                    <span class="withdraw_color">沈维</span>
+                                    <span class="withdraw_color">撤回</span>
+                                    <span>(</span>
+                                    <span>2018-05-16 18:00:00</span>
+                                    <span>)</span>
+                                </div>
+                                <div class="process_bar_line_item"></div>
+                                <div class="bar_line_item line_item_01">
+                                    <p class="check_name">沈维</p>
+                                </div>
+                                <div class="bar_line_item line_item_02">
+                                    <p class="check_name">汤风</p>
+                                </div>
+                                <div class="bar_line_item line_item_03">
+                                    <p class="check_name">梅泰斗</p>
+                                </div>
+                                <div class="bar_line_item line_item_04">
+                                    <p class="check_name">李毅华</p>
+                                </div>
+                                <div class="bar_line_item line_item_05">
+                                    <p class="check_name">梅泰斗</p>
+                                </div>
+                                <div class="bar_line_item line_item_06">
+                                    <p class="check_name">李毅华</p>
+                                </div>
+                                <div class="bar_line_item line_item_07">
+                                    <p class="check_name">李老师/郝老师</p>
+                                </div>
+                                <div class="check_content_item line_big_01">
+                                    <i class="fa fa-check"></i>
+                                    <div class="check_item_box">
+                                        <p class="check_check">2018-05-16 18:00:00</p>
+                                    </div>
+                                </div>
+                                <div class="check_content_item line_big_02">
+                                    <i class="fa fa-check"></i>
+                                    <div class="check_item_box">
+                                        <p class="check_check">2018-05-16 18:00:00</p>
+                                    </div>
+                                </div>
+                                <div class="check_content_item line_big_03">
+                                    <i class="fa fa-check"></i>
+                                    <div class="check_item_box">
+                                        <p class="check_check">2018-05-16 18:00:00</p>
+                                    </div>
+                                </div>
+                                <div class="check_content_item line_big_04">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="check_content_item line_big_05">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--审批意见-->
+                        <div class="opinion_box">
+                            <h2 class="opinion_box_title">审批意见</h2>
+                            <div class="opinion_box_center"></div>
+                            <p class="opinion_box_txt">
+                                <span>汤凤</span>
+                                <span>通过了该条申请：</span>
+                                <span class="opinion_box_timer"> 2018-05-16  18:00:00</span>
+                            </p>
+                            <div class="opinion_box_text">无</div>
+                            <p class="opinion_box_txt">
+                                <span>梅泰斗</span>
+                                <span>通过了该条申请：</span>
+                                <span class="opinion_box_timer"> 2018-05-16  18:00:00</span>
+                            </p>
+                            <div class="opinion_box_text">无</div>
+                            <p class="opinion_box_txt">
+                                <span>沈维</span>
+                                <span>通过了该条申请：</span>
+                                <span class="opinion_box_timer"> 2018-05-16  18:00:00</span>
+                            </p>
+                            <div class="opinion_box_text">沈维撤回了该条申请</div>
+                        </div>
+                    </div>
+                    <div class="modal_center_item modal_center_02">
+                        <p class="modal_center_titles">
+                            <span class="modal_center_txt">流程</span>
+                            <span>( 已审批：</span>
+                            <span class="modal_text_color">23小时24分 </span>
+                            <span class="modal_juli">剩余：</span>
+                            <span class="modal_text_color">3小时15分</span>
+                            <span class="modal_juli">审批节点：</span>
+                            <span class="modal_text_color">3/5</span>
+                            <span> )</span>
+                        </p>
+                        <i class="fa fa-angle-left icon_item_left"></i>
+                        <i class="fa fa-angle-right icon_item_right"></i>
+                        <div class="process_bar">
+                            <div class="process_bar_line">
+                                <div class="process_bar_line_item"></div>
+                                <div class="bar_line_item line_item_01">
+                                    <p class="check_name">沈维</p>
+                                </div>
+                                <div class="bar_line_item line_item_02">
+                                    <p class="check_name">汤风</p>
+                                </div>
+                                <div class="bar_line_item line_item_03">
+                                    <p class="check_name">梅泰斗</p>
+                                </div>
+                                <div class="bar_line_item line_item_04">
+                                    <p class="check_name">李毅华</p>
+                                </div>
+                                <div class="bar_line_item line_item_05">
+                                    <p class="check_name">梅泰斗</p>
+                                </div>
+                                <div class="bar_line_item line_item_06">
+                                    <p class="check_name">李毅华</p>
+                                </div>
+                                <div class="bar_line_item line_item_07">
+                                    <p class="check_name">李老师/郝老师</p>
+                                </div>
+                                <div class="check_content_item line_big_01">
+                                    <i class="fa fa-check"></i>
+                                    <div class="check_item_box">
+                                        <p class="check_check">2018-05-16 18:00:00</p>
+                                    </div>
+                                </div>
+                                <div class="check_content_item line_big_02">
+                                    <i class="fa fa-check"></i>
+                                    <div class="check_item_box">
+                                        <p class="check_check">2018-05-16 18:00:00</p>
+                                    </div>
+                                </div>
+                                <div class="check_content_item check_none_item line_big_03">
+                                    <i class="fa fa-check fa_check_none"></i>
+                                    <i class="fa fa-times"></i>
+                                    <div class="check_item_box">
+                                        <p class="check_check">2018-05-16 18:00:00</p>
+                                    </div>
+                                </div>
+                                <div class="check_content_item line_big_04">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="check_content_item line_big_05">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opinion_box">
+                            <h2 class="opinion_box_title">审批意见</h2>
+                            <div class="opinion_box_center"></div>
+                            <p class="opinion_box_txt">
+                                <span>汤凤</span>
+                                <span>通过了该条申请：</span>
+                                <span class="opinion_box_timer"> 2018-05-16  18:00:00</span>
+                            </p>
+                            <div class="opinion_box_text">无</div>
+                            <p class="opinion_box_txt">
+                                <span>梅泰斗</span>
+                                <span>通过了该条申请：</span>
+                                <span class="opinion_box_timer"> 2018-05-16  18:00:00</span>
+                            </p>
+                            <div class="opinion_box_text">无</div>
+                            <p class="opinion_box_txt">
+                                <span>沈维</span>
+                                <span>通过了该条申请：</span>
+                                <span class="opinion_box_timer"> 2018-05-16  18:00:00</span>
+                            </p>
+                            <div class="opinion_box_text">沈维撤回了该条申请</div>
+                        </div>
+                    </div>
+                    <div class="modal_center_item modal_center_03" style="padding-right: 30px;">
+                        <div class="modal_content_item">
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过沈维通过微信向沈维通过微信向沈维通过沈维通过微信向沈维通过微信向沈维通过沈维通过微信向沈维通过微信向沈维通过沈维通过微信向沈维通过微信向沈维通过沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">
+                                    沈维通过微信向沈维通过微信向沈维通过
+                                    <span class="color_names">李毅华</span>
+                                    发送催办提醒
+                                </li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_center_item modal_center_04" style="padding-right: 30px;">
+                        <div class="modal_content_item">
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">沈维重置了付款链接</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">生成付款链接</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">付款链接已过期，支付失败</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                            <ul class="modal_content_box">
+                                <li class="modal_content_box_txt">学员XXX通过微信成功付款<span class="color_names">5777.00</span>元</li>
+                                <li class="modal_content_box_time">2018-05-16 18:00:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="js/refund_management.js"></script>
+    <script src="js/evolutionary.js"></script>
+</body>
+</html>

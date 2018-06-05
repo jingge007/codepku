@@ -1,0 +1,402 @@
+@charset "UTF-8";
+body {
+  background-color: #EAF0F2; }
+
+.view_application {
+  width: 1300px;
+  height: 1260px;
+  background-color: #ffffff;
+  box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+  border-radius: 4px;
+  margin: 20px auto 0;
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  /*定义滚动条轨道 内阴影+圆角*/
+  /*定义滑块 内阴影+圆角*/ }
+  .view_application .change_classes_content_txt {
+    font-family: '微软雅黑';
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 19px 0; }
+  .view_application .change_classes_nav {
+    height: 65px;
+    width: 100%;
+    padding: 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #f0f0f0;
+    box-sizing: border-box; }
+    .view_application .change_classes_nav .doub_item_boxs {
+      display: flex;
+      height: 65px;
+      align-items: center; }
+      .view_application .change_classes_nav .doub_item_boxs .doub_title {
+        margin-right: 10px;
+        color: #333333;
+        font-size: 18px;
+        font-family: '微软雅黑'; }
+      .view_application .change_classes_nav .doub_item_boxs .doub_icont {
+        background: url("../images/doub_icont.png") no-repeat;
+        background-size: cover;
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        cursor: pointer;
+        position: relative; }
+        .view_application .change_classes_nav .doub_item_boxs .doub_icont .notes_box {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 40px;
+          width: 686px;
+          height: 400px;
+          z-index: 9999;
+          background-color: #ffffff;
+          box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+          border-radius: 10px;
+          border: solid 1px #dcdcdc;
+          padding: 28px 31px 0 38px;
+          font-family: '微软雅黑'; }
+          .view_application .change_classes_nav .doub_item_boxs .doub_icont .notes_box .notes_box_title {
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+            font-weight: 600; }
+          .view_application .change_classes_nav .doub_item_boxs .doub_icont .notes_box .notes_box_txt {
+            margin: 25px 0 0 0;
+            font-size: 14px;
+            color: #666; }
+          .view_application .change_classes_nav .doub_item_boxs .doub_icont .notes_box .notes_box_text {
+            font-size: 14px;
+            color: #666;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px; }
+          .view_application .change_classes_nav .doub_item_boxs .doub_icont .notes_box:before {
+            content: '';
+            display: inline-block;
+            width: 41px;
+            height: 100%;
+            position: absolute;
+            left: -37px;
+            top: 0; }
+        .view_application .change_classes_nav .doub_item_boxs .doub_icont:hover .notes_box {
+          display: block; }
+    .view_application .change_classes_nav .select_application {
+      height: 65px;
+      display: flex;
+      align-items: center; }
+      .view_application .change_classes_nav .select_application .select_application_box {
+        width: 160px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        color: #666666;
+        font-size: 14px;
+        font-family: '微软雅黑';
+        margin-right: 42px;
+        outline: none; }
+      .view_application .change_classes_nav .select_application .select_application_back {
+        cursor: pointer;
+        display: inline-block;
+        width: 29px;
+        height: 23px; }
+  .view_application .change_classes_content {
+    padding: 39px 75px 0 75px; }
+    .view_application .change_classes_content .change_classes_center {
+      width: 1148px;
+      height: 71px;
+      padding: 0 100px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .view_application .change_classes_content .change_classes_center .change_information_item {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center; }
+        .view_application .change_classes_content .change_classes_center .change_information_item p {
+          margin: 0;
+          padding: 0;
+          display: flex; }
+  .view_application .course_information {
+    padding-top: 80px; }
+    .view_application .course_information .course_information_center {
+      display: flex;
+      justify-content: space-between; }
+      .view_application .course_information .course_information_center .course_information_item {
+        font-size: 14px;
+        color: #666666;
+        display: flex;
+        width: 315px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+        margin: 20px auto 0; }
+        .view_application .course_information .course_information_center .course_information_item .money_txt {
+          color: #333; }
+      .view_application .course_information .course_information_center .course_information_01 .original_course {
+        width: 612px;
+        height: 395px;
+        border-radius: 4px;
+        border: solid 1px #DEDDDD;
+        padding: 20px 30px 0 30px; }
+        .view_application .course_information .course_information_center .course_information_01 .original_course .original_title {
+          display: block;
+          margin-bottom: 15px;
+          font-family: '微软雅黑';
+          color: #333;
+          font-size: 16px; }
+        .view_application .course_information .course_information_center .course_information_01 .original_course .select_box {
+          display: flex;
+          width: 100%;
+          justify-content: space-between; }
+          .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_01 {
+            display: flex; }
+            .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_01 .select_box_center {
+              height: 28px;
+              line-height: 28px;
+              font-family: '微软雅黑';
+              color: #666;
+              font-size: 14px; }
+            .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_01 .text_link {
+              height: 28px;
+              line-height: 28px;
+              text-decoration: none;
+              color: #2284f1;
+              font-family: '微软雅黑';
+              font-size: 14px; }
+          .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 {
+            font-family: '微软雅黑';
+            color: #666666;
+            font-size: 14px;
+            display: flex;
+            align-items: center; }
+            .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img {
+              background: url("../images/doub_icont.png") no-repeat;
+              background-size: cover;
+              width: 17px;
+              height: 17px;
+              display: inline-block;
+              margin-left: 8px;
+              cursor: pointer;
+              position: relative; }
+              .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_01, .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_02 {
+                display: none;
+                position: absolute;
+                top: 30px;
+                left: -30px;
+                width: 686px;
+                height: 400px;
+                z-index: 9999;
+                background-color: #ffffff;
+                box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+                border-radius: 10px;
+                border: solid 1px #dcdcdc;
+                padding: 28px 28px 0 30px;
+                font-family: '微软雅黑'; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_01 .doub_item_01_title, .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_02 .doub_item_01_title {
+                  font-size: 18px;
+                  color: #333;
+                  margin: 0;
+                  font-weight: 600; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_01 p, .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_02 p {
+                  margin: 20px 0 0 0;
+                  color: #666;
+                  font-size: 14px; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_01:before, .view_application .course_information .course_information_center .course_information_01 .original_course .select_box .select_box_item_02 .doub_img .doub_item_02:before {
+                  content: '';
+                  display: inline-block;
+                  position: absolute;
+                  top: -30px;
+                  left: 0;
+                  height: 30px;
+                  width: 100%; }
+        .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item {
+          width: 100%;
+          margin-top: 15px;
+          box-shadow: 2px 3px 5px 0px rgba(153, 153, 153, 0.08);
+          border-radius: 4px;
+          box-sizing: border-box; }
+          .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table {
+            width: 100%;
+            font-family: '微软雅黑'; }
+            .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item {
+              width: 100%;
+              display: inline-block;
+              height: 50px;
+              line-height: 50px;
+              background-color: #b7c7d4;
+              font-size: 14px;
+              color: #fff; }
+              .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item tr {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                table-layout: fixed; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item tr td {
+                  display: inline-block;
+                  height: 50px;
+                  text-align: center; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item tr td:nth-child(1) {
+                  flex: 3; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item tr td:nth-child(2) {
+                  flex: 2.5; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item tr td:nth-child(3) {
+                  flex: 2.5; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item tr td:nth-child(4) {
+                  flex: 2; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item tr td:nth-child(5) {
+                  flex: 2.5; }
+            .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody {
+              display: block;
+              height: 220px;
+              overflow-y: auto;
+              overflow-y: overlay; }
+              .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum {
+                width: 100%;
+                display: flex;
+                height: 44px;
+                font-size: 14px;
+                color: #666;
+                line-height: 44px;
+                text-align: center;
+                table-layout: fixed; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum td:nth-child(1) {
+                  flex: 3; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum td:nth-child(2) {
+                  flex: 2.5; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum td:nth-child(3) {
+                  flex: 2.5; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum td:nth-child(4) {
+                  flex: 2; }
+                .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum td:nth-child(5) {
+                  flex: 2.5; }
+              .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum:nth-child(odd) {
+                background-color: #fff; }
+              .view_application .course_information .course_information_center .course_information_01 .original_course .original_table_item .original_table .original_item_tbody .original_curriculum:nth-child(even) {
+                background-color: #f5f8fb; }
+      .view_application .course_information .course_information_center .course_information_02 .pre_course {
+        width: 514px;
+        height: 395px;
+        border-radius: 4px;
+        border: solid 1px #DEDDDD;
+        padding: 20px 20px 0 30px; }
+        .view_application .course_information .course_information_center .course_information_02 .pre_course .pre_course_title {
+          display: block;
+          margin-bottom: 15px;
+          font-family: '微软雅黑';
+          color: #333;
+          font-size: 16px; }
+        .view_application .course_information .course_information_center .course_information_02 .pre_course .select_pre_box {
+          width: 100%;
+          height: 300px;
+          padding-right: 10px;
+          overflow-y: auto;
+          box-sizing: border-box; }
+          .view_application .course_information .course_information_center .course_information_02 .pre_course .select_pre_box .pre_course_content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-family: '微软雅黑';
+            color: #666666;
+            text-align: center;
+            margin-bottom: 25px; }
+            .view_application .course_information .course_information_center .course_information_02 .pre_course .select_pre_box .pre_course_content .pre_course_content_txt {
+              width: 110px;
+              height: 28px;
+              line-height: 28px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            .view_application .course_information .course_information_center .course_information_02 .pre_course .select_pre_box .pre_course_content .select_pre_course_content {
+              height: 28px;
+              line-height: 28px;
+              margin: 0 40px; }
+            .view_application .course_information .course_information_center .course_information_02 .pre_course .select_pre_box .pre_course_content .pre_course_content_item {
+              min-width: 150px;
+              height: 35px;
+              line-height: 35px;
+              background-color: #f9f9f9;
+              display: flex;
+              justify-content: center;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+    .view_application .course_information .price_difference {
+      margin: 45px auto 0;
+      width: 835px;
+      display: flex;
+      height: 30px;
+      justify-content: center;
+      align-items: center; }
+      .view_application .course_information .price_difference .difference_money, .view_application .course_information .price_difference .difference_add {
+        font-family: '微软雅黑';
+        font-size: 16px;
+        color: #333;
+        font-weight: 600; }
+      .view_application .course_information .price_difference .difference_add {
+        display: none; }
+      .view_application .course_information .price_difference .difference_txt {
+        font-family: '微软雅黑';
+        font-size: 16px;
+        color: #999;
+        font-weight: 600;
+        margin-right: 50px; }
+      .view_application .course_information .price_difference .difference_money_input {
+        display: inline-block;
+        font-family: '微软雅黑';
+        font-size: 16px;
+        color: #f89741;
+        margin-right: 5px; }
+  .view_application .remarks_box {
+    padding-top: 70px; }
+    .view_application .remarks_box .remarks_box_title {
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      color: #333;
+      font-family: '微软雅黑';
+      font-weight: 600; }
+    .view_application .remarks_box .remarks_box_item {
+      padding-left: 30px;
+      width: 100%; }
+      .view_application .remarks_box .remarks_box_item .remarks_box_item_title {
+        color: #666;
+        font-size: 14px;
+        font-family: '微软雅黑';
+        margin-bottom: 10px; }
+      .view_application .remarks_box .remarks_box_item .remarks_box_item_text {
+        width: 1120px;
+        height: 116px;
+        background-color: #ffffff;
+        border: solid 1px #d2d2d2;
+        padding: 20px;
+        overflow-y: auto;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: #333;
+        font-family: '微软雅黑'; }
+  .view_application .select_pre_box::-webkit-scrollbar,
+  .view_application .select_students_tbody::-webkit-scrollbar,
+  .view_application .original_item_tbody::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    background-color: #f5f5f5; }
+  .view_application .select_pre_box::-webkit-scrollbar-track,
+  .view_application .select_students_tbody::-webkit-scrollbar-track,
+  .view_application .original_item_tbody::-webkit-scrollbar-track {
+    border-radius: 9px;
+    background-color: #F5F5F5; }
+  .view_application .select_pre_box::-webkit-scrollbar-thumb,
+  .view_application .select_students_tbody::-webkit-scrollbar-thumb,
+  .view_application .original_item_tbody::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: #ccdafa; }
+
+/*# sourceMappingURL=view_application.css.map */
