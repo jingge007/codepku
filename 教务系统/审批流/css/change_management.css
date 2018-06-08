@@ -591,14 +591,16 @@ body {
               min-height: 62px;
               background-color: #e1edf8;
               border-radius: 4px;
-              padding: 0 18px 6px 18px;
+              padding: 6px 18px 6px 18px;
               text-align: center;
               font-size: 14px;
               color: #666666;
               font-family: '微软雅黑'; }
               .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box .operation_item_txt {
                 margin: 6px 0 0 0;
-                cursor: pointer; }
+                cursor: pointer;
+                text-decoration: none;
+                color: #666666; }
                 .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box .operation_item_txt:hover {
                   color: #2284f1; }
               .change_management .change_management_table .change_management_tbody tr td:nth-child(15) .line_box_btn .operation_item_box:before {

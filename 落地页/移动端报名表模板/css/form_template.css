@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.form_template_box {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/form_bg.png") top center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .form_template_box .mobile_sign_up_form {
+    position: absolute;
+    top: 37.3333333333vw;
+    left: 50%;
+    transform: translateX(-50%); }
+    .form_template_box .mobile_sign_up_form form {
+      width: 86.6666666667vw;
+      background-color: #fff;
+      z-index: 300 !important;
+      text-align: center;
+      border-radius: 2vw;
+      padding-top: 6.6666666667vw; }
+    .form_template_box .mobile_sign_up_form .mobile_sign_up_title {
+      margin: 0 auto 5.3333333333vw;
+      font-size: 5.0666666667vw;
+      font-family: '微软雅黑';
+      color: #009944;
+      font-weight: 700; }
+    .form_template_box .mobile_sign_up_form .mobile_sign_up_input, .form_template_box .mobile_sign_up_form .mobile_sign_up_select {
+      display: block;
+      width: 66.6666666667vw;
+      height: 10.5333333333vw;
+      background-color: #f7f7f7;
+      border-radius: 1.0666666667vw;
+      margin: 0 auto 5.0666666667vw;
+      border: none !important;
+      font-size: 4vw;
+      font-family: '微软雅黑';
+      color: #999999;
+      padding: 2vw 0 2vw 4.5333333333vw;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      box-sizing: border-box; }
+    .form_template_box .mobile_sign_up_form .mobile_sign_up_input::-webkit-input-placeholder {
+      color: #999999; }
+    .form_template_box .mobile_sign_up_form .mobile_sign_up_input:-moz-placeholder {
+      color: #999999; }
+    .form_template_box .mobile_sign_up_form .mobile_sign_up_input::-moz-placeholder {
+      color: #999999; }
+    .form_template_box .mobile_sign_up_form .mobile_sign_up_input:-ms-input-placeholder {
+      color: #999999; }
+    .form_template_box .mobile_sign_up_form .verification_code_box {
+      width: 66.6666666667vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto; }
+      .form_template_box .mobile_sign_up_form .verification_code_box .verification_code_input {
+        margin: 0;
+        width: 34.6666666667vw;
+        height: 10.5333333333vw;
+        border: none !important;
+        background-color: #f7f7f7;
+        border-radius: 1.0666666667vw;
+        font-size: 4vw;
+        font-family: '微软雅黑';
+        color: #999999;
+        padding: 2vw 0 2vw 4.5333333333vw;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        box-sizing: border-box; }
+      .form_template_box .mobile_sign_up_form .verification_code_box .verification_code_btn {
+        border: none;
+        outline: none;
+        width: 29.3333333333vw;
+        height: 10.5333333333vw;
+        line-height: 10.5333333333vw;
+        background-color: #009944;
+        border-radius: 0.5333333333vw;
+        font-family: '微软雅黑';
+        font-size: 3.6vw;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+    .form_template_box .mobile_sign_up_form .sign_up_btn {
+      margin: 5.0666666667vw auto 9.3333333333vw;
+      width: 66.6666666667vw;
+      height: 10.5333333333vw;
+      line-height: 10.5333333333vw;
+      border: none !important;
+      outline: none;
+      background-color: #009944;
+      border-radius: 0.5333333333vw;
+      font-family: '微软雅黑';
+      font-size: 3.8666666667vw;
+      color: #fff;
+      padding: 0;
+      text-align: center; }
+  .form_template_box .logo_box {
+    width: 29.3333333333vw;
+    height: 5.6vw;
+    background: url("../images/code_logo.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 6.6666666667vw;
+    left: 50%;
+    transform: translateX(-50%); }
+
+/*# sourceMappingURL=form_template.css.map */

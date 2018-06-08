@@ -139,6 +139,7 @@ $(function () {
                 '</div>' +
                 '<div class="subtraction_btn">ㅡ</div>' +
                 '</div>'
+
             $('.select_pre_box').append(pre_course_html);
             payable_value += parseFloat($('.payable_money').html());
             /*应缴总额*/
@@ -181,5 +182,4 @@ $(function () {
     $('.remarks_box_determine').on('click', function () {
         $('#again_modal').modal('show');
     })
-
 })

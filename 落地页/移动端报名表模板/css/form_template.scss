@@ -1,0 +1,119 @@
+.form_template_box {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/form_bg.png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  .mobile_sign_up_form {
+    position: absolute;
+    top: (280/7.5)+vw;
+    left: 50%;
+    transform: translateX(-50%);
+    form {
+      width: (650/7.5)+vw;
+      background-color: #fff;
+      z-index: 300 !important;
+      text-align: center;
+      border-radius: (15/7.5)+vw;
+      padding-top: (50/7.5)+vw;
+    }
+    .mobile_sign_up_title {
+      margin: 0 auto (40/7.5)+vw;
+      font-size: (38/7.5)+vw;
+      font-family: '微软雅黑';
+      color: #009944;
+      font-weight: 700;
+    }
+    .mobile_sign_up_input, .mobile_sign_up_select {
+      display: block;
+      width: (500/7.5)+vw;
+      height: (79/7.5)+vw;
+      background-color: #f7f7f7;
+      border-radius: (8/7.5)+vw;
+      margin: 0 auto (38/7.5)+vw;
+      border: none !important;
+      font-size: (30/7.5)+vw;
+      font-family: '微软雅黑';
+      color: #999999;
+      padding: (15/7.5)+vw 0 (15/7.5)+vw (34/7.5)+vw;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .mobile_sign_up_input::-webkit-input-placeholder {
+      color: #999999;
+    }
+    .mobile_sign_up_input:-moz-placeholder {
+      color: #999999;
+    }
+    .mobile_sign_up_input::-moz-placeholder {
+      color: #999999;
+    }
+    .mobile_sign_up_input:-ms-input-placeholder {
+      color: #999999;
+    }
+    .verification_code_box {
+      width: (500/7.5)+vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      .verification_code_input {
+        margin: 0;
+        width: (260/7.5)+vw;
+        height: (79/7.5)+vw;
+        border: none !important;
+        background-color: #f7f7f7;
+        border-radius: (8/7.5)+vw;
+        font-size: (30/7.5)+vw;
+        font-family: '微软雅黑';
+        color: #999999;
+        padding: (15/7.5)+vw 0 (15/7.5)+vw (34/7.5)+vw;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+      .verification_code_btn {
+        border: none;
+        outline: none;
+        width: (220/7.5)+vw;
+        height: (79/7.5)+vw;
+        line-height: (79/7.5)+vw;
+        background-color: #009944;
+        border-radius: (4/7.5)+vw;
+        font-family: '微软雅黑';
+        font-size: (27/7.5)+vw;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    }
+    .sign_up_btn {
+      margin: (38/7.5)+vw auto (70/7.5)+vw;
+      width: (500/7.5)+vw;
+      height: (79/7.5)+vw;
+      line-height: (79/7.5)+vw;
+      border: none !important;
+      outline: none;
+      background-color: #009944;
+      border-radius: (4/7.5)+vw;
+      font-family: '微软雅黑';
+      font-size: (29/7.5)+vw;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  .logo_box {
+    width: (220/7.5)+vw;
+    height: (42/7.5)+vw;
+    background: url("../images/code_logo.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: (50/7.5)+vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
