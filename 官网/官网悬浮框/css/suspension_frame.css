@@ -4,15 +4,15 @@
   position: fixed;
   top: 250px;
   right: 12px;
-  z-index: 9999 !important;
-  background-color: #fff; }
+  z-index: 9999 !important; }
   .suspension_frame .auditions_frame_text {
     margin-top: 5px;
     display: block;
     text-align: center;
     font-family: '微软雅黑';
     font-size: 12px;
-    color: #666; }
+    color: #666;
+    background-color: #fff; }
   .suspension_frame .auditions_frame_box {
     width: 100%;
     height: 55px;
@@ -20,15 +20,18 @@
     position: relative;
     box-shadow: 0px 0px 9px 0px rgba(0, 39, 97, 0.15);
     margin-bottom: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    background: #fff; }
     .suspension_frame .auditions_frame_box .link_txt {
       text-decoration: none; }
     .suspension_frame .auditions_frame_box .auditions_frame_icon {
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 20px;
       vertical-align: top;
-      margin: 0 auto;
-      display: block; }
+      margin: 4px auto;
+      display: block;
+      animation: wiggle 1.5s infinite;
+      -webkit-animation: wiggle .6s infinite; }
     .suspension_frame .auditions_frame_box .auditions_frame_num {
       width: 18px;
       height: 18px;
@@ -81,7 +84,8 @@
       height: 130px; }
   .suspension_frame .consultation_frame {
     width: 100%;
-    box-shadow: 0px 0px 9px 0px rgba(0, 39, 97, 0.15); }
+    box-shadow: 0px 0px 9px 0px rgba(0, 39, 97, 0.15);
+    background: #fff; }
     .suspension_frame .consultation_frame .on_line_item, .suspension_frame .consultation_frame .telephone_item, .suspension_frame .consultation_frame .public_number_item, .suspension_frame .consultation_frame .back_top_item {
       width: 100%;
       height: 60px;
@@ -92,7 +96,7 @@
         width: 24px;
         height: 21px;
         vertical-align: top;
-        margin: 0 auto 7px;
+        margin: 4px auto 7px;
         display: block; }
       .suspension_frame .consultation_frame .on_line_item .telephone_icons, .suspension_frame .consultation_frame .telephone_item .telephone_icons, .suspension_frame .consultation_frame .public_number_item .telephone_icons, .suspension_frame .consultation_frame .back_top_item .telephone_icons {
         width: 23px;
@@ -127,11 +131,28 @@
         height: 76px;
         width: 195px;
         display: none; }
+    .suspension_frame .consultation_frame .back_top_item {
+      display: none; }
   .suspension_frame .on_line_item:hover .prompt_popup_item_02 {
     display: block; }
   .suspension_frame .telephone_item:hover .prompt_popup_item_03 {
     display: block; }
   .suspension_frame .public_number_item:hover .prompt_popup_item_04 {
     display: block; }
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(-15deg); } }
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(-15deg); }
+  50% {
+    -webkit-transform: rotate(15deg); }
+  100% {
+    -webkit-transform: rotate(-15deg); } }
 
 /*# sourceMappingURL=suspension_frame.css.map */

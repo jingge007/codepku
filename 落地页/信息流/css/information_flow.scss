@@ -135,6 +135,37 @@
         font-weight: 600;
       }
     }
+    .bright_spot {
+      width: (700/7.5)+vw;
+      height: (1247/7.5)+vw;
+      margin: (40/7.5)+vw auto 0;
+      border-radius: (15/7.5)+vw;
+      background-color: #fff;
+      .bright_spot_01 {
+        width: (667/7.5)+vw;
+        height: (219/7.5)+vw;
+        margin: 0 auto (40/7.5)+vw;
+        display: block;
+      }
+      .bright_spot_02 {
+        width: (663/7.5)+vw;
+        height: (241/7.5)+vw;
+        margin: 0 auto (40/7.5)+vw;
+        display: block;
+      }
+      .bright_spot_03 {
+        width: (676/7.5)+vw;
+        height: (237/7.5)+vw;
+        margin: 0 auto (40/7.5)+vw;
+        display: block;
+      }
+      .bright_spot_04 {
+        width: (667/7.5)+vw;
+        height: (239/7.5)+vw;
+        margin: 0 auto (40/7.5)+vw;
+        display: block;
+      }
+    }
     .course_introduction {
       width: (700/7.5)+vw;
       height: (1170/7.5)+vw;

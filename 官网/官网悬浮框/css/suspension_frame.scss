@@ -4,7 +4,6 @@
   top: 250px;
   right: 12px;
   z-index: 9999 !important;
-  background-color: #fff;
   .auditions_frame_text {
     margin-top: 5px;
     display: block;
@@ -12,6 +11,7 @@
     font-family: '微软雅黑';
     font-size: 12px;
     color: #666;
+    background-color: #fff;
   }
   .auditions_frame_box {
     width: 100%;
@@ -21,15 +21,18 @@
     box-shadow: 0px 0px 9px 0px rgba(0, 39, 97, 0.15);
     margin-bottom: 10px;
     cursor: pointer;
+    background: #fff;
     .link_txt {
       text-decoration: none;
     }
     .auditions_frame_icon {
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 20px;
       vertical-align: top;
-      margin: 0 auto;
+      margin: 4px auto;
       display: block;
+      animation: wiggle 1.5s infinite;
+      -webkit-animation: wiggle .6s infinite;
     }
     .auditions_frame_num {
       width: 18px;
@@ -96,6 +99,7 @@
   .consultation_frame {
     width: 100%;
     box-shadow: 0px 0px 9px 0px rgba(0, 39, 97, 0.15);
+    background: #fff;
     .on_line_item, .telephone_item, .public_number_item, .back_top_item {
       width: 100%;
       height: 60px;
@@ -106,7 +110,7 @@
         width: 24px;
         height: 21px;
         vertical-align: top;
-        margin: 0 auto 7px;
+        margin: 4px auto 7px;
         display: block;
       }
       .telephone_icons {
@@ -148,6 +152,9 @@
         display: none;
       }
     }
+    .back_top_item {
+      display: none;
+    }
   }
   .on_line_item:hover {
     .prompt_popup_item_02 {
@@ -165,5 +172,29 @@
     .prompt_popup_item_04 {
       display: block;
     }
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
   }
 }

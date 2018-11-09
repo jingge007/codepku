@@ -1,0 +1,279 @@
+@charset "UTF-8";
+.information_flow {
+  width: 100%; }
+  .information_flow .information_flow_banner {
+    width: 100%;
+    height: 49.3333333333vw;
+    background: url("../images/flow_banner.png") no-repeat;
+    background-size: cover; }
+  .information_flow .mobile_sign_up_form {
+    margin: -4.6666666667vw auto 0;
+    width: 93.3333333333vw;
+    background-color: #fff;
+    z-index: 9998 !important;
+    text-align: center;
+    border-radius: 2vw;
+    padding-bottom: 6.6666666667vw; }
+    .information_flow .mobile_sign_up_form form {
+      padding-top: 5.3333333333vw; }
+    .information_flow .mobile_sign_up_form .mobile_sign_up_title {
+      margin: 0 auto 5.3333333333vw;
+      font-size: 5.0666666667vw;
+      font-family: '微软雅黑';
+      color: #3b95ff;
+      font-weight: 600; }
+    .information_flow .mobile_sign_up_form .mobile_sign_up_input, .information_flow .mobile_sign_up_form .mobile_sign_up_select {
+      display: block;
+      width: 59.0666666667vw;
+      height: 10.5333333333vw;
+      background-color: #f7f7f7;
+      border-radius: 1.0666666667vw;
+      margin: 0 auto 3.7333333333vw;
+      border: none !important;
+      font-size: 4vw;
+      font-family: '微软雅黑';
+      color: #999999;
+      padding: 2vw 0 2vw 4.5333333333vw;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      box-sizing: border-box; }
+    .information_flow .mobile_sign_up_form .mobile_sign_up_input::-webkit-input-placeholder {
+      color: #999999; }
+    .information_flow .mobile_sign_up_form .mobile_sign_up_input:-moz-placeholder {
+      color: #999999; }
+    .information_flow .mobile_sign_up_form .mobile_sign_up_input::-moz-placeholder {
+      color: #999999; }
+    .information_flow .mobile_sign_up_form .mobile_sign_up_input:-ms-input-placeholder {
+      color: #999999; }
+    .information_flow .mobile_sign_up_form .verification_code_box {
+      width: 59.0666666667vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 3.7333333333vw; }
+      .information_flow .mobile_sign_up_form .verification_code_box .verification_code_input {
+        margin: 0;
+        width: 27.2vw;
+        height: 10.5333333333vw;
+        border: none !important;
+        background-color: #f7f7f7;
+        border-radius: 1.0666666667vw;
+        font-size: 4vw;
+        font-family: '微软雅黑';
+        color: #999999;
+        padding: 2vw 0 2vw 4.5333333333vw;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        box-sizing: border-box; }
+      .information_flow .mobile_sign_up_form .verification_code_box .verification_code_btn {
+        border: none;
+        outline: none;
+        width: 27.2vw;
+        height: 10.5333333333vw;
+        line-height: 10.5333333333vw;
+        background-color: #3b95ff;
+        border-radius: 0.5333333333vw;
+        font-family: '微软雅黑';
+        font-size: 3.6vw;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+    .information_flow .mobile_sign_up_form .sign_up_btn {
+      margin: 0 auto;
+      width: 59.0666666667vw;
+      height: 10.5333333333vw;
+      line-height: 10.5333333333vw;
+      border: none !important;
+      outline: none;
+      background-color: #3b95ff;
+      border-radius: 0.5333333333vw;
+      font-family: '微软雅黑';
+      font-size: 3.8666666667vw;
+      color: #fff;
+      padding: 0;
+      text-align: center; }
+  .information_flow .information_flow_content {
+    margin-top: -2px;
+    width: 100%;
+    background: url("../images/flow_bg.png");
+    background-size: 30%; }
+    .information_flow .information_flow_content .course_introduction_title {
+      position: relative;
+      text-align: center;
+      margin: 4.4vw auto 1.3333333333vw; }
+      .information_flow .information_flow_content .course_introduction_title .number_txt {
+        display: block;
+        font-family: '微软雅黑';
+        font-size: 13.3333333333vw;
+        color: #e7efff;
+        font-weight: 600; }
+      .information_flow .information_flow_content .course_introduction_title .number_text {
+        display: inline-block;
+        font-family: '微软雅黑';
+        font-size: 4.8vw;
+        color: #2284f1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600; }
+    .information_flow .information_flow_content .bright_spot {
+      width: 93.3333333333vw;
+      height: 166.2666666667vw;
+      margin: 5.3333333333vw auto 0;
+      border-radius: 2vw;
+      background-color: #fff; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_01 {
+        width: 88.9333333333vw;
+        height: 29.2vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_02 {
+        width: 88.4vw;
+        height: 32.1333333333vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_03 {
+        width: 90.1333333333vw;
+        height: 31.6vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_04 {
+        width: 88.9333333333vw;
+        height: 31.8666666667vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
+    .information_flow .information_flow_content .course_introduction {
+      width: 93.3333333333vw;
+      height: 156vw;
+      margin: 0 auto 0;
+      border-radius: 2vw;
+      background-color: #fff; }
+      .information_flow .information_flow_content .course_introduction .scratch_img {
+        width: 88.2666666667vw;
+        height: 17.6vw;
+        display: block;
+        margin: 0 auto 5.3333333333vw; }
+      .information_flow .information_flow_content .course_introduction .scratch_icon, .information_flow .information_flow_content .course_introduction .python_icon, .information_flow .information_flow_content .course_introduction .noip_icon {
+        width: 59.7333333333vw;
+        height: 15.0666666667vw;
+        display: block;
+        margin: 0 auto 7.3333333333vw; }
+      .information_flow .information_flow_content .course_introduction .python_icon {
+        height: 17.2vw; }
+      .information_flow .information_flow_content .course_introduction .noip_icon {
+        height: 16.4vw; }
+    .information_flow .information_flow_content .curriculum_harvest {
+      width: 93.3333333333vw;
+      height: 144vw;
+      margin: 5.3333333333vw auto 0;
+      border-radius: 2vw;
+      background-color: #fff; }
+      .information_flow .information_flow_content .curriculum_harvest .curriculum_img {
+        width: 86.8vw;
+        height: 27.2vw;
+        display: block;
+        margin: 0 auto 1.3333333333vw; }
+    .information_flow .information_flow_content .period_introduction {
+      width: 93.3333333333vw;
+      height: 121.8666666667vw;
+      margin: 5.3333333333vw auto 0;
+      border-radius: 2vw;
+      background-color: #fff; }
+      .information_flow .information_flow_content .period_introduction .period_introduction_txt, .information_flow .information_flow_content .period_introduction .period_introduction_text {
+        text-align: center;
+        font-family: '微软雅黑';
+        font-size: 3.4666666667vw;
+        color: #2284f1;
+        margin: 2.6666666667vw auto; }
+      .information_flow .information_flow_content .period_introduction .period_introduction_text {
+        color: #ffba00; }
+      .information_flow .information_flow_content .period_introduction .period_01, .information_flow .information_flow_content .period_introduction .period_02 {
+        width: 88.9333333333vw;
+        height: 26.6666666667vw;
+        display: block;
+        margin: 0 auto 5.7333333333vw; }
+      .information_flow .information_flow_content .period_introduction .period_02 {
+        height: 36vw; }
+    .information_flow .information_flow_content .Promise_introduction {
+      width: 93.3333333333vw;
+      height: 78vw;
+      margin: 5.3333333333vw auto 0;
+      border-radius: 2vw;
+      background-color: #fff; }
+      .information_flow .information_flow_content .Promise_introduction .Promise_box {
+        width: 86.6666666667vw;
+        margin: 5.3333333333vw auto 0;
+        display: flex;
+        justify-content: space-between; }
+        .information_flow .information_flow_content .Promise_introduction .Promise_box .Promise_01, .information_flow .information_flow_content .Promise_introduction .Promise_box .Promise_02 {
+          width: 40.2666666667vw;
+          height: 41.3333333333vw;
+          display: inline-block; }
+    .information_flow .information_flow_content .code_logo_box {
+      height: 24vw; }
+    .information_flow .information_flow_content .code_logo {
+      width: 29.4666666667vw;
+      height: 5.6vw;
+      margin: 4vw auto 0;
+      display: block; }
+    .information_flow .information_flow_content .qr_code {
+      width: 100%;
+      height: 64vw;
+      text-align: center; }
+      .information_flow .information_flow_content .qr_code .qr_code_title {
+        margin: 10.6666666667vw auto 4vw;
+        font-size: 4.5333333333vw;
+        font-family: '微软雅黑';
+        color: #ffe400; }
+      .information_flow .information_flow_content .qr_code .qr_code_txt {
+        font-size: 3.4666666667vw;
+        font-family: '微软雅黑';
+        color: #ffe400;
+        margin: 0 0 6.6666666667vw 0; }
+      .information_flow .information_flow_content .qr_code .erweima_box {
+        width: 26.9333333333vw;
+        height: 26.9333333333vw;
+        margin: 0 auto;
+        display: block; }
+    .information_flow .information_flow_content .footer_box {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      height: 13.3vw;
+      background-color: #fafafa;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 9999; }
+      .information_flow .information_flow_content .footer_box .btm_left_img {
+        position: absolute;
+        left: 4vw;
+        bottom: 2.6vw;
+        width: 10vw; }
+      .information_flow .information_flow_content .footer_box .btm_tipst {
+        color: #499cf8;
+        font-family: "微软雅黑";
+        align-items: center;
+        flex: 1;
+        font-size: 3.7333333333vw;
+        justify-content: center;
+        padding: 0 0 0 10vw;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .information_flow .information_flow_content .footer_box .btm_btn {
+        display: inline-block;
+        width: 30.667vw;
+        background-color: #ffc600;
+        font-size: 3.7333333333vw;
+        color: #fff;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-family: '微软雅黑'; }
+
+/*# sourceMappingURL=information_flow.css.map */

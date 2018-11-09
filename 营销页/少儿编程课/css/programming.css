@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.programming {
+  width: 100%;
+  background-color: #0C86D9; }
+  .programming .programming_banner {
+    width: 100%;
+    height: 104.5333333333vw;
+    background: url("../images/programming_banner.png") no-repeat;
+    background-size: cover; }
+  .programming .programming_form {
+    width: 90.2666666667vw;
+    margin: 0 auto 2.6666666667vw;
+    background-color: #fff;
+    padding: 3.3333333333vw 0 4vw 0;
+    border-radius: 1.3333333333vw; }
+    .programming .programming_form .programming_form_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5.0666666667vw;
+      font-weight: 600;
+      margin-bottom: 2vw; }
+      .programming .programming_form .programming_form_title .blue_txt {
+        color: #2988EF;
+        font-family: '微软雅黑'; }
+      .programming .programming_form .programming_form_title .red_txt {
+        color: #FD5410;
+        font-family: '微软雅黑'; }
+    .programming .programming_form .programming_form_text {
+      letter-spacing: 3px;
+      color: #FC3B3E;
+      font-size: 3.7333333333vw;
+      text-align: center;
+      margin-bottom: 2.6666666667vw; }
+    .programming .programming_form .programming_form_select, .programming .programming_form .programming_form_input {
+      display: block;
+      width: 74.2666666667vw;
+      height: 10.5333333333vw;
+      border-radius: 1.0666666667vw;
+      margin: 0 auto 4.6666666667vw;
+      border: 1px solid #D8D8D8;
+      font-size: 4vw;
+      font-family: '微软雅黑';
+      background-color: #fff;
+      color: #999999;
+      padding: 2vw 0 2vw 4.5333333333vw;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      box-sizing: border-box; }
+    .programming .programming_form .verification_code_box {
+      width: 74.5333333333vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto; }
+      .programming .programming_form .verification_code_box .verification_code_input {
+        margin: 0;
+        width: 40vw;
+        height: 10.5333333333vw;
+        border: 1px solid #D8D8D8;
+        border-radius: 1.0666666667vw;
+        font-size: 4vw;
+        font-family: '微软雅黑';
+        color: #999999;
+        padding: 2vw 0 2vw 4.5333333333vw;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        box-sizing: border-box; }
+      .programming .programming_form .verification_code_box .verification_code_btn {
+        border: none;
+        outline: none;
+        width: 30vw;
+        height: 10.5333333333vw;
+        line-height: 10.5333333333vw;
+        background-color: #3b95ff;
+        border-radius: 1.0666666667vw;
+        font-family: '微软雅黑';
+        font-size: 3.6vw;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+    .programming .programming_form .sign_up_btn {
+      display: block;
+      width: 74.5333333333vw;
+      height: 10.5333333333vw;
+      line-height: 10.5333333333vw;
+      border: none !important;
+      outline: none;
+      background-color: #3b95ff;
+      border-radius: 10.5333333333vw;
+      font-family: '微软雅黑';
+      font-size: 3.8666666667vw;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+      margin: 4.6666666667vw auto 0; }
+  .programming .programming_img_01, .programming .programming_img_02, .programming .programming_img_03, .programming .programming_img_04 {
+    width: 100%;
+    display: block;
+    height: 109.0666666667vw; }
+  .programming .programming_img_02 {
+    height: 145.7333333333vw; }
+  .programming .programming_img_03 {
+    height: 69.2vw; }
+  .programming .programming_img_04 {
+    height: 129.6vw; }
+
+/*# sourceMappingURL=programming.css.map */

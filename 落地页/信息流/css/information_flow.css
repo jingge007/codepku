@@ -120,6 +120,32 @@
         top: 50%;
         transform: translate(-50%, -50%);
         font-weight: 600; }
+    .information_flow .information_flow_content .bright_spot {
+      width: 93.3333333333vw;
+      height: 166.2666666667vw;
+      margin: 5.3333333333vw auto 0;
+      border-radius: 2vw;
+      background-color: #fff; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_01 {
+        width: 88.9333333333vw;
+        height: 29.2vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_02 {
+        width: 88.4vw;
+        height: 32.1333333333vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_03 {
+        width: 90.1333333333vw;
+        height: 31.6vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
+      .information_flow .information_flow_content .bright_spot .bright_spot_04 {
+        width: 88.9333333333vw;
+        height: 31.8666666667vw;
+        margin: 0 auto 5.3333333333vw;
+        display: block; }
     .information_flow .information_flow_content .course_introduction {
       width: 93.3333333333vw;
       height: 156vw;
